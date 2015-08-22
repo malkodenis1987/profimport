@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfImport &ndash; О нас &ndash; Корпоративная книга</title>
+
+    <!-- Font init -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Bower components-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+
+    <script src="assets/js/app.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Main Menu-->
+                    <div class="main-menu">
+                        <ul>
+                            <li class="home"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></li>
+                            <li class="about"><a href="about-mail.html">О нас</a></li>
+                            <li class="work active"><a href="work-docs.html">Рабочая среда</a></li>
+                            <li class="news"><a href="news.html">Новости</a></li>
+                            <li class="gallery"><a href="gallery.html">Галерея</a></li>
+                            <li class="bank"><a href="bank.html">Банк идей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <form action="#">
+                            <div class="form-row clearfix">
+                                <button type="submit">&nbsp;</button>
+                                <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <p class="title">d.sorokotyaga</p>
+                        <p class="dater"><span class="date">17.08.15</span> <span class="time">12:52</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div id="content" class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Sidebar Left -->
+                    <div class="sidebar left" id="left-sidebar">
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="docs"><a href="work-docs.html">Корпоративные документы</a></li>
+                                <li class="study"><a href="work-study.html">Программа развития и обучения</a></li>
+                                <li class="comp"><a href="work-comp.html">Программа компенсаций и льгот</a></li>
+                                <li class="self active"><a href="work-self.html">Саморазвитие</a></li>
+                                <li class="social"><a href="work-social.html">Социальный пакет</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- Main -->
+                    <div class="main" id="main">
+                        <div class="scroll-wrapper">
+                            <article>
+                                <!-- Book -->
+                                <div class="book">
+                                    <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                    <div class="details">
+                                        <h4>Век абсурдов (1989), <br />Чарльз Хэнди</h4>
+                                        <p>Профессор Лондонской школы бизнеса рассказывает о драматических переменах в
+                                            повседневной и рабочей жизни людей. Новые технологии отменяют привычные
+                                            правила и способы работы. Книгу называют пророческой, ведь спустя
+                                            десятилетия мысли Хэнди стали еще более актуальными.
+                                        </p>
+                                        <p>Ссылка для скачивания: ex.ua/25842574</p>
+                                        <p class="tags"><a href="#"># бизнес</a><a href="#"># стратегии</a></p>
+                                    </div>
+                                </div>
+                                <!-- Book -->
+                                <div class="book">
+                                    <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                    <div class="details">
+                                        <h4>Построенные навечно. Успех компаний, обладающих видением (1994),
+                                            <br />Джим Коллинз, Джерри Поррас</h4>
+                                        <p>Авторы изучают успех гигантов бизнеса (Disney, 3M, Sony и других) и пытаются
+                                            понять, как им удается выделяться на фоне других. Рассуждения приводят
+                                            Коллинза и Поррасак к мысли, что важны не столько лидеры, сколько правильная
+                                            корпоративная культура.
+                                        </p>
+                                        <p>Ссылка для скачивания: ex.ua/25842574</p>
+                                        <p class="tags"><a href="#"># бизнес</a><a href="#"># стратегии</a></p>
+                                    </div>
+                                </div>
+                                <!-- Book -->
+                                <div class="book">
+                                    <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                    <div class="details">
+                                        <h4>Конкурируя за будущее (1996), <br />Гэри Хэмел и К. К. Прахалад</h4>
+                                        <p>Эта книга снабжает революционеров орудиями и концепциями для борьбы с
+                                            защитниками прошлого. Хэмел и Прахалад рассказывают о стратегическом
+                                            планировании, о том, что оно должно быть эмоциональным, целеустремленным, а
+                                            не только аналитическим. В книге много говорится о ключевых компетенциях
+                                            компании и необходимости предвидеть изменения в отрасли, а не просто
+                                            приспосабливаться к новому.
+                                        </p>
+                                        <p>Ссылка для скачивания: ex.ua/25842574</p>
+                                        <p class="tags"><a href="#"># бизнес</a><a href="#"># стратегии</a></p>
+                                    </div>
+                                </div>
+                                <!-- Book -->
+                                <div class="book">
+                                    <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                    <div class="details">
+                                        <h4>Конкурентная стратегия. Методика анализа отраслей и конкурентов (1980),
+                                            <br />Майкл Портер</h4>
+                                        <p>Вот уже тридцать лет эта книга становится отправной точкой для управленцев,
+                                            которые задумываются о рентабельности на конкурентном рынке.
+                                        </p>
+                                        <p>Ссылка для скачивания: ex.ua/25842574</p>
+                                        <p class="tags"><a href="#"># бизнес</a><a href="#"># стратегии</a></p>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Pager -->
+                        <div class="pager">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="prev">
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&lt;</span>
+                                        </a>
+                                    </li>
+                                    <li class="current"><a href="#">1,</a></li>
+                                    <li><a href="#">2,</a></li>
+                                    <li><a href="#">3,</a></li>
+                                    <li><span>......,</span></li>
+                                    <li><a href="#">15,</a></li>
+                                    <li><a href="#">16,</a></li>
+                                    <li><a href="#">17</a></li>
+                                    <li class="next">
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&gt;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>
+</footer>
+</body>
+</html>

@@ -66,3 +66,41 @@
     }
   }
 }
+.box {
+  border-radius: 5px;
+  float: left;
+  width: 50%;
+  .body {
+    border-radius: 5px 5px 0 0;
+    img {
+      border-radius: 5px 5px 0 0;
+      display: block;
+      width: 100%;
+    }
+  }
+  .foot {
+    background: @red;
+    border-radius: 0 0 5px 5px;
+    line-height: 76px;
+    text-align: center;
+    a {
+      color: @white;
+      font-size: 24px;
+      display: inline-block;
+      padding: 0 0 0 110px;
+      text-transform: uppercase;
+      &.books {
+        background: url("../img/box-books.png") left center no-repeat;
+      }
+      &.articles {
+        background: url("../img/box-articles.png") left center no-repeat;
+      }
+      &.video {
+        background: url("../img/box-video.png") left center no-repeat;
+      }
+      &.music {
+        background: url("../img/box-music.png") left center no-repeat;
+      }
+    }
+  }
+}

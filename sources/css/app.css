@@ -122,6 +122,11 @@ body {
 .content p.docs {
   padding: 0 0 15px;
 }
+.content p.tags a {
+  color: #be392a;
+  font-style: italic;
+  padding-left: 5px;
+}
 .content ul,
 .content ol,
 .content dl {
@@ -198,6 +203,9 @@ body {
 }
 .content .docs .ico a:hover {
   color: #be392a;
+}
+.content .book .details {
+  padding-left: 280px;
 }
 header {
   height: 140px;
@@ -514,4 +522,42 @@ footer {
 }
 .widget .body .btn:nth-child(2) {
   bottom: 45px;
+}
+.box {
+  border-radius: 5px;
+  float: left;
+  width: 50%;
+}
+.box .body {
+  border-radius: 5px 5px 0 0;
+}
+.box .body img {
+  border-radius: 5px 5px 0 0;
+  display: block;
+  width: 100%;
+}
+.box .foot {
+  background: #be392a;
+  border-radius: 0 0 5px 5px;
+  line-height: 76px;
+  text-align: center;
+}
+.box .foot a {
+  color: #ffffff;
+  font-size: 24px;
+  display: inline-block;
+  padding: 0 0 0 110px;
+  text-transform: uppercase;
+}
+.box .foot a.books {
+  background: url("../img/box-books.png") left center no-repeat;
+}
+.box .foot a.articles {
+  background: url("../img/box-articles.png") left center no-repeat;
+}
+.box .foot a.video {
+  background: url("../img/box-video.png") left center no-repeat;
+}
+.box .foot a.music {
+  background: url("../img/box-music.png") left center no-repeat;
 }

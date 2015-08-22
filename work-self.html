@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfImport &ndash; О нас &ndash; Корпоративная книга</title>
+
+    <!-- Font init -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Bower components-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+
+    <script src="assets/js/app.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Main Menu-->
+                    <div class="main-menu">
+                        <ul>
+                            <li class="home"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></li>
+                            <li class="about"><a href="about-mail.html">О нас</a></li>
+                            <li class="work active"><a href="work-docs.html">Рабочая среда</a></li>
+                            <li class="news"><a href="news.html">Новости</a></li>
+                            <li class="gallery"><a href="gallery.html">Галерея</a></li>
+                            <li class="bank"><a href="bank.html">Банк идей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <form action="#">
+                            <div class="form-row clearfix">
+                                <button type="submit">&nbsp;</button>
+                                <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <p class="title">d.sorokotyaga</p>
+                        <p class="dater"><span class="date">17.08.15</span> <span class="time">12:52</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div id="content" class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Sidebar Left -->
+                    <div class="sidebar left" id="left-sidebar">
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="docs"><a href="work-docs.html">Корпоративные документы</a></li>
+                                <li class="study"><a href="work-study.html">Программа развития и обучения</a></li>
+                                <li class="comp"><a href="work-comp.html">Программа компенсаций и льгот</a></li>
+                                <li class="self active"><a href="work-self.html">Саморазвитие</a></li>
+                                <li class="social"><a href="work-social.html">Социальный пакет</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- Main -->
+                    <div class="main" id="main">
+                        <div class="scroll-wrapper">
+                            <article>
+                                <div class="box">
+                                    <div class="body">
+                                        <img src="assets/img/books.jpg" alt=""/>
+                                    </div>
+                                    <div class="foot">
+                                        <a class="books" href="work-self-books.html">Книги</a>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="body">
+                                        <img src="assets/img/articles.jpg" alt=""/>
+                                    </div>
+                                    <div class="foot">
+                                        <a class="articles" href="#">Статьи</a>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="body">
+                                        <img src="assets/img/video.jpg" alt=""/>
+                                    </div>
+                                    <div class="foot">
+                                        <a class="video" href="#">Видео</a>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="body">
+                                        <img src="assets/img/music.jpg" alt=""/>
+                                    </div>
+                                    <div class="foot">
+                                        <a class="music" href="#">Музыка</a>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Pager -->
+                        <div class="pager">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="prev">
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&lt;</span>
+                                        </a>
+                                    </li>
+                                    <li class="current"><a href="#">1,</a></li>
+                                    <li><a href="#">2,</a></li>
+                                    <li><a href="#">3,</a></li>
+                                    <li><span>......,</span></li>
+                                    <li><a href="#">15,</a></li>
+                                    <li><a href="#">16,</a></li>
+                                    <li><a href="#">17</a></li>
+                                    <li class="next">
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&gt;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>
+</footer>
+</body>
+</html>
