@@ -1,0 +1,43 @@
+.pager {
+  color: @grey_light;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      line-height: 18px;
+      padding: 0 3px;
+      &.prev {
+      }
+      &.next {
+      }
+      &.current {
+        font-size: 22px;
+        font-weight: bold;
+      }
+      a {
+        color: @grey_light;
+        border: none;
+        padding: 0;
+        text-decoration: none;
+        &:hover {
+          background: none;
+          text-decoration: none;
+        }
+      }
+      span {
+        display: block;
+        border: none;
+        padding: 0;
+        &:hover {
+          background: none;
+        }
+      }
+    }
+  }
+}

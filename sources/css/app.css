@@ -72,12 +72,22 @@ body {
 .content h6 {
   color: #74706f;
 }
+.content h4 {
+  color: #be392a;
+  font-size: 24px;
+  line-height: 28px;
+  margin: -3px 0 0;
+  padding: 0 0 18px;
+}
 .content p {
   color: #74706f;
   font-size: 18px;
   line-height: 22px;
   margin: 0;
   padding: 0 0 20px;
+}
+.content p.docs {
+  padding: 0 0 15px;
 }
 .content ul,
 .content ol,
@@ -96,6 +106,28 @@ body {
 }
 .content img {
   max-width: 100%;
+}
+.content .ico {
+  color: #74706f;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 2px 0 3px 34px;
+}
+.content .ico.doc {
+  background: url("../img/doc.png") left top no-repeat;
+}
+.content .ico.xls {
+  background: url("../img/xls.png") left top no-repeat;
+}
+.content .ico.pdf {
+  background: url("../img/pdf.png") left top no-repeat;
+}
+.content .ico span {
+  padding-left: 10px;
+}
+.content .ico span:nth-child(1) {
+  padding-left: 0;
 }
 header {
   height: 140px;
@@ -290,4 +322,43 @@ footer {
     font-size: 20px;
     line-height: 24px;
   }
+}
+.pager {
+  color: #c4c4be;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.pager ul {
+  margin: 0;
+  padding: 0;
+}
+.pager ul li {
+  display: inline-block;
+  line-height: 18px;
+  padding: 0 3px;
+}
+.pager ul li.current {
+  font-size: 22px;
+  font-weight: bold;
+}
+.pager ul li a {
+  color: #c4c4be;
+  border: none;
+  padding: 0;
+  text-decoration: none;
+}
+.pager ul li a:hover {
+  background: none;
+  text-decoration: none;
+}
+.pager ul li span {
+  display: block;
+  border: none;
+  padding: 0;
+}
+.pager ul li span:hover {
+  background: none;
 }
