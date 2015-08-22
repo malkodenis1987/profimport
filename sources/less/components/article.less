@@ -38,25 +38,57 @@
   img {
     max-width: 100%;
   }
-  .ico {
-    color: @text-color;
-    font-size: 18px;
-    line-height: 26px;
-    margin: 0;
-    padding: 2px 0 3px 34px;
-    &.doc {
-      background: url("../img/doc.png") left top no-repeat;
-    }
-    &.xls {
-      background: url("../img/xls.png") left top no-repeat;
-    }
-    &.pdf {
-      background: url("../img/pdf.png") left top no-repeat;
-    }
-    span {
-      padding-left: 10px;
-      &:nth-child(1) {
-        padding-left: 0;
+  .docs {
+    position: relative;
+    .ico {
+      color: @text-color;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.6px;
+      margin: 0;
+      padding: 2px 0 16px 25px;
+      position: relative;
+      &.doc {
+        background: url("../img/doc.png") left 2px no-repeat;
+      }
+      &.xls {
+        background: url("../img/xls.png") left top no-repeat;
+      }
+      &.pdf {
+        background: url("../img/pdf.png") left top no-repeat;
+      }
+      span {
+        padding-left: 10px;
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+      }
+      &:hover {
+        color: @red;
+        a {
+          display: block;
+        }
+      }
+      a {
+        bottom: -2px;
+        color: @sidebar-grey;
+        display: none;
+        line-height: 18px;
+        padding: 0 0 0 24px;
+        font-style: italic;
+        position: absolute;
+        text-decoration: none;
+        &.download {
+          background: url("../img/download.png") left center no-repeat;
+          left: 26px;
+        }
+        &.print {
+          background: url("../img/print.png") left center no-repeat;
+          left: 115px;
+        }
+        &:hover {
+          color: @red;
+        }
       }
     }
   }

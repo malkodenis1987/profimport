@@ -37,6 +37,17 @@ body {
   display: block;
   height: 35px;
 }
+.col-md-5-1 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 45.5000%;
+}
 .col-md-3-5 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -46,7 +57,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  width: 29.1665%;
+  width: 27.25%;
 }
 .scroll-wrapper {
   overflow: auto;
@@ -107,27 +118,59 @@ body {
 .content img {
   max-width: 100%;
 }
-.content .ico {
+.content .docs {
+  position: relative;
+}
+.content .docs .ico {
   color: #74706f;
   font-size: 18px;
   line-height: 26px;
+  letter-spacing: -0.6px;
   margin: 0;
-  padding: 2px 0 3px 34px;
+  padding: 2px 0 16px 25px;
+  position: relative;
 }
-.content .ico.doc {
-  background: url("../img/doc.png") left top no-repeat;
+.content .docs .ico.doc {
+  background: url("../img/doc.png") left 2px no-repeat;
 }
-.content .ico.xls {
+.content .docs .ico.xls {
   background: url("../img/xls.png") left top no-repeat;
 }
-.content .ico.pdf {
+.content .docs .ico.pdf {
   background: url("../img/pdf.png") left top no-repeat;
 }
-.content .ico span {
+.content .docs .ico span {
   padding-left: 10px;
 }
-.content .ico span:nth-child(1) {
+.content .docs .ico span:nth-child(1) {
   padding-left: 0;
+}
+.content .docs .ico:hover {
+  color: #be392a;
+}
+.content .docs .ico:hover a {
+  display: block;
+}
+.content .docs .ico a {
+  bottom: -2px;
+  color: #c4c4be;
+  display: none;
+  line-height: 18px;
+  padding: 0 0 0 24px;
+  font-style: italic;
+  position: absolute;
+  text-decoration: none;
+}
+.content .docs .ico a.download {
+  background: url("../img/download.png") left center no-repeat;
+  left: 26px;
+}
+.content .docs .ico a.print {
+  background: url("../img/print.png") left center no-repeat;
+  left: 115px;
+}
+.content .docs .ico a:hover {
+  color: #be392a;
 }
 header {
   height: 140px;
@@ -301,6 +344,21 @@ footer {
 }
 .sidebar.left ul li.company a {
   background-position: 14px -243px;
+}
+.sidebar.left ul li.docs a {
+  background-position: 6px -381px;
+}
+.sidebar.left ul li.study a {
+  background-position: 8px -464px;
+}
+.sidebar.left ul li.comp a {
+  background-position: 12px -551px;
+}
+.sidebar.left ul li.self a {
+  background-position: 12px -639px;
+}
+.sidebar.left ul li.social a {
+  background-position: 12px -724px;
 }
 .sidebar.left ul li.active {
   background-color: #be392a;
