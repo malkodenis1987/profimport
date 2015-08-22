@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,body {
+  background: @white;
+  font-family: 'Sochi2014-Light', 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#wrapper {
+  min-height: 100%;
+  margin-bottom: -35px;
+}
+#wrapper:after {
+  content: "";
+  display: block;
+  height: 35px;
+ }
+.col-md-3-5 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 29.1665%;
+}
+.scroll-wrapper {
+  overflow: auto;
+  padding-right: 20px;
+  .jspVerticalBar {
+    background: none;
+    border-radius: 3px;
+    width: 5px;
+    .jspTrack {
+      border-radius: 3px;
+      .jspDrag {
+        background: @red;
+        border-radius: 3px;
+      }
+    }
+  }
+}

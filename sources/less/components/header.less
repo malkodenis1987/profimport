@@ -1,0 +1,133 @@
+header {
+  height: 140px;
+  .main-menu {
+    font-family: 'Sochi2014-Medium';
+    float: left;
+    margin: 0;
+    padding: 35px 0 10px;
+    width: 100%;
+    li {
+      float: left;
+      list-style: none;
+      text-align: center;
+      width: 16.9%;
+      &.active {
+        a {
+          color: @red;
+        }
+      }
+      &.home {
+        background: none;
+        text-align: left;
+        width: 13%;
+        a {
+          padding-top: 0;
+        }
+      }
+      &.about {
+        background: url("../img/menu-about.png") center top no-repeat;
+        &:hover, &.active {
+          background-position: center -154px;
+        }
+      }
+      &.work {
+        background: url("../img/menu-work.png") center top no-repeat;
+        &:hover, &.active {
+          background-position: center -154px;
+        }
+      }
+      &.news {
+        background: url("../img/menu-news.png") center top no-repeat;
+        &:hover, &.active {
+          background-position: center -154px;
+        }
+      }
+      &.gallery {
+        background: url("../img/menu-gallery.png") center top no-repeat;
+        &:hover, &.active {
+          background-position: center -154px;
+        }
+      }
+      &.bank {
+        background: url("../img/menu-bank.png") center top no-repeat;
+        &:hover, &.active {
+          background-position: center -154px;
+        }
+      }
+      a {
+        color: @grey_menu;
+        display: block;
+        font-size: 22px;
+        padding: 60px 0 0;
+        &:hover {
+          color: @red;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .search {
+    background: url("../img/search.png") left bottom no-repeat;
+    border-bottom: 1px #9b9b96 solid;
+    float: left;
+    padding: 92px 0 0;
+    width: 40%;
+    button {
+      background: none;
+      border: 0;
+      float: left;
+      width: 17%;
+    }
+    input {
+      background: none;
+      border: none;
+      color: @grey_menu;
+      font-size: 18px;
+      float: left;
+      height: 26px;
+      width: 83%;
+      &::-webkit-input-placeholder {
+        font-style: italic;
+      }
+      &:-moz-placeholder {
+        font-style: italic;
+      }
+      &::-moz-placeholder {
+        font-style: italic;
+      }
+      &:-ms-input-placeholder {
+        font-style: italic;
+      }
+      .responsive('xxxlarge', {
+        font-size: 14px;
+      });
+    }
+  }
+  .account {
+    background: url("../img/flag.png") 10% 50px no-repeat;
+    float: left;
+    padding: 55px 0 0 25%;
+    width: 60%;
+    p {
+      color: @grey_menu;
+      font-size: 24px;
+      line-height: 24px;
+      margin: 0;
+      padding: 0 0 5px;
+      &.title {
+        color: @red;
+        padding-bottom: 20px;
+      }
+      &.dater {
+        font-size: 20px;
+        padding-bottom: 0;
+        .responsive('xxxlarge', {
+          font-size: 14px;
+        });
+      }
+      .responsive('xxxlarge', {
+        font-size: 18px;
+      });
+    }
+  }
+}

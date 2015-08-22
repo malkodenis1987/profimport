@@ -1,0 +1,26 @@
+{
+  "name": "profimport",
+  "version": "0.0.1",
+  "homepage": "",
+  "authors": [
+    "dmalko <dmalko@speroteck.com>"
+  ],
+  "description": "profimport project",
+  "keywords": [
+    "bower",
+    "grunt"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "jquery-mousewheel": "*",
+    "jquery.jscrollpane": "*"
+  }
+}

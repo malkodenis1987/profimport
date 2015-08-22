@@ -1,0 +1,57 @@
+.sidebar {
+  &.left {
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        background: @sidebar-grey;
+        border-radius: 5px;
+        list-style: none;
+        margin: 0 0 8px;
+        padding: 0;
+        &:hover {
+          background-color: @red;
+        }
+        &.mail {
+          a {
+            background-position: 14px 15px;
+          }
+        }
+        &.history {
+          a {
+            background-position: 14px -71px;
+          }
+        }
+        &.book {
+          a {
+            background-position: 14px -156px;
+          }
+        }
+        &.company {
+          a {
+            background-position: 14px -243px;
+          }
+        }
+        &.active {
+          background-color: @red;
+        }
+        a {
+          background: url("../img/left-nav.png") 0 0 no-repeat;
+          color: @white;
+          display: block;
+          font-size: 24px;
+          line-height: 29px;
+          min-height: 78px;
+          padding: 14px 14px 14px 88px;
+          &:hover {
+            text-decoration: none;
+          }
+          .responsive('xxxlarge', {
+            font-size: 20px;
+            line-height: 24px;
+          });
+        }
+      }
+    }
+  }
+}
