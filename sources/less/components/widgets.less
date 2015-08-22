@@ -1,0 +1,68 @@
+.widget {
+  .head {
+    background: @red;
+    border-radius: 5px 5px 0 0;
+    color: @white;
+    font-size: 22px;
+    line-height: 46px;
+    padding: 0 8px 0 2px;
+    .date {
+      float: right;
+    }
+    .title {
+      display: inline-block;
+      padding: 0 0 0 38px;
+      &.best {
+        background: url("../img/best-ico.png") 2px 1px no-repeat;
+      }
+      &.seminar {
+        background: url("../img/seminar-ico.png") 1px 5px no-repeat;
+      }
+    }
+  }
+  .body {
+    .gradient();
+    border-radius: 0 0 5px 5px;
+    min-height: 145px;
+    height: 28px;
+    padding: 7px;
+    position: relative;
+    &.double {
+      .col {
+        &:last-child {
+          padding-bottom: 50px;
+        }
+      }
+    }
+    .col {
+      float: left;
+      width: 50%;
+      &:last-child {
+        padding-left: 2%;
+        padding-bottom: 25px;
+      }
+    }
+    p {
+      color: @white;
+    }
+    .btn {
+      background: @red;
+      bottom: 7px;
+      color: @white;
+      display: block;
+      font-size: 18px;
+      height: 28px;
+      line-height: 22px;
+      padding: 0;
+      position: absolute;
+      right: 7px;
+      width: 46%;
+      &:hover {
+        opacity: 0.8;
+      }
+      &:nth-child(2) {
+        bottom: 45px;
+      }
+    }
+  }
+}

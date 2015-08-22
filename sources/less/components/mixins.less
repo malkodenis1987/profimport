@@ -46,3 +46,12 @@
 .responsive(@view; @rules) when (@view = 'max1024') {
   @media only screen and (max-width: (@tablet-breakpoint - 1)) { @rules(); }
 }
+/* Gradient Mixin */
+.gradient (@startColor: #f6f8f9, @endColor: #c3c8ce) {
+  background-color: @startColor;
+  background: -webkit-gradient(linear, left top, left bottom, from(@startColor), to(@endColor));
+  background: -webkit-linear-gradient(top, @startColor, @endColor);
+  background: -moz-linear-gradient(top, @startColor, @endColor);
+  background: -ms-linear-gradient(top, @startColor, @endColor);
+  background: -o-linear-gradient(top, @startColor, @endColor);
+}

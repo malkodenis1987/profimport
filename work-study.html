@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfImport &ndash; О нас &ndash; Корпоративная книга</title>
+
+    <!-- Font init -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Bower components-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+
+    <script src="assets/js/app.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Main Menu-->
+                    <div class="main-menu">
+                        <ul>
+                            <li class="home"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></li>
+                            <li class="about"><a href="about-mail.html">О нас</a></li>
+                            <li class="work active"><a href="work-docs.html">Рабочая среда</a></li>
+                            <li class="news"><a href="news.html">Новости</a></li>
+                            <li class="gallery"><a href="gallery.html">Галерея</a></li>
+                            <li class="bank"><a href="bank.html">Банк идей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <form action="#">
+                            <div class="form-row clearfix">
+                                <button type="submit">&nbsp;</button>
+                                <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <p class="title">d.sorokotyaga</p>
+                        <p class="dater"><span class="date">17.08.15</span> <span class="time">12:52</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div id="content" class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3">
+                    <!-- Sidebar Left -->
+                    <div class="sidebar left" id="left-sidebar">
+                        <div class="nav-menu">
+                            <ul>
+                                <li class="docs"><a href="work-docs.html">Корпоративные документы</a></li>
+                                <li class="study active"><a href="work-study.html">Программа развития и обучения</a></li>
+                                <li class="comp"><a href="work-comp.html">Программа компенсаций и льгот</a></li>
+                                <li class="self"><a href="work-self.html">Саморазвитие</a></li>
+                                <li class="social"><a href="work-social.html">Социальный пакет</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <!-- Main -->
+                    <div class="main" id="main">
+                        <div class="scroll-wrapper">
+                            <article>
+                                <div class="row">
+                                    <div class="col-md-5-1">
+                                        <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                        <h4>Программа Лучший сотрудник</h4>
+                                        <p>
+                                            Лучший сотрудник объявляется 1 раз в месяц и определяется по следующим параметрам:<br />
+                                            1. Колическтво заключенных сделок<br />
+                                            2. Сумма принесенного дохода в компанию<br />
+                                            3. Колическтво новых клиентов<br />
+                                            4. Количество положительных отзывов<br />
+                                            5. Количество отрицательных отзывов
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <h4>&nbsp;</h4>
+                                        <h5>Победитель программы Лучший сотрудник получает следующие бонусы:</h5>
+                                        <ul>
+                                            <li>Премию в размере 100 долларов</li>
+                                            <li>100% компенсацию затрат на участие в соц. мероприятиях компании</li>
+                                            <li>25% скидку на приобретение продукции поставщиков в течение месяца</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <div class="widget">
+                                            <div class="head clearfix">
+                                                <span class="date">июль 2015</span>
+                                                <span class="title best">Лучший сотрудник</span>
+                                            </div>
+                                            <div class="body clearfix">
+                                                <div class="col">
+                                                    <img src="assets/img/widget.jpg" alt=""/>
+                                                </div>
+                                                <div class="col">
+                                                    <h5>ИВАНОВА <br /> Ирина Васильевна</h5>
+                                                    <p>клиент-менеджер направление Свет Юг</p>
+                                                    <a class="btn" href="#">поздравить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5-1">
+                                        <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                        <h3>Семинар Тайм-менеджемн</h3>
+                                        <p>Дата проведения: 20.08.15<br />
+                                            Время проведения: 10:00-16:00<br />
+                                            Место проведения: офис Профимпорт
+                                        </p>
+                                        <p>Программа семинара включает обучение основам планирования, определения
+                                            приоритетных задач, делегирования полномочий
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <h6>Программа:</h6>
+                                        <p>
+                                            10:00-12:00  Секци я1<br />
+                                            12:00-12:15  Кофе брейк<br />
+                                            12:15-15:00  Секция 2<br />
+                                            15:00-16:00  Работа с кейсами
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <div class="widget">
+                                            <div class="head clearfix">
+                                                <span class="title seminar">Участие в семинаре</span>
+                                            </div>
+                                            <div class="body clearfix">
+                                                <div class="col">&nbsp;</div>
+                                                <div class="col">
+                                                    <h4>d.sorokotyaga</h4>
+                                                    <a class="btn" href="#">поздравить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5-1">
+                                        <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                        <h3>Семинар Тайм-менеджемн</h3>
+                                        <p>Дата проведения: 20.08.15<br />
+                                            Время проведения: 10:00-16:00<br />
+                                            Место проведения: офис Профимпорт
+                                        </p>
+                                        <p>Программа семинара включает обучение основам планирования, определения
+                                            приоритетных задач, делегирования полномочий
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <h6>Программа:</h6>
+                                        <p>
+                                            10:00-12:00  Секци я1<br />
+                                            12:00-12:15  Кофе брейк<br />
+                                            12:15-15:00  Секция 2<br />
+                                            15:00-16:00  Работа с кейсами
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <div class="widget">
+                                            <div class="head clearfix">
+                                                <span class="title seminar">Участие в семинаре</span>
+                                            </div>
+                                            <div class="body clearfix">
+                                                <div class="col">&nbsp;</div>
+                                                <div class="col">
+                                                    <h4>d.sorokotyaga</h4>
+                                                    <a class="btn" href="#">поздравить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5-1">
+                                        <img class="align-left" src="assets/img/about-history.jpg" alt=""/>
+                                        <h3>Семинар Тайм-менеджемн</h3>
+                                        <p>Дата проведения: 20.08.15<br />
+                                            Время проведения: 10:00-16:00<br />
+                                            Место проведения: офис Профимпорт
+                                        </p>
+                                        <p>Программа семинара включает обучение основам планирования, определения
+                                            приоритетных задач, делегирования полномочий
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <h6>Программа:</h6>
+                                        <p>
+                                            10:00-12:00  Секци я1<br />
+                                            12:00-12:15  Кофе брейк<br />
+                                            12:15-15:00  Секция 2<br />
+                                            15:00-16:00  Работа с кейсами
+                                        </p>
+                                    </div>
+                                    <div class="col-md-3-5">
+                                        <div class="widget">
+                                            <div class="head clearfix">
+                                                <span class="title seminar">Участие в семинаре</span>
+                                            </div>
+                                            <div class="body clearfix">
+                                                <div class="col">&nbsp;</div>
+                                                <div class="col">
+                                                    <h4>d.sorokotyaga</h4>
+                                                    <a class="btn" href="#">поздравить</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <!-- Pager -->
+                        <div class="pager">
+                            <nav>
+                                <ul class="pagination">
+                                    <li class="prev">
+                                        <a href="#" aria-label="Previous">
+                                            <span aria-hidden="true">&lt;</span>
+                                        </a>
+                                    </li>
+                                    <li class="current"><a href="#">1,</a></li>
+                                    <li><a href="#">2,</a></li>
+                                    <li><a href="#">3,</a></li>
+                                    <li><span>......,</span></li>
+                                    <li><a href="#">15,</a></li>
+                                    <li><a href="#">16,</a></li>
+                                    <li><a href="#">17</a></li>
+                                    <li class="next">
+                                        <a href="#" aria-label="Next">
+                                            <span aria-hidden="true">&gt;</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>
+</footer>
+</body>
+</html>

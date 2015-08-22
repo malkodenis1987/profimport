@@ -75,6 +75,7 @@ body {
   background: #be392a;
   border-radius: 3px;
 }
+/* Gradient Mixin */
 .content h1,
 .content h2,
 .content h3,
@@ -83,12 +84,33 @@ body {
 .content h6 {
   color: #74706f;
 }
+.content h3 {
+  color: #be392a;
+  font-size: 24px;
+  line-height: 28px;
+  margin: -3px 0 0;
+  padding: 0;
+}
 .content h4 {
   color: #be392a;
   font-size: 24px;
   line-height: 28px;
   margin: -3px 0 0;
   padding: 0 0 18px;
+}
+.content h5 {
+  color: #be392a;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+  padding: 0 0 2px;
+}
+.content h6 {
+  color: #be392a;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 0;
+  padding: 30px 0 20px;
 }
 .content p {
   color: #74706f;
@@ -106,6 +128,11 @@ body {
   color: #74706f;
   font-size: 18px;
   line-height: 22px;
+}
+.content ul li {
+  background: url("../img/dot.png") left 7px no-repeat;
+  list-style: none;
+  padding: 0 0 2px 15px;
 }
 .content .align-left {
   float: left;
@@ -394,6 +421,7 @@ footer {
   padding: 0;
 }
 .pager ul li {
+  background: none;
   display: inline-block;
   line-height: 18px;
   padding: 0 3px;
@@ -419,4 +447,71 @@ footer {
 }
 .pager ul li span:hover {
   background: none;
+}
+.widget .head {
+  background: #be392a;
+  border-radius: 5px 5px 0 0;
+  color: #ffffff;
+  font-size: 22px;
+  line-height: 46px;
+  padding: 0 8px 0 2px;
+}
+.widget .head .date {
+  float: right;
+}
+.widget .head .title {
+  display: inline-block;
+  padding: 0 0 0 38px;
+}
+.widget .head .title.best {
+  background: url("../img/best-ico.png") 2px 1px no-repeat;
+}
+.widget .head .title.seminar {
+  background: url("../img/seminar-ico.png") 1px 5px no-repeat;
+}
+.widget .body {
+  background-color: #f6f8f9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f8f9), to(#c3c8ce));
+  background: -webkit-linear-gradient(top, #f6f8f9, #c3c8ce);
+  background: -moz-linear-gradient(top, #f6f8f9, #c3c8ce);
+  background: -ms-linear-gradient(top, #f6f8f9, #c3c8ce);
+  background: -o-linear-gradient(top, #f6f8f9, #c3c8ce);
+  border-radius: 0 0 5px 5px;
+  min-height: 145px;
+  height: 28px;
+  padding: 7px;
+  position: relative;
+}
+.widget .body.double .col:last-child {
+  padding-bottom: 50px;
+}
+.widget .body .col {
+  float: left;
+  width: 50%;
+}
+.widget .body .col:last-child {
+  padding-left: 2%;
+  padding-bottom: 25px;
+}
+.widget .body p {
+  color: #ffffff;
+}
+.widget .body .btn {
+  background: #be392a;
+  bottom: 7px;
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  height: 28px;
+  line-height: 22px;
+  padding: 0;
+  position: absolute;
+  right: 7px;
+  width: 46%;
+}
+.widget .body .btn:hover {
+  opacity: 0.8;
+}
+.widget .body .btn:nth-child(2) {
+  bottom: 45px;
 }
