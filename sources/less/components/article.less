@@ -127,9 +127,43 @@
       }
     }
   }
+  /* Книги */
   .book {
     .details {
       padding-left: 280px;
+    }
+  }
+  /* Социяальный пакет */
+  .social-item {
+    background: @red;
+    .pic {
+      float: left;
+      width: 75%;
+    }
+    .link {
+      color: @white;
+      font-size: 24px;
+      float: left;
+      text-transform: uppercase;
+      text-align: center;
+      width: 25%;
+      a {
+        color: @white;
+        display: block;
+        padding: 135px 0 0;
+        &.football {
+          background: url("../img/football-ico.png") center 35px no-repeat;
+        }
+        &.fitness {
+          background: url("../img/fitness-ico.png") center 28px no-repeat;
+        }
+        &.souna {
+          background: url("../img/souna-ico.png") center 40px no-repeat;
+        }
+        &.party {
+          background: url("../img/party-ico.png") center 35px no-repeat;
+        }
+      }
     }
   }
 }

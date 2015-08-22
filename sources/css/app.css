@@ -76,6 +76,10 @@ body {
   border-radius: 3px;
 }
 /* Gradient Mixin */
+.content {
+  /* Книги */
+  /* Социяальный пакет */
+}
 .content h1,
 .content h2,
 .content h3,
@@ -206,6 +210,38 @@ body {
 }
 .content .book .details {
   padding-left: 280px;
+}
+.content .social-item {
+  background: #be392a;
+}
+.content .social-item .pic {
+  float: left;
+  width: 75%;
+}
+.content .social-item .link {
+  color: #ffffff;
+  font-size: 24px;
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25%;
+}
+.content .social-item .link a {
+  color: #ffffff;
+  display: block;
+  padding: 135px 0 0;
+}
+.content .social-item .link a.football {
+  background: url("../img/football-ico.png") center 35px no-repeat;
+}
+.content .social-item .link a.fitness {
+  background: url("../img/fitness-ico.png") center 28px no-repeat;
+}
+.content .social-item .link a.souna {
+  background: url("../img/souna-ico.png") center 40px no-repeat;
+}
+.content .social-item .link a.party {
+  background: url("../img/party-ico.png") center 35px no-repeat;
 }
 header {
   height: 140px;
