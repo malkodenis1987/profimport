@@ -48,7 +48,10 @@
     }
   }
   a {
-
+    color: @red;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   ul, ol, dl {
     color: @text-color;
@@ -164,6 +167,85 @@
           background: url("../img/party-ico.png") center 35px no-repeat;
         }
       }
+    }
+  }
+  /* Home */
+  .boxes {
+    margin: 0 0 7px;
+    .box {
+      float: left;
+      width: 33.33%;
+      .pic {
+        border-radius: 5px 5px 0 0;
+        img {
+          border-radius: 5px 5px 0 0;
+          height: auto;
+          width: 100%;
+        }
+      }
+      .title {
+        background: @red;
+        color: @white;
+        border-radius: 0 0 5px 5px;
+        padding: 5px 10px;
+        h4 {
+          color: @white;
+          font-size: 24px;
+          margin: 0;
+          height: 65px;
+          padding: 0 0 5px;
+        }
+        p {
+          color: @white;
+          margin: 0;
+          padding: 0 0 5px;
+          a {
+            color: @white;
+            float: right;
+            &:after {
+              content: ">";
+            }
+          }
+        }
+      }
+    }
+  }
+  .quiz {
+    .gradient();
+    border-radius: 5px;
+    padding: 5px;
+    h4 {
+      background: url("../img/quiz.png") left center no-repeat;
+      line-height: 44px;
+      margin: 5px;
+      padding: 0 0 0 58px;
+    }
+    p {
+      padding: 0 0 5px;
+    }
+    .question {
+      text-align: center;
+      p {
+        font-size: 22px;
+        line-height: 32px;
+        margin: 0;
+        padding: 0 20px 5px;
+      }
+      .btn {
+        font-size: 22px;
+        height: 40px;
+        line-height: 28px;
+        padding: 0 30px;
+      }
+    }
+    .options {
+      color: @red;
+      font-size: 22px;
+      padding: 15px 0 10px;
+    }
+    .total {
+      color: @red;
+      float: right;
     }
   }
 }

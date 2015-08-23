@@ -21,6 +21,8 @@
   "dependencies": {
     "bootstrap": "*",
     "jquery-mousewheel": "*",
-    "jquery.jscrollpane": "*"
+    "jquery.jscrollpane": "*",
+    "jquery-ui": "~1.11.4",
+    "fullcalendar": "*"
   }
 }

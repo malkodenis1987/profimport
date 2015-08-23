@@ -1,0 +1,97 @@
+.datepicker {
+  border: 3px @calendar-grey solid;
+  border-radius: 18px;
+  margin: 14px 0 20px;
+  .gradient(#ffffff, #d4d7da);
+  .head {
+    background: @red url("../img/calendar-ico.png") 22px 10px no-repeat;
+    border-radius: 15px 15px 0 0;
+    color: @white;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 28px 10px 10px;
+    position: relative;
+    text-align: center;
+    .dots {
+      background: url("../img/calendar-bg.png") center top no-repeat;
+      height: 44px;
+      left: 0;
+      position: absolute;
+      top: -14px;
+      width: 100%;
+    }
+  }
+  .body {
+    padding: 7px 13px 10px 7px;
+    .fc-toolbar {
+      h2 {
+        color: @red;
+        font-size: 24px;
+      }
+      .fc-today-button {
+        display: none;
+      }
+      .fc-button-group {
+        button {
+          background: none;
+          box-shadow: none;
+          border: none;
+          color: @sidebar-grey;
+        }
+      }
+    }
+    .fc-view-container {
+      background: @white;
+      border: 2px @calendar-border solid;
+      box-shadow: 5px 5px 0 0 @calendar-border;
+      table {
+        border: none;
+        .fc-head {
+          display: none;
+        }
+        td, th {
+          border-color: @calendar-border;
+        }
+      }
+      .fc-row {
+        min-height: 3em;
+      }
+      .fc-day-number {
+        color: @calendar-border;
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .fc-event {
+        background: none;
+        border: 0;
+        color: @red;
+        font-size: 9px;
+        padding: 5px 0 0;
+      }
+    }
+  }
+}
+.btn {
+  background: @red;
+  border: 0;
+  color: @white;
+  display: inline-block;
+  font-size: 18px;
+  height: 28px;
+  line-height: 22px;
+  padding: 0 10px;
+  &:hover {
+    color: @white;
+    opacity: 0.8;
+  }
+  &.big {
+    font-size: 24px;
+    height: 64px;
+    line-height: 60px;
+  }
+}
+label {
+  color: @text-color;
+  font-weight: normal;
+  font-size: 18px;
+}

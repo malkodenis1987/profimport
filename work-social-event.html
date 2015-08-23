@@ -11,12 +11,15 @@
     <!-- Bower components-->
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css"/>
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
     <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
     <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
 
     <!-- Custom styles and scripts -->
     <link rel="stylesheet" href="assets/css/app.min.css"/>
@@ -82,32 +85,43 @@
                     <div class="main" id="main">
                         <div class="scroll-wrapper">
                             <article>
-                                <!-- Social Item -->
-                                <div class="social-item clearfix">
-                                    <div class="pic"><img src="assets/img/football.jpg" alt=""/></div>
-                                    <div class="link">
-                                        <a class="ico football" href="work-social-event.html">Футбол</a>
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>ФУТБОЛ</h4>
+                                        <p>Компания оплачивает аренду футбольного поля для проведения любительских игр в мини-футбол.
+                                            Обеспечиваются душевые кабины для послеигровой гигиены, помещение для переодевания.
+                                        </p>
+                                        <p>Формируются команды по 5 человек. Игра "на вылет".</p>
+                                        <p>Общее время 1 мероприятия: 2 часа.</p>
+                                        <p>Для участия необходимо иметь:
+                                            1. Сменную форму
+                                            2. Полотенце
+                                            3. Гигиенические принадлежности для душа
+                                            4. Питьевая вода - по необходимости
+                                        </p>
+                                        <p>Внимание: ценные вещи, телефоны и деньги в помещении для переодевания
+                                            рекомендуется не оставлять.
+                                        </p>
+                                        <p>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#myModal">Модальное окно 1</a>
+                                        </p>
+                                        <p>
+                                            <a href="javascript:;" data-toggle="modal" data-target="#myModal2">Модальное окно 2</a>
+                                        </p>
                                     </div>
-                                </div>
-                                <!-- Social Item -->
-                                <div class="social-item clearfix">
-                                    <div class="pic"><img src="assets/img/fitness.jpg" alt=""/></div>
-                                    <div class="link">
-                                        <a class="ico fitness" href="#">Фитнес</a>
-                                    </div>
-                                </div>
-                                <!-- Social Item -->
-                                <div class="social-item clearfix">
-                                    <div class="pic"><img src="assets/img/souna.jpg" alt=""/></div>
-                                    <div class="link">
-                                        <a class="ico souna" href="#">Сауна</a>
-                                    </div>
-                                </div>
-                                <!-- Social Item -->
-                                <div class="social-item clearfix">
-                                    <div class="pic"><img src="assets/img/party.jpg" alt=""/></div>
-                                    <div class="link">
-                                        <a class="ico party" href="#">Праздники</a>
+                                    <div class="col-md-4">
+                                        <div class="sidebar right">
+                                            <div class="datepicker">
+                                                <div class="head">
+                                                    <span class="dots">&nbsp;</span>
+                                                    Календарь мероприятия
+                                                </div>
+                                                <div class="body">
+                                                    <div id="datepicker"></div>
+                                                </div>
+                                            </div>
+                                            <a class="btn big" href="#">Присоединиться</a>
+                                        </div>
                                     </div>
                                 </div>
                             </article>
@@ -142,6 +156,46 @@
         </div>
     </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">04.08.2015</h4>
+            </div>
+            <div class="modal-body">
+                <h6>20:00-22:00</h6>
+                <dl>
+                    <dt>Адрес:</dt>
+                    <dd>ул. 3-я Строителей, 48,  клуб "Буревестник" 5-е поле</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel2">ИВАНОВ Иван Иванович</h4>
+            </div>
+            <div class="modal-body">
+                <p>клиент-менеджер <br />направление Свет Центр</p>
+                <p><a href="#">написать комментарий...</a></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default grey">приложить документы</button>
+                <button type="button" class="btn btn-primary">отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Footer -->
 <footer>
     <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>

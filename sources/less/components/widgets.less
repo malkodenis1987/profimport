@@ -18,13 +18,16 @@
       &.seminar {
         background: url("../img/seminar-ico.png") 1px 5px no-repeat;
       }
+      &.birth {
+        background: url("../img/birth.png") 1px 5px no-repeat;
+        padding: 15px 0 8px 82px;
+      }
     }
   }
   .body {
     .gradient();
     border-radius: 0 0 5px 5px;
     min-height: 145px;
-    height: 28px;
     padding: 7px;
     position: relative;
     &.double {
@@ -62,6 +65,56 @@
       }
       &:nth-child(2) {
         bottom: 45px;
+      }
+    }
+  }
+  &.slider {
+    border: 3px @calendar-grey solid;
+    border-radius: 18px;
+    margin: 14px 0 20px;
+    .gradient(#ffffff, #d4d7da);
+    .head {
+      border-radius: 15px 15px 0 0;
+      font-size: 24px;
+      padding: 0 8px 0 18px;
+    }
+    .body {
+      text-align: center;
+      h4 {
+        color: @text-color;
+        font-size: 48px;
+        line-height: 48px;
+        margin: 0;
+        padding: 0;
+      }
+      h5 {
+        color: @text-color;
+        font-size: 32px;
+        line-height: 40px;
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        color: @text-color;
+        font-size: 24px;
+        line-height: 32px;
+        margin: 0;
+        padding: 0;
+      }
+      .btn {
+        font-size: 20px;
+        height: 32px;
+        left: 0;
+        line-height: 28px;
+        margin: 10px auto;
+        position: relative;
+        top: 0;
+      }
+      .carousel-control {
+        background: none;
+      }
+      .glyphicon {
+        color: @text-color;
       }
     }
   }
