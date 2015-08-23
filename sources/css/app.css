@@ -184,6 +184,7 @@ label {
   /* Социяальный пакет */
   /* Home */
   /* Bank */
+  /* Gallery */
 }
 .content h1,
 .content h2,
@@ -571,6 +572,71 @@ label {
 .content .idea-column .idea-item .add-comment .add-comment textarea {
   float: left;
   width: 80%;
+}
+.content .media-head {
+  background: #be392a;
+  border-radius: 0 0 5px 5px;
+  line-height: 76px;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+.content .media-head h4 {
+  color: #ffffff;
+  display: inline-block;
+  font-size: 24px;
+  line-height: 76px;
+  margin: 0 auto;
+  padding: 0 0 0 88px;
+  text-transform: uppercase;
+}
+.content .media-head.fotos h4 {
+  background: url("../img/fotos.png") left center no-repeat;
+}
+.content .media-head.video h4 {
+  background: url("../img/video.png") left center no-repeat;
+}
+.content .col-media {
+  float: left;
+  width: 50%;
+}
+.content .col-media h4 {
+  color: #74706f;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content .col-media .item {
+  float: left;
+  padding: 0 5px;
+  position: relative;
+  text-align: center;
+  width: 50%;
+}
+.content .col-media .item:nth-child(even) {
+  clear: left;
+}
+.content .col-media .item .name a {
+  color: #74706f;
+}
+.content .col-media .item .name a:hover {
+  color: #be392a;
+  text-decoration: none;
+}
+.content .col-media .item .pic {
+  position: relative;
+}
+.content .col-media .item .play {
+  background: url("../img/play.png") 0 0 no-repeat;
+  height: 89px;
+  left: 50%;
+  margin: -44px 0 0 -44px;
+  position: absolute;
+  top: 50%;
+  width: 89px;
 }
 header {
   height: 140px;

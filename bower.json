@@ -23,6 +23,7 @@
     "jquery-mousewheel": "*",
     "jquery.jscrollpane": "*",
     "jquery-ui": "~1.11.4",
-    "fullcalendar": "*"
+    "fullcalendar": "*",
+    "jquery-colorbox": "*"
   }
 }
