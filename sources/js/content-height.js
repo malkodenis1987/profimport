@@ -4,6 +4,7 @@
 jQuery(window).load(function(){
     console.log('content page height initialization');
 
+    var addComment = jQuery('.comments-list');
     var scrollContent = jQuery('.scroll-wrapper');
     var windowHeight = jQuery(window).height();
     var staticElements = ['header', 'footer', '.pager'];
@@ -16,4 +17,5 @@ jQuery(window).load(function(){
     scrollContent.height(windowHeight - indent).jScrollPane({
         contentWidth: '0px'
     });
+    addComment.jScrollPane();
 });

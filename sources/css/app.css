@@ -170,6 +170,10 @@ body {
   height: 64px;
   line-height: 60px;
 }
+.btn.grey {
+  background: #c4c4be;
+  color: #ffffff;
+}
 label {
   color: #74706f;
   font-weight: normal;
@@ -201,6 +205,10 @@ label {
   line-height: 28px;
   margin: -3px 0 0;
   padding: 0 0 18px;
+}
+.content h4.news-title {
+  color: #74706f;
+  padding: 0 0 5px;
 }
 .content h5 {
   color: #be392a;
@@ -388,6 +396,12 @@ label {
 }
 .content .boxes .box .title p a:after {
   content: ">";
+}
+.content .boxes.long .box {
+  width: 25%;
+}
+.content .boxes.full-width .box {
+  width: 100%;
 }
 .content .quiz {
   background-color: #f6f8f9;
@@ -907,4 +921,94 @@ footer {
 }
 .box .foot a.music {
   background: url("../img/box-music.png") left center no-repeat;
+}
+.content .actions {
+  float: right;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.content .actions li {
+  background: none;
+  display: inline-block;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+.content .actions li a {
+  color: #c4c4be;
+  display: block;
+  line-height: 28px;
+  padding: 0 0 0 30px;
+}
+.content .actions li a.like {
+  background: url("../img/action-like.gif") left top no-repeat;
+}
+.content .actions li a.dislike {
+  background: url("../img/action-dislike.gif") left 2px no-repeat;
+}
+.content .actions li a.comment {
+  background: url("../img/action-comment.gif") left top no-repeat;
+}
+.content .add-comment .comments-list {
+  height: 260px;
+  overflow: auto;
+}
+.content .add-comment .comments-list ul {
+  color: #c4c4be;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+.content .add-comment .comments-list ul li {
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+.content .add-comment .comments-list ul li p {
+  color: #c4c4be;
+  padding: 0 0 10px;
+}
+.content .add-comment .comments-list ul li .author {
+  float: right;
+}
+.content .add-comment .comments-list ul li .time {
+  padding: 0 0 0 20px;
+}
+.content .add-comment .add-comment {
+  border: 3px #c4c4be solid;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 8px;
+}
+.content .add-comment .add-comment p {
+  color: #c4c4be;
+  padding: 0 0 10px;
+}
+.content .add-comment .add-comment p.author {
+  text-align: right;
+}
+.content .add-comment .add-comment .time {
+  padding: 0 0 0 10px;
+}
+.content .add-comment .add-comment .btn {
+  float: right;
+}
+.content .add-comment .add-comment textarea {
+  color: #c4c4be;
+  font-size: 18px;
+  background: none;
+  border: none;
+  width: 100%;
+}
+.content .add-comment .add-comment textarea::-webkit-input-placeholder {
+  font-style: italic;
+}
+.content .add-comment .add-comment textarea:-moz-placeholder {
+  font-style: italic;
+}
+.content .add-comment .add-comment textarea::-moz-placeholder {
+  font-style: italic;
+}
+.content .add-comment .add-comment textarea:-ms-input-placeholder {
+  font-style: italic;
 }

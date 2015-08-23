@@ -15,6 +15,10 @@
     line-height: 28px;
     margin: -3px 0 0;
     padding: 0 0 18px;
+    &.news-title {
+      color: @text-color;
+      padding: 0 0 5px;
+    }
   }
   h5 {
     color: @red;
@@ -207,6 +211,16 @@
             }
           }
         }
+      }
+    }
+    &.long {
+      .box {
+        width: 25%;
+      }
+    }
+    &.full-width {
+      .box {
+        width: 100%;
       }
     }
   }

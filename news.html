@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfImport</title>
+
+    <!-- Font init -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Bower components-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+
+    <script src="assets/js/app.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Main Menu-->
+                    <div class="main-menu">
+                        <ul>
+                            <li class="home"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></li>
+                            <li class="about"><a href="about-mail.html">О нас</a></li>
+                            <li class="work"><a href="work-docs.html">Рабочая среда</a></li>
+                            <li class="news active"><a href="news.html">Новости</a></li>
+                            <li class="gallery"><a href="gallery.html">Галерея</a></li>
+                            <li class="bank"><a href="bank.html">Банк идей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <form action="#">
+                            <div class="form-row clearfix">
+                                <button type="submit">&nbsp;</button>
+                                <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <p class="title">d.sorokotyaga</p>
+                        <p class="dater"><span class="date">17.08.15</span> <span class="time">12:52</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div id="content" class="content">
+        <div class="scroll-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="boxes full-width">
+                            <div class="box">
+                                <div class="pic"><img src="assets/img/news.jpg" alt=""/></div>
+                                <div class="title">
+                                    <h4>Направление Свет заключило 100 000-ю сделку</h4>
+                                    <p><span class="date">05.08.15</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="actions">
+                                    <li><a class="like" href="#">125</a></li>
+                                    <li><a class="dislike" href="#">2</a></li>
+                                    <li><a class="comment" href="#">10</a></li>
+                                </ul>
+                                <h4 class="news-title">Направление Свет заключило 100 000-ю сделку</h4>
+                                <p class="date">05.08.15</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>3 августа сотрудники направления Свет подписали контракт, который стал 100 000-м с
+                                    начала 2015 года. Таким образом направление Свет лидирует по результатам работы и в
+                                    августе 2015 года награждается дополнительным днем отпуска.
+                                </p>
+                                <p>На второй позиции по результатам работ находится направление Мебель, сотрудники
+                                    которого заключили 98 562 сделки с начала 2015 года.
+                                </p>
+
+                                <p>Самый успешный менеджер компании, заключивший 9,5% сделок от общего числа сделок
+                                    компании, работает в направлении Штукатурки. Поздравляем Петрова Н.Н. В августе
+                                    2015 года, как самый успешный продавец, Петров Н.Н. получает денежную премию в
+                                    размере 300 долларов.
+                                </p>
+                                <p class="tags"><a href="#">#Свет</a> <a href="#">#Сделки</a> <a href="#">#Итоги работы компании</a></p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>3 августа сотрудники направления Свет подписали контракт, который стал 100 000-м с
+                                    начала 2015 года. Таким образом направление Свет лидирует по результатам работы и в
+                                    августе 2015 года награждается дополнительным днем отпуска.
+                                </p>
+                                <p>На второй позиции по результатам работ находится направление Мебель, сотрудники
+                                    которого заключили 98 562 сделки с начала 2015 года.
+                                </p>
+
+                                <p>Самый успешный менеджер компании, заключивший 9,5% сделок от общего числа сделок
+                                    компании, работает в направлении Штукатурки. Поздравляем Петрова Н.Н. В августе
+                                    2015 года, как самый успешный продавец, Петров Н.Н. получает денежную премию в
+                                    размере 300 долларов.
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="add-comment">
+                                    <div class="comments-list">
+                                        <ul>
+                                            <li>
+                                                <p class="author">n.petrov</p>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                            </li>
+                                            <li>
+                                                <p class="author">o.orlov</p>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                            </li>
+                                            <li>
+                                                <p class="author">k.denisenko</p>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                            </li>
+                                            <li>
+                                                <p class="author">n.petrov</p>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                            </li>
+                                            <li>
+                                                <p class="author">o.orlov</p>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                            </li>
+                                            <li>
+                                                <p class="author">k.denisenko</p>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="add-comment">
+                                        <form action="">
+                                            <p class="author">d.sorokotyaga</p>
+                                            <textarea name="comment" id="comment" cols="30" rows="3" placeholder="оставить комментарий..."></textarea>
+                                            <div class="button-row">
+                                                <button class="btn grey">отправить</button>
+                                                <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <!-- Boxes -->
+                        <div class="boxes long clearfix">
+                            <div class="box">
+                                <div class="pic"><img src="assets/img/home-3.jpg" alt=""/></div>
+                                <div class="title">
+                                    <h4>Результаты тим-билдинга в июле 2015</h4>
+                                    <p><a href="#">все новости</a><span class="date">05.08.15</span></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="pic"><img src="assets/img/home-4.jpg" alt=""/></div>
+                                <div class="title">
+                                    <h4>Дружеский матч с Philips 20.08 Поддержим нашу команду!</h4>
+                                    <p><a href="#">все новости</a><span class="date">05.08.15</span></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="pic"><img src="assets/img/home-5.jpg" alt=""/></div>
+                                <div class="title">
+                                    <h4>Празднование дня рождения компании</h4>
+                                    <p><a href="#">все новости</a><span class="date">05.08.15</span></p>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <div class="pic"><img src="assets/img/home-6.jpg" alt=""/></div>
+                                <div class="title">
+                                    <h4>Начала работу социальная программа для семей с детьми</h4>
+                                    <p><a href="#">все новости</a><span class="date">05.08.15</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>
+</footer>
+</body>
+</html>
