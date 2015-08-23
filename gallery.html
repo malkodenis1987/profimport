@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfImport</title>
+
+    <!-- Font init -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Bower components-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+
+    <script src="assets/js/app.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Main Menu-->
+                    <div class="main-menu">
+                        <ul>
+                            <li class="home"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></li>
+                            <li class="about"><a href="about-mail.html">О нас</a></li>
+                            <li class="work"><a href="work-docs.html">Рабочая среда</a></li>
+                            <li class="news"><a href="news.html">Новости</a></li>
+                            <li class="gallery active"><a href="gallery.html">Галерея</a></li>
+                            <li class="bank"><a href="bank.html">Банк идей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <form action="#">
+                            <div class="form-row clearfix">
+                                <button type="submit">&nbsp;</button>
+                                <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <p class="title">d.sorokotyaga</p>
+                        <p class="dater"><span class="date">17.08.15</span> <span class="time">12:52</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div id="content" class="content">
+        <div class="scroll-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+
+                </div>
+                <div class="row">
+
+                </div>
+            </div>
+        </div>
+        <!-- Pager -->
+        <div class="pager">
+            <nav>
+                <ul class="pagination">
+                    <li class="prev">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&lt;</span>
+                        </a>
+                    </li>
+                    <li class="current"><a href="#">1,</a></li>
+                    <li><a href="#">2,</a></li>
+                    <li><a href="#">3,</a></li>
+                    <li><span>......,</span></li>
+                    <li><a href="#">15,</a></li>
+                    <li><a href="#">16,</a></li>
+                    <li><a href="#">17</a></li>
+                    <li class="next">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>
+</footer>
+</body>
+</html>

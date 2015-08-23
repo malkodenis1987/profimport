@@ -262,4 +262,136 @@
       float: right;
     }
   }
+  /* Bank */
+  .idea-head {
+    background: @red;
+    padding: 12px 0 12px 40px;
+    h4 {
+      background: url("../img/idea.png") left top no-repeat;
+      color: @white;
+      font-size: 24px;
+      margin: 0;
+      padding: 0 0 0 70px;
+      span {
+        display: block;
+        color: @sidebar-grey;
+      }
+    }
+  }
+  .idea {
+    .gradient();
+  }
+  .idea-details {
+    p {
+      padding: 5px 0;
+    }
+  }
+  .idea-column {
+    border-right: 1px @text-color solid;
+    float: left;
+    width: 40%;
+    &:last-child {
+      border: none;
+      padding: 0 10px;
+      width: 20%;
+      h4 {
+        color: @blue;
+      }
+      h3 {
+        color: @text-color;
+        font-weight: bold;
+        padding: 5px 0 2px;
+      }
+      textarea {
+        border: 3px @calendar-border solid;
+        border-radius: 5px;
+        color: @text-color;
+        font-size: 18px;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 10px;
+        width: 100%;
+      }
+      .author {
+        float: right;
+      }
+      .btn {
+        float: right;
+      }
+    }
+    &:first-child {
+      h4 {
+        color: @green;
+      }
+      .idea-item {
+
+      }
+    }
+    h4 {
+      color: @red;
+      padding: 5px 0;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .idea-item {
+      margin: 0 0 10px;
+      padding: 0 10px;
+      h3 {
+        color: @text-color;
+      }
+      .date {
+        float: right;
+        padding-bottom: 0;
+      }
+      .author {
+        padding-bottom: 0;
+      }
+      .actions {
+        float: left;
+      }
+      .accepted {
+        background: @green;
+        border-radius: 5px;
+        color: @white;
+        float: right;
+        line-height: 36px;
+        padding: 0 65px;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      .view {
+        color: @sidebar-grey;
+        float: right;
+        font-style: italic;
+        font-size: 18px;
+        line-height: 36px;
+        &:hover {
+          color: @red;
+        }
+      }
+      .add-comment {
+        .comments-list {
+          height: 200px;
+        }
+        .add-comment {
+          .author {
+            float: right;
+            width: 20%;
+          }
+          .button-row {
+            float: left;
+            width: 100%;
+          }
+          .date {
+            float: left;
+            padding: 5px 0 0;
+          }
+          textarea {
+            float: left;
+            width: 80%;
+          }
+        }
+      }
+    }
+  }
 }

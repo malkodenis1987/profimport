@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html ng-app>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <title>ProfImport</title>
+
+    <!-- Font init -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+    <!-- Bower components-->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
+    <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css"/>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/mwheelIntent.js"></script>
+    <script src="bower_components/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="bower_components/jquery.jscrollpane/jquery.jscrollpane.min.js"></script>
+    <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
+    <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="assets/css/app.min.css"/>
+
+    <script src="assets/js/app.min.js"></script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- Header -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Main Menu-->
+                    <div class="main-menu">
+                        <ul>
+                            <li class="home"><a href="index.html"><img src="assets/img/logo.png" alt=""/></a></li>
+                            <li class="about"><a href="about-mail.html">О нас</a></li>
+                            <li class="work"><a href="work-docs.html">Рабочая среда</a></li>
+                            <li class="news"><a href="news.html">Новости</a></li>
+                            <li class="gallery"><a href="gallery.html">Галерея</a></li>
+                            <li class="bank active"><a href="bank.html">Банк идей</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="search">
+                        <form action="#">
+                            <div class="form-row clearfix">
+                                <button type="submit">&nbsp;</button>
+                                <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="account">
+                        <p class="title">d.sorokotyaga</p>
+                        <p class="dater"><span class="date">17.08.15</span> <span class="time">12:52</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Content -->
+    <div id="content" class="content">
+        <div class="scroll-wrapper">
+            <div class="container-fluid">
+                <div class="idea">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="idea-head">
+                                <h4>Есть идея? <span>Поделись с нами</span></h4>
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <div class="idea-details">
+                                <p>
+                                    Нам важно мнение каждого сотрудника!<br />
+                                    Мы ценим инициативу и инициативных людей! В этом разделе Вы можете предлагать любые идеи, которые связаны с рабочим процессом, социальными программами, условиями работы и т.п.<br />
+                                    Каждая идея выдвигается на обсуждение. Решение о принятии и реализации идеи принимается Генеральным директором после изучения мнения проголосовавших и высказавшихся.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="column idea-column">
+                            <h4>Принятые идеи</h4>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="accepted">Принято 05.08.15</span>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="accepted">Принято 05.08.15</span>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="accepted">Принято 05.08.15</span>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <span class="accepted">Принято 05.08.15</span>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column idea-column">
+                            <h4>Идеи на обсуждения</h4>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="view" href="#">посмотреть и оставить комментарий</a>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="add-comment">
+                                            <div class="comments-list">
+                                                <ul>
+                                                    <li>
+                                                        <p class="author">n.petrov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">o.orlov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">k.denisenko</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">n.petrov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">o.orlov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">k.denisenko</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="add-comment clearfix">
+                                                <form action="">
+                                                    <p class="author">d.sorokotyaga</p>
+                                                    <textarea name="comment" id="comment" cols="30" rows="1" placeholder="оставить комментарий..."></textarea>
+                                                    <div class="button-row">
+                                                        <button class="btn grey">отправить</button>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="view" href="#">посмотреть и оставить комментарий</a>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Idea Item -->
+                            <div class="idea-item">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <img src="assets/img/author.jpg" alt=""/>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3>День рожения компании на теплоходе</h3>
+                                        <p class="date">05.08.15</p>
+                                        <p class="author">Автор: <a href="#">a.ivanova</a> </p>
+                                        <p>
+                                            Празднование дня рожения компании на теплоходе: экскурсия по Днепру,
+                                            остановка на острове с приготовлением шашлыков, ухи. Подвижные игры. Выезд
+                                            на 3 часа по Днепру с дискотекой на палубе.<br />
+                                            Бюджет: 350 грн/чел<br />
+                                            Время: с 11:00 до 19:00
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <a class="view" href="#">посмотреть и оставить комментарий</a>
+                                        <ul class="actions">
+                                            <li><a class="like" href="#">125</a></li>
+                                            <li><a class="dislike" href="#">2</a></li>
+                                            <li><a class="comment" href="#">10</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column idea-column">
+                            <h4>Подать идею</h4>
+                            <form action="#">
+                                <div class="form-row">
+                                    <h3>Тема:</h3>
+                                    <textarea name="theme" id="theme" cols="30" rows="3" placeholder="заменчивое название, способное вызвать дебаты..."></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <h3>Суть идеи:</h3>
+                                    <textarea name="subject" id="subject" cols="30" rows="30" placeholder="основные характеристики идеи, алгоритм реализации..."></textarea>
+                                </div>
+                                <div class="form-row">
+                                    <p class="author">a.ivanova</p>
+                                    <p class="date">05.08.15</p>
+                                    <button type="submit" class="btn grey">отправить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pager -->
+        <div class="pager">
+            <nav>
+                <ul class="pagination">
+                    <li class="prev">
+                        <a href="#" aria-label="Previous">
+                            <span aria-hidden="true">&lt;</span>
+                        </a>
+                    </li>
+                    <li class="current"><a href="#">1,</a></li>
+                    <li><a href="#">2,</a></li>
+                    <li><a href="#">3,</a></li>
+                    <li><span>......,</span></li>
+                    <li><a href="#">15,</a></li>
+                    <li><a href="#">16,</a></li>
+                    <li><a href="#">17</a></li>
+                    <li class="next">
+                        <a href="#" aria-label="Next">
+                            <span aria-hidden="true">&gt;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!-- Footer -->
+<footer>
+    <a class="logo" href="index.html"><img src="assets/img/footer-logo.gif" alt="Profimport" /></a>
+</footer>
+</body>
+</html>

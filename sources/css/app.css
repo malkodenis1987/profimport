@@ -183,6 +183,7 @@ label {
   /* Книги */
   /* Социяальный пакет */
   /* Home */
+  /* Bank */
 }
 .content h1,
 .content h2,
@@ -445,6 +446,131 @@ label {
 .content .quiz .total {
   color: #be392a;
   float: right;
+}
+.content .idea-head {
+  background: #be392a;
+  padding: 12px 0 12px 40px;
+}
+.content .idea-head h4 {
+  background: url("../img/idea.png") left top no-repeat;
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0;
+  padding: 0 0 0 70px;
+}
+.content .idea-head h4 span {
+  display: block;
+  color: #c4c4be;
+}
+.content .idea {
+  background-color: #f6f8f9;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f6f8f9), to(#c3c8ce));
+  background: -webkit-linear-gradient(top, #f6f8f9, #c3c8ce);
+  background: -moz-linear-gradient(top, #f6f8f9, #c3c8ce);
+  background: -ms-linear-gradient(top, #f6f8f9, #c3c8ce);
+  background: -o-linear-gradient(top, #f6f8f9, #c3c8ce);
+}
+.content .idea-details p {
+  padding: 5px 0;
+}
+.content .idea-column {
+  border-right: 1px #74706f solid;
+  float: left;
+  width: 40%;
+}
+.content .idea-column:last-child {
+  border: none;
+  padding: 0 10px;
+  width: 20%;
+}
+.content .idea-column:last-child h4 {
+  color: #0412c8;
+}
+.content .idea-column:last-child h3 {
+  color: #74706f;
+  font-weight: bold;
+  padding: 5px 0 2px;
+}
+.content .idea-column:last-child textarea {
+  border: 3px #9b9b96 solid;
+  border-radius: 5px;
+  color: #74706f;
+  font-size: 18px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 10px;
+  width: 100%;
+}
+.content .idea-column:last-child .author {
+  float: right;
+}
+.content .idea-column:last-child .btn {
+  float: right;
+}
+.content .idea-column:first-child h4 {
+  color: #4fb114;
+}
+.content .idea-column h4 {
+  color: #be392a;
+  padding: 5px 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content .idea-column .idea-item {
+  margin: 0 0 10px;
+  padding: 0 10px;
+}
+.content .idea-column .idea-item h3 {
+  color: #74706f;
+}
+.content .idea-column .idea-item .date {
+  float: right;
+  padding-bottom: 0;
+}
+.content .idea-column .idea-item .author {
+  padding-bottom: 0;
+}
+.content .idea-column .idea-item .actions {
+  float: left;
+}
+.content .idea-column .idea-item .accepted {
+  background: #4fb114;
+  border-radius: 5px;
+  color: #ffffff;
+  float: right;
+  line-height: 36px;
+  padding: 0 65px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.content .idea-column .idea-item .view {
+  color: #c4c4be;
+  float: right;
+  font-style: italic;
+  font-size: 18px;
+  line-height: 36px;
+}
+.content .idea-column .idea-item .view:hover {
+  color: #be392a;
+}
+.content .idea-column .idea-item .add-comment .comments-list {
+  height: 200px;
+}
+.content .idea-column .idea-item .add-comment .add-comment .author {
+  float: right;
+  width: 20%;
+}
+.content .idea-column .idea-item .add-comment .add-comment .button-row {
+  float: left;
+  width: 100%;
+}
+.content .idea-column .idea-item .add-comment .add-comment .date {
+  float: left;
+  padding: 5px 0 0;
+}
+.content .idea-column .idea-item .add-comment .add-comment textarea {
+  float: left;
+  width: 80%;
 }
 header {
   height: 140px;
@@ -967,6 +1093,9 @@ footer {
 .content .add-comment .comments-list ul li p {
   color: #c4c4be;
   padding: 0 0 10px;
+}
+.content .add-comment .comments-list ul li .date {
+  float: none;
 }
 .content .add-comment .comments-list ul li .author {
   float: right;
