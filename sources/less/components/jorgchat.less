@@ -1,0 +1,63 @@
+.jOrgChart {
+  .line {
+    height: 20px;
+    width: 2px;
+  }
+  .down {
+    background-color: #9b9b96;
+    margin: 0 auto;
+  }
+  .top {
+    border-top: 2px solid #9b9b96;
+  }
+  .left {
+    border-right: 2px solid #9b9b96;
+  }
+  .right {
+    border-left: 2px solid #9b9b96;
+  }
+  td {
+    text-align: center;
+    vertical-align: top;
+    padding: 0;
+  }
+  .node {
+    background-color: #fff;
+    border: 1px #9b9b96 solid;
+    border-radius: 5px;
+    color: @text-color;
+    font-size: 18px;
+    display: inline-block;
+    width: 260px;
+    height: 60px;
+    line-height: 18px;
+    z-index: 10;
+    margin: 0 2px;
+    &:hover {
+      background: #d6d9db;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .vacation {
+      display: block;
+    }
+    .name {
+      color: @text-color;
+      font-weight: bold;
+      strong {
+        display: block;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+.drag-active {
+  border-style: dotted !important;
+}
+.drop-hover {
+  border-style: solid !important;
+  border-color: #E05E00 !important;
+}

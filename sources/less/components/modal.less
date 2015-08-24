@@ -1,6 +1,12 @@
+#card {
+  .modal-dialog {
+    width: 790px;
+  }
+}
 .modal-dialog {
   .modal-header {
     border-bottom: none;
+    min-height: 30px;
     padding: 15px 15px 5px;
     h4 {
       color: @red;
@@ -42,6 +48,70 @@
       }
       dd {
         display: inline;
+      }
+    }
+    .head {
+      color: @text-color;
+      font-size: 24px;
+      text-align: center;
+      p {
+        color: @text-color;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 30px;
+        margin: 0;
+        padding: 0 0 10px;
+      }
+      span {
+        display: block;
+        &.name {
+          color: @red;
+        }
+        &.first-name {
+          text-transform: uppercase;
+        }
+      }
+    }
+    .body {
+      dl {
+        font-size: 22px;
+        float: left;
+        width: 100%;
+        dt {
+          float: left;
+          width: 40%;
+        }
+        dd {
+          float: left;
+          width: 60%;
+        }
+      }
+    }
+    .foot {
+      p {
+        font-size: 24px;
+        strong {
+          padding: 0 15px 0 0;
+        }
+      }
+      .first-name {
+        color: @red;
+        padding: 0 10px 0 0;
+      }
+      .ico {
+        line-height: 26px;
+        margin: 0;
+        padding: 2px 0 16px 25px;
+        position: relative;
+        &.doc {
+          background: url("../img/doc.png") left 6px no-repeat;
+        }
+        &.xls {
+          background: url("../img/xls.png") left 4px no-repeat;
+        }
+        &.pdf {
+          background: url("../img/pdf.png") left 4px no-repeat;
+        }
       }
     }
   }

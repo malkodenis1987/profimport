@@ -850,8 +850,12 @@ footer {
 .sidebar.right .btn {
   width: 100%;
 }
+#card .modal-dialog {
+  width: 790px;
+}
 .modal-dialog .modal-header {
   border-bottom: none;
+  min-height: 30px;
   padding: 15px 15px 5px;
 }
 .modal-dialog .modal-header h4 {
@@ -895,6 +899,66 @@ footer {
 }
 .modal-dialog .modal-body dl dd {
   display: inline;
+}
+.modal-dialog .modal-body .head {
+  color: #74706f;
+  font-size: 24px;
+  text-align: center;
+}
+.modal-dialog .modal-body .head p {
+  color: #74706f;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 0 10px;
+}
+.modal-dialog .modal-body .head span {
+  display: block;
+}
+.modal-dialog .modal-body .head span.name {
+  color: #be392a;
+}
+.modal-dialog .modal-body .head span.first-name {
+  text-transform: uppercase;
+}
+.modal-dialog .modal-body .body dl {
+  font-size: 22px;
+  float: left;
+  width: 100%;
+}
+.modal-dialog .modal-body .body dl dt {
+  float: left;
+  width: 40%;
+}
+.modal-dialog .modal-body .body dl dd {
+  float: left;
+  width: 60%;
+}
+.modal-dialog .modal-body .foot p {
+  font-size: 24px;
+}
+.modal-dialog .modal-body .foot p strong {
+  padding: 0 15px 0 0;
+}
+.modal-dialog .modal-body .foot .first-name {
+  color: #be392a;
+  padding: 0 10px 0 0;
+}
+.modal-dialog .modal-body .foot .ico {
+  line-height: 26px;
+  margin: 0;
+  padding: 2px 0 16px 25px;
+  position: relative;
+}
+.modal-dialog .modal-body .foot .ico.doc {
+  background: url("../img/doc.png") left 6px no-repeat;
+}
+.modal-dialog .modal-body .foot .ico.xls {
+  background: url("../img/xls.png") left 4px no-repeat;
+}
+.modal-dialog .modal-body .foot .ico.pdf {
+  background: url("../img/pdf.png") left 4px no-repeat;
 }
 .modal-dialog .modal-footer {
   border-top: 0;
@@ -1206,4 +1270,164 @@ footer {
 }
 .content .add-comment .add-comment textarea:-ms-input-placeholder {
   font-style: italic;
+}
+.jOrgChart .line {
+  height: 20px;
+  width: 2px;
+}
+.jOrgChart .down {
+  background-color: #9b9b96;
+  margin: 0 auto;
+}
+.jOrgChart .top {
+  border-top: 2px solid #9b9b96;
+}
+.jOrgChart .left {
+  border-right: 2px solid #9b9b96;
+}
+.jOrgChart .right {
+  border-left: 2px solid #9b9b96;
+}
+.jOrgChart td {
+  text-align: center;
+  vertical-align: top;
+  padding: 0;
+}
+.jOrgChart .node {
+  background-color: #fff;
+  border: 1px #9b9b96 solid;
+  border-radius: 5px;
+  color: #74706f;
+  font-size: 18px;
+  display: inline-block;
+  width: 260px;
+  height: 60px;
+  line-height: 18px;
+  z-index: 10;
+  margin: 0 2px;
+}
+.jOrgChart .node:hover {
+  background: #d6d9db;
+}
+.jOrgChart .node a:hover {
+  text-decoration: none;
+}
+.jOrgChart .node .vacation {
+  display: block;
+}
+.jOrgChart .node .name {
+  color: #74706f;
+  font-weight: bold;
+}
+.jOrgChart .node .name strong {
+  display: block;
+  text-transform: uppercase;
+}
+.drag-active {
+  border-style: dotted !important;
+}
+.drop-hover {
+  border-style: solid !important;
+  border-color: #E05E00 !important;
+}
+.pln {
+  color: #000000;
+}
+@media screen {
+  .str {
+    color: #008800;
+  }
+  .kwd {
+    color: #000088;
+  }
+  .com {
+    color: #880000;
+  }
+  .typ {
+    color: #660066;
+  }
+  .lit {
+    color: #006666;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #666600;
+  }
+  .tag {
+    color: #000088;
+  }
+  .atn {
+    color: #660066;
+  }
+  .atv {
+    color: #008800;
+  }
+  .dec,
+  .var {
+    color: #660066;
+  }
+  .fun {
+    color: red;
+  }
+}
+@media print, projection {
+  .str {
+    color: #006600;
+  }
+  .kwd {
+    color: #006;
+    font-weight: bold;
+  }
+  .com {
+    color: #600;
+    font-style: italic;
+  }
+  .typ {
+    color: #404;
+    font-weight: bold;
+  }
+  .lit {
+    color: #004444;
+  }
+  .pun,
+  .opn,
+  .clo {
+    color: #444400;
+  }
+  .tag {
+    color: #006;
+    font-weight: bold;
+  }
+  .atn {
+    color: #440044;
+  }
+  .atv {
+    color: #006600;
+  }
+}
+pre.prettyprint {
+  padding: 2px;
+  border: 1px solid #888888;
+}
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L5,
+li.L6,
+li.L7,
+li.L8 {
+  list-style-type: none;
+}
+li.L1,
+li.L3,
+li.L5,
+li.L7,
+li.L9 {
+  background: #eeeeee;
 }
