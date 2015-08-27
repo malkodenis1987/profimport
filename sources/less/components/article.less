@@ -8,6 +8,10 @@
     line-height: 28px;
     margin: -3px 0 0;
     padding: 0;
+    .responsive('tablet', {
+      font-size: 18px;
+      line-height: 24px;
+    });
   }
   h4 {
     color: @red;
@@ -19,6 +23,10 @@
       color: @text-color;
       padding: 0 0 5px;
     }
+    .responsive('tablet', {
+      font-size: 17px;
+      line-height: 22px;
+    });
   }
   h5 {
     color: @red;
@@ -26,6 +34,10 @@
     line-height: 20px;
     margin: 0;
     padding: 0 0 2px;
+    .responsive('tablet', {
+      font-size: 15px;
+      line-height: 20px;
+    });
   }
   h6 {
     color: @red;
@@ -33,6 +45,10 @@
     line-height: 20px;
     margin: 0;
     padding: 30px 0 20px;
+    .responsive('tablet', {
+      font-size: 14px;
+      line-height: 18px;
+    });
   }
   p {
     color: @text-color;
@@ -50,6 +66,10 @@
         padding-left: 5px;
       }
     }
+    .responsive('tablet', {
+      font-size: 14px;
+      line-height: 18px;
+    });
   }
   a {
     color: @red;
@@ -61,6 +81,10 @@
     color: @text-color;
     font-size: 18px;
     line-height: 22px;
+    .responsive('tablet', {
+      font-size: 14px;
+      line-height: 18px;
+    });
   }
   ul {
     li {
@@ -72,10 +96,18 @@
   .align-left {
     float: left;
     margin: 0 15px 10px 0;
+    .responsive('small', {
+      margin: 0;
+      width: 100%;
+    });
   }
   .align-right {
     float: right;
     margin: 0 0 10px 15px;
+    .responsive('small', {
+      margin: 0;
+      width: 100%;
+    });
   }
   img {
     max-width: 100%;
@@ -86,7 +118,7 @@
       color: @text-color;
       font-size: 18px;
       line-height: 26px;
-      letter-spacing: -0.6px;
+      letter-spacing: -0.7px;
       margin: 0;
       padding: 2px 0 16px 25px;
       position: relative;
@@ -154,21 +186,39 @@
       text-transform: uppercase;
       text-align: center;
       width: 25%;
+      .responsive('tablet', {
+        font-size: 14px;
+      });
       a {
         color: @white;
         display: block;
         padding: 135px 0 0;
+        .responsive('tablet', {
+          padding: 90px 0 0;
+        });
         &.football {
           background: url("../img/football-ico.png") center 35px no-repeat;
+          .responsive('tablet', {
+            background: url("../img/football-ico.png") center 2px no-repeat;
+          });
         }
         &.fitness {
           background: url("../img/fitness-ico.png") center 28px no-repeat;
+          .responsive('tablet', {
+            background: url("../img/fitness-ico.png") center 2px no-repeat;
+          });
         }
         &.souna {
           background: url("../img/souna-ico.png") center 40px no-repeat;
+          .responsive('tablet', {
+            background: url("../img/souna-ico.png") center 2px no-repeat;
+          });
         }
         &.party {
           background: url("../img/party-ico.png") center 35px no-repeat;
+          .responsive('tablet', {
+            background: url("../img/party-ico.png") center 2px no-repeat;
+          });
         }
       }
     }
@@ -179,6 +229,9 @@
     .box {
       float: left;
       width: 33.33%;
+      .responsive('small', {
+        width: 100%;
+      });
       .pic {
         border-radius: 5px 5px 0 0;
         img {
@@ -195,9 +248,18 @@
         h4 {
           color: @white;
           font-size: 24px;
+          line-height: 28px;
           margin: 0;
-          height: 65px;
+          height: 60px;
           padding: 0 0 5px;
+          .responsive('small', {
+            font-size: 16px;
+            line-height: 20px;
+          });
+          .responsive('tablet', {
+            font-size: 17px;
+            line-height: 22px;
+          });
         }
         p {
           color: @white;
@@ -216,6 +278,9 @@
     &.long {
       .box {
         width: 25%;
+        .responsive('small', {
+          width: 100%;
+        });
       }
     }
     &.full-width {
@@ -227,15 +292,21 @@
   .quiz {
     .gradient();
     border-radius: 5px;
-    padding: 5px;
+    padding: 9px 20px 8px 8px;
     h4 {
       background: url("../img/quiz.png") left center no-repeat;
       line-height: 44px;
       margin: 5px;
       padding: 0 0 0 58px;
+      .responsive('tablet', {
+        margin-bottom: 0;
+      });
     }
     p {
       padding: 0 0 5px;
+      .responsive('tablet', {
+        padding-bottom: 0;
+      });
     }
     .question {
       text-align: center;
@@ -244,18 +315,31 @@
         line-height: 32px;
         margin: 0;
         padding: 0 20px 5px;
+        .responsive('tablet', {
+          font-size: 14px;
+          line-height: 18px;
+        });
       }
       .btn {
         font-size: 22px;
         height: 40px;
         line-height: 28px;
         padding: 0 30px;
+        .responsive('tablet', {
+          font-size: 14px;
+          height: 22px;
+          line-height: 20px;
+        });
       }
     }
     .options {
       color: @red;
       font-size: 22px;
       padding: 15px 0 10px;
+      .responsive('tablet', {
+        font-size: 17px;
+        line-height: 22px;
+      });
     }
     .total {
       color: @red;
@@ -270,6 +354,7 @@
       background: url("../img/idea.png") left top no-repeat;
       color: @white;
       font-size: 24px;
+      font-weight: bold;
       margin: 0;
       padding: 0 0 0 70px;
       span {
@@ -290,10 +375,17 @@
     border-right: 1px @text-color solid;
     float: left;
     width: 40%;
+    .responsive('small', {
+      border: none;
+      width: 100%;
+    });
     &:last-child {
       border: none;
       padding: 0 10px;
       width: 20%;
+      .responsive('small', {
+        width: 100%;
+      });
       h4 {
         color: @blue;
       }
@@ -334,10 +426,14 @@
       text-transform: uppercase;
     }
     .idea-item {
-      margin: 0 0 10px;
+      margin: 0 0 5px;
       padding: 0 10px;
       h3 {
         color: @text-color;
+      }
+      p {
+        line-height: 20px;
+        padding-bottom: 3px;
       }
       .date {
         float: right;
@@ -355,6 +451,7 @@
         color: @white;
         float: right;
         line-height: 36px;
+        margin: -3px 0 0;
         padding: 0 65px;
         text-align: center;
         text-transform: uppercase;
@@ -371,7 +468,7 @@
       }
       .add-comment {
         .comments-list {
-          height: 200px;
+          height: 100px;
         }
         .add-comment {
           .author {
@@ -398,15 +495,18 @@
   .media-head {
     background: @red;
     border-radius: 0 0 5px 5px;
-    line-height: 76px;
+    line-height: 72px;
     margin: 0 auto;
     text-align: center;
     width: 80%;
+    .responsive('small', {
+      width: 100%;
+    });
     h4 {
       color: @white;
       display: inline-block;
       font-size: 24px;
-      line-height: 76px;
+      line-height: 72px;
       margin: 0 auto;
       padding: 0 0 0 88px;
       text-transform: uppercase;
@@ -425,6 +525,9 @@
   .col-media {
     float: left;
     width: 50%;
+    .responsive('small', {
+      width: 100%;
+    });
     h4 {
       color: @text-color;
       font-size: 24px;
@@ -440,10 +543,14 @@
       position: relative;
       text-align: center;
       width: 50%;
+      .responsive('small', {
+        width: 100%;
+      });
       &:nth-child(even) {
         clear: left;
       }
       .name {
+        padding-bottom: 5px;
         a {
           color: @text-color;
           &:hover {
@@ -463,6 +570,9 @@
         position: absolute;
         top: 50%;
         width: 89px;
+        &:hover {
+          text-decoration: none;
+        }
       }
     }
   }

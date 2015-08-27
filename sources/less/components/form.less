@@ -3,15 +3,30 @@
   border-radius: 18px;
   margin: 14px 0 20px;
   .gradient(#ffffff, #d4d7da);
+  &.no-indent {
+    margin-bottom: 0;
+  }
   .head {
     background: @red url("../img/calendar-ico.png") 22px 10px no-repeat;
     border-radius: 15px 15px 0 0;
     color: @white;
     font-size: 24px;
     line-height: 32px;
-    padding: 28px 10px 10px;
+    padding: 25px 10px 10px;
     position: relative;
     text-align: center;
+    .responsive('small', {
+      background: none;
+      background-color: @red;
+      font-size: 20px;
+      line-height: 22px;
+    });
+    .responsive('tablet', {
+      background: none;
+      background-color: @red;
+      font-size: 20px;
+      line-height: 22px;
+    });
     .dots {
       background: url("../img/calendar-bg.png") center top no-repeat;
       height: 44px;
@@ -27,6 +42,9 @@
       h2 {
         color: @red;
         font-size: 24px;
+        .responsive('tablet', {
+          font-size: 20px;
+        });
       }
       .fc-today-button {
         display: none;
@@ -54,7 +72,11 @@
         }
       }
       .fc-row {
-        min-height: 3em;
+        max-height: 48px !important;
+        min-height: 2em;
+        .fc-content-skeleton {
+          padding-bottom: 0;
+        }
       }
       .fc-day-number {
         color: @calendar-border;
@@ -85,6 +107,7 @@
     opacity: 0.8;
   }
   &.big {
+    color: @white;
     font-size: 24px;
     height: 64px;
     line-height: 60px;
@@ -93,9 +116,22 @@
     background: @sidebar-grey;
     color: @white;
   }
+  .responsive('small', {
+    font-size: 14px;
+    line-height: 22px;
+  });
+  .responsive('tablet', {
+    font-size: 14px;
+    line-height: 22px;
+  });
 }
 label {
   color: @text-color;
   font-weight: normal;
   font-size: 18px;
+  .responsive('tablet', {
+    font-size: 14px;
+    line-height: 10px;
+    margin-bottom: 0;
+  });
 }

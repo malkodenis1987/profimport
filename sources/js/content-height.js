@@ -12,10 +12,15 @@ $(function() {
 
     $.each(staticElements, function(index, value){
         indent = indent + $(value).height();
+        console.log('value: ' + $(value).height());
     });
+    console.log('windowHeight: ' + windowHeight);
+    console.log('indent: ' + indent);
 
-    scrollContent.height(windowHeight - indent).jScrollPane({
-        contentWidth: '0px'
-    });
+    if ($('.visible-xs').is(':hidden')) {
+        scrollContent.height(windowHeight - indent).jScrollPane({
+            contentWidth: '0px'
+        });
+    }
     addComment.jScrollPane();
 });

@@ -6,12 +6,26 @@
     font-size: 22px;
     line-height: 46px;
     padding: 0 8px 0 2px;
+    .responsive('small', {
+      font-size: 20px;
+      line-height: 22px;
+    });
+    .responsive('tablet', {
+      font-size: 20px;
+      line-height: 22px;
+    });
     .date {
       float: right;
     }
     .title {
       display: inline-block;
       padding: 0 0 0 38px;
+      .responsive('small', {
+        min-height: 44px;
+      });
+      .responsive('tablet', {
+        min-height: 44px;
+      });
       &.best {
         background: url("../img/best-ico.png") 2px 1px no-repeat;
       }
@@ -20,7 +34,10 @@
       }
       &.birth {
         background: url("../img/birth.png") 1px 5px no-repeat;
-        padding: 15px 0 8px 82px;
+        padding: 13px 0 5px 82px;
+        .responsive('tablet', {
+          padding: 13px 0 5px 62px;
+        });
       }
     }
   }
@@ -60,6 +77,14 @@
       position: absolute;
       right: 7px;
       width: 46%;
+      .responsive('small', {
+        font-size: 11px;
+        height: 23px;
+      });
+      .responsive('tablet', {
+        font-size: 11px;
+        height: 23px;
+      });
       &:hover {
         opacity: 0.8;
       }
@@ -71,12 +96,16 @@
   &.slider {
     border: 3px @calendar-grey solid;
     border-radius: 18px;
-    margin: 14px 0 20px;
+    margin: 14px 0 -5px;
     .gradient(#ffffff, #d4d7da);
     .head {
       border-radius: 15px 15px 0 0;
       font-size: 24px;
       padding: 0 8px 0 18px;
+      .responsive('tablet', {
+        font-size: 20px;
+        line-height: 22px;
+      });
     }
     .body {
       text-align: center;
@@ -86,6 +115,10 @@
         line-height: 48px;
         margin: 0;
         padding: 0;
+        .responsive('tablet', {
+          font-size: 20px;
+          line-height: 22px;
+        });
       }
       h5 {
         color: @text-color;
@@ -93,13 +126,21 @@
         line-height: 40px;
         margin: 0;
         padding: 0;
+        .responsive('tablet', {
+          font-size: 14px;
+          line-height: 22px;
+        });
       }
       p {
         color: @text-color;
         font-size: 24px;
-        line-height: 32px;
+        line-height: 28px;
         margin: 0;
         padding: 0;
+        .responsive('tablet', {
+          font-size: 12px;
+          line-height: 14px;
+        });
       }
       .btn {
         font-size: 20px;
@@ -109,6 +150,11 @@
         margin: 10px auto;
         position: relative;
         top: 0;
+        .responsive('tablet', {
+          font-size: 14px;
+          line-height: 22px;
+          height: 25px;
+        });
       }
       .carousel-control {
         background: none;
@@ -134,7 +180,7 @@
   .foot {
     background: @red;
     border-radius: 0 0 5px 5px;
-    line-height: 76px;
+    line-height: 72px;
     text-align: center;
     a {
       color: @white;

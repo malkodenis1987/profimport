@@ -1,5 +1,14 @@
 header {
   height: 140px;
+  .responsive('small', {
+    height: auto;
+  });
+  .responsive('tablet', {
+    height: 115px;
+  });
+  .responsive('xlarge', {
+    height: 130px;
+  });
   .main-menu {
     font-family: 'Sochi2014-Medium';
     float: left;
@@ -11,6 +20,10 @@ header {
       list-style: none;
       text-align: center;
       width: 16.9%;
+      .responsive('small', {
+        float: none;
+        width: 100%;
+      });
       &.active {
         a {
           color: @red;
@@ -20,8 +33,15 @@ header {
         background: none;
         text-align: left;
         width: 13%;
+        .responsive('small', {
+          text-align: center;
+          width: 100%;
+        });
         a {
           padding-top: 0;
+        }
+        img {
+          max-width: 100%;
         }
       }
       &.about {
@@ -63,6 +83,10 @@ header {
           color: @red;
           text-decoration: none;
         }
+        .responsive('tablet', {
+          font-size: 16px;
+          padding: 52px 0 0;
+        })
       }
     }
   }
@@ -72,6 +96,22 @@ header {
     float: left;
     padding: 92px 0 0;
     width: 40%;
+    .responsive('small', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('xlarge', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('xxlarge', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('tablet', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
     button {
       background: none;
       border: 0;
@@ -108,6 +148,26 @@ header {
     float: left;
     padding: 55px 0 0 25%;
     width: 60%;
+    .responsive('small', {
+      background: none;
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('tablet', {
+      background: none;
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('xlarge', {
+      background: none;
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('xxlarge', {
+      background: none;
+      padding: 10px 0 0;
+      width: 100%;
+    });
     p {
       color: @grey_menu;
       font-size: 24px;
@@ -117,6 +177,9 @@ header {
       &.title {
         color: @red;
         padding-bottom: 20px;
+        .responsive('tablet', {
+          padding-bottom: 15px;
+        });
       }
       &.dater {
         font-size: 20px;

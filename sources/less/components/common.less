@@ -29,6 +29,17 @@ html,body {
   padding-right: 15px;
   position: relative;
   width: 45.5000%;
+  .responsive('small', {
+    width: 100%;
+  });
+  .responsive('tablet', {
+    width: 30%;
+  });
+  p {
+    &:last-child {
+      padding-bottom: 5px;
+    }
+  }
 }
 .col-md-3-5 {
   box-sizing: border-box;
@@ -40,10 +51,24 @@ html,body {
   padding-right: 15px;
   position: relative;
   width: 27.25%;
+  .responsive('tablet', {
+    width: 35%;
+  });
+  .responsive('small', {
+    width: 100%;
+  });
+  p {
+    &:last-child {
+      padding-bottom: 5px;
+    }
+  }
 }
 .scroll-wrapper {
   overflow: auto;
   padding-right: 20px;
+  .responsive('small', {
+    padding-right: 0;
+  });
   .jspVerticalBar {
     background: none;
     border-radius: 3px;

@@ -48,6 +48,19 @@ body {
   position: relative;
   width: 45.5000%;
 }
+@media only screen and (max-width: 479px) {
+  .col-md-5-1 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-md-5-1 {
+    width: 30%;
+  }
+}
+.col-md-5-1 p:last-child {
+  padding-bottom: 5px;
+}
 .col-md-3-5 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -59,9 +72,27 @@ body {
   position: relative;
   width: 27.25%;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .col-md-3-5 {
+    width: 35%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .col-md-3-5 {
+    width: 100%;
+  }
+}
+.col-md-3-5 p:last-child {
+  padding-bottom: 5px;
+}
 .scroll-wrapper {
   overflow: auto;
   padding-right: 20px;
+}
+@media only screen and (max-width: 479px) {
+  .scroll-wrapper {
+    padding-right: 0;
+  }
 }
 .scroll-wrapper .jspVerticalBar {
   background: none;
@@ -87,15 +118,34 @@ body {
   background: -ms-linear-gradient(top, #ffffff, #d4d7da);
   background: -o-linear-gradient(top, #ffffff, #d4d7da);
 }
+.datepicker.no-indent {
+  margin-bottom: 0;
+}
 .datepicker .head {
   background: #be392a url("../img/calendar-ico.png") 22px 10px no-repeat;
   border-radius: 15px 15px 0 0;
   color: #ffffff;
   font-size: 24px;
   line-height: 32px;
-  padding: 28px 10px 10px;
+  padding: 25px 10px 10px;
   position: relative;
   text-align: center;
+}
+@media only screen and (max-width: 479px) {
+  .datepicker .head {
+    background: none;
+    background-color: #be392a;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .datepicker .head {
+    background: none;
+    background-color: #be392a;
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 .datepicker .head .dots {
   background: url("../img/calendar-bg.png") center top no-repeat;
@@ -111,6 +161,11 @@ body {
 .datepicker .body .fc-toolbar h2 {
   color: #be392a;
   font-size: 24px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .datepicker .body .fc-toolbar h2 {
+    font-size: 20px;
+  }
 }
 .datepicker .body .fc-toolbar .fc-today-button {
   display: none;
@@ -137,7 +192,11 @@ body {
   border-color: #9b9b96;
 }
 .datepicker .body .fc-view-container .fc-row {
-  min-height: 3em;
+  max-height: 48px !important;
+  min-height: 2em;
+}
+.datepicker .body .fc-view-container .fc-row .fc-content-skeleton {
+  padding-bottom: 0;
 }
 .datepicker .body .fc-view-container .fc-day-number {
   color: #9b9b96;
@@ -166,6 +225,7 @@ body {
   opacity: 0.8;
 }
 .btn.big {
+  color: #ffffff;
   font-size: 24px;
   height: 64px;
   line-height: 60px;
@@ -174,10 +234,29 @@ body {
   background: #c4c4be;
   color: #ffffff;
 }
+@media only screen and (max-width: 479px) {
+  .btn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .btn {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 label {
   color: #74706f;
   font-weight: normal;
   font-size: 18px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  label {
+    font-size: 14px;
+    line-height: 10px;
+    margin-bottom: 0;
+  }
 }
 .content {
   /* Книги */
@@ -201,6 +280,12 @@ label {
   margin: -3px 0 0;
   padding: 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
 .content h4 {
   color: #be392a;
   font-size: 24px;
@@ -212,6 +297,12 @@ label {
   color: #74706f;
   padding: 0 0 5px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content h4 {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
 .content h5 {
   color: #be392a;
   font-size: 18px;
@@ -219,12 +310,24 @@ label {
   margin: 0;
   padding: 0 0 2px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content h5 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
 .content h6 {
   color: #be392a;
   font-size: 18px;
   line-height: 20px;
   margin: 0;
   padding: 30px 0 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content h6 {
+    font-size: 14px;
+    line-height: 18px;
+  }
 }
 .content p {
   color: #74706f;
@@ -241,6 +344,12 @@ label {
   font-style: italic;
   padding-left: 5px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .content a {
   color: #be392a;
 }
@@ -254,6 +363,14 @@ label {
   font-size: 18px;
   line-height: 22px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content ul,
+  .content ol,
+  .content dl {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .content ul li {
   background: url("../img/dot.png") left 7px no-repeat;
   list-style: none;
@@ -263,9 +380,21 @@ label {
   float: left;
   margin: 0 15px 10px 0;
 }
+@media only screen and (max-width: 479px) {
+  .content .align-left {
+    margin: 0;
+    width: 100%;
+  }
+}
 .content .align-right {
   float: right;
   margin: 0 0 10px 15px;
+}
+@media only screen and (max-width: 479px) {
+  .content .align-right {
+    margin: 0;
+    width: 100%;
+  }
 }
 .content img {
   max-width: 100%;
@@ -277,7 +406,7 @@ label {
   color: #74706f;
   font-size: 18px;
   line-height: 26px;
-  letter-spacing: -0.6px;
+  letter-spacing: -0.7px;
   margin: 0;
   padding: 2px 0 16px 25px;
   position: relative;
@@ -342,22 +471,52 @@ label {
   text-align: center;
   width: 25%;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link {
+    font-size: 14px;
+  }
+}
 .content .social-item .link a {
   color: #ffffff;
   display: block;
   padding: 135px 0 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link a {
+    padding: 90px 0 0;
+  }
+}
 .content .social-item .link a.football {
   background: url("../img/football-ico.png") center 35px no-repeat;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link a.football {
+    background: url("../img/football-ico.png") center 2px no-repeat;
+  }
 }
 .content .social-item .link a.fitness {
   background: url("../img/fitness-ico.png") center 28px no-repeat;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link a.fitness {
+    background: url("../img/fitness-ico.png") center 2px no-repeat;
+  }
+}
 .content .social-item .link a.souna {
   background: url("../img/souna-ico.png") center 40px no-repeat;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link a.souna {
+    background: url("../img/souna-ico.png") center 2px no-repeat;
+  }
+}
 .content .social-item .link a.party {
   background: url("../img/party-ico.png") center 35px no-repeat;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link a.party {
+    background: url("../img/party-ico.png") center 2px no-repeat;
+  }
 }
 .content .boxes {
   margin: 0 0 7px;
@@ -365,6 +524,11 @@ label {
 .content .boxes .box {
   float: left;
   width: 33.33%;
+}
+@media only screen and (max-width: 479px) {
+  .content .boxes .box {
+    width: 100%;
+  }
 }
 .content .boxes .box .pic {
   border-radius: 5px 5px 0 0;
@@ -383,9 +547,22 @@ label {
 .content .boxes .box .title h4 {
   color: #ffffff;
   font-size: 24px;
+  line-height: 28px;
   margin: 0;
-  height: 65px;
+  height: 60px;
   padding: 0 0 5px;
+}
+@media only screen and (max-width: 479px) {
+  .content .boxes .box .title h4 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .boxes .box .title h4 {
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
 .content .boxes .box .title p {
   color: #ffffff;
@@ -402,6 +579,11 @@ label {
 .content .boxes.long .box {
   width: 25%;
 }
+@media only screen and (max-width: 479px) {
+  .content .boxes.long .box {
+    width: 100%;
+  }
+}
 .content .boxes.full-width .box {
   width: 100%;
 }
@@ -413,7 +595,7 @@ label {
   background: -ms-linear-gradient(top, #f6f8f9, #c3c8ce);
   background: -o-linear-gradient(top, #f6f8f9, #c3c8ce);
   border-radius: 5px;
-  padding: 5px;
+  padding: 9px 20px 8px 8px;
 }
 .content .quiz h4 {
   background: url("../img/quiz.png") left center no-repeat;
@@ -421,8 +603,18 @@ label {
   margin: 5px;
   padding: 0 0 0 58px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .quiz h4 {
+    margin-bottom: 0;
+  }
+}
 .content .quiz p {
   padding: 0 0 5px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .quiz p {
+    padding-bottom: 0;
+  }
 }
 .content .quiz .question {
   text-align: center;
@@ -433,16 +625,35 @@ label {
   margin: 0;
   padding: 0 20px 5px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .quiz .question p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
 .content .quiz .question .btn {
   font-size: 22px;
   height: 40px;
   line-height: 28px;
   padding: 0 30px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .quiz .question .btn {
+    font-size: 14px;
+    height: 22px;
+    line-height: 20px;
+  }
+}
 .content .quiz .options {
   color: #be392a;
   font-size: 22px;
   padding: 15px 0 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .quiz .options {
+    font-size: 17px;
+    line-height: 22px;
+  }
 }
 .content .quiz .total {
   color: #be392a;
@@ -456,6 +667,7 @@ label {
   background: url("../img/idea.png") left top no-repeat;
   color: #ffffff;
   font-size: 24px;
+  font-weight: bold;
   margin: 0;
   padding: 0 0 0 70px;
 }
@@ -479,10 +691,21 @@ label {
   float: left;
   width: 40%;
 }
+@media only screen and (max-width: 479px) {
+  .content .idea-column {
+    border: none;
+    width: 100%;
+  }
+}
 .content .idea-column:last-child {
   border: none;
   padding: 0 10px;
   width: 20%;
+}
+@media only screen and (max-width: 479px) {
+  .content .idea-column:last-child {
+    width: 100%;
+  }
 }
 .content .idea-column:last-child h4 {
   color: #0412c8;
@@ -518,11 +741,15 @@ label {
   text-transform: uppercase;
 }
 .content .idea-column .idea-item {
-  margin: 0 0 10px;
+  margin: 0 0 5px;
   padding: 0 10px;
 }
 .content .idea-column .idea-item h3 {
   color: #74706f;
+}
+.content .idea-column .idea-item p {
+  line-height: 20px;
+  padding-bottom: 3px;
 }
 .content .idea-column .idea-item .date {
   float: right;
@@ -540,6 +767,7 @@ label {
   color: #ffffff;
   float: right;
   line-height: 36px;
+  margin: -3px 0 0;
   padding: 0 65px;
   text-align: center;
   text-transform: uppercase;
@@ -555,7 +783,7 @@ label {
   color: #be392a;
 }
 .content .idea-column .idea-item .add-comment .comments-list {
-  height: 200px;
+  height: 100px;
 }
 .content .idea-column .idea-item .add-comment .add-comment .author {
   float: right;
@@ -576,16 +804,21 @@ label {
 .content .media-head {
   background: #be392a;
   border-radius: 0 0 5px 5px;
-  line-height: 76px;
+  line-height: 72px;
   margin: 0 auto;
   text-align: center;
   width: 80%;
+}
+@media only screen and (max-width: 479px) {
+  .content .media-head {
+    width: 100%;
+  }
 }
 .content .media-head h4 {
   color: #ffffff;
   display: inline-block;
   font-size: 24px;
-  line-height: 76px;
+  line-height: 72px;
   margin: 0 auto;
   padding: 0 0 0 88px;
   text-transform: uppercase;
@@ -599,6 +832,11 @@ label {
 .content .col-media {
   float: left;
   width: 50%;
+}
+@media only screen and (max-width: 479px) {
+  .content .col-media {
+    width: 100%;
+  }
 }
 .content .col-media h4 {
   color: #74706f;
@@ -616,8 +854,16 @@ label {
   text-align: center;
   width: 50%;
 }
+@media only screen and (max-width: 479px) {
+  .content .col-media .item {
+    width: 100%;
+  }
+}
 .content .col-media .item:nth-child(even) {
   clear: left;
+}
+.content .col-media .item .name {
+  padding-bottom: 5px;
 }
 .content .col-media .item .name a {
   color: #74706f;
@@ -638,8 +884,26 @@ label {
   top: 50%;
   width: 89px;
 }
+.content .col-media .item .play:hover {
+  text-decoration: none;
+}
 header {
   height: 140px;
+}
+@media only screen and (max-width: 479px) {
+  header {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 115px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  header {
+    height: 130px;
+  }
 }
 header .main-menu {
   font-family: 'Sochi2014-Medium';
@@ -654,6 +918,12 @@ header .main-menu li {
   text-align: center;
   width: 16.9%;
 }
+@media only screen and (max-width: 479px) {
+  header .main-menu li {
+    float: none;
+    width: 100%;
+  }
+}
 header .main-menu li.active a {
   color: #be392a;
 }
@@ -662,8 +932,17 @@ header .main-menu li.home {
   text-align: left;
   width: 13%;
 }
+@media only screen and (max-width: 479px) {
+  header .main-menu li.home {
+    text-align: center;
+    width: 100%;
+  }
+}
 header .main-menu li.home a {
   padding-top: 0;
+}
+header .main-menu li.home img {
+  max-width: 100%;
 }
 header .main-menu li.about {
   background: url("../img/menu-about.png") center top no-repeat;
@@ -710,12 +989,42 @@ header .main-menu li a:hover {
   color: #be392a;
   text-decoration: none;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .main-menu li a {
+    font-size: 16px;
+    padding: 52px 0 0;
+  }
+}
 header .search {
   background: url("../img/search.png") left bottom no-repeat;
   border-bottom: 1px #9b9b96 solid;
   float: left;
   padding: 92px 0 0;
   width: 40%;
+}
+@media only screen and (max-width: 479px) {
+  header .search {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  header .search {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  header .search {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .search {
+    padding: 10px 0 0;
+    width: 100%;
+  }
 }
 header .search button {
   background: none;
@@ -755,6 +1064,34 @@ header .account {
   padding: 55px 0 0 25%;
   width: 60%;
 }
+@media only screen and (max-width: 479px) {
+  header .account {
+    background: none;
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .account {
+    background: none;
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  header .account {
+    background: none;
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  header .account {
+    background: none;
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
 header .account p {
   color: #74706f;
   font-size: 24px;
@@ -765,6 +1102,11 @@ header .account p {
 header .account p.title {
   color: #be392a;
   padding-bottom: 20px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .account p.title {
+    padding-bottom: 15px;
+  }
 }
 header .account p.dater {
   font-size: 20px;
@@ -841,10 +1183,22 @@ footer {
 .sidebar.left ul li a:hover {
   text-decoration: none;
 }
+@media only screen and (max-width: 479px) {
+  .sidebar.left ul li a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
   .sidebar.left ul li a {
     font-size: 20px;
     line-height: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidebar.left ul li a {
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 .sidebar.right .btn {
@@ -1023,12 +1377,34 @@ footer {
   line-height: 46px;
   padding: 0 8px 0 2px;
 }
+@media only screen and (max-width: 479px) {
+  .widget .head {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
 .widget .head .date {
   float: right;
 }
 .widget .head .title {
   display: inline-block;
   padding: 0 0 0 38px;
+}
+@media only screen and (max-width: 479px) {
+  .widget .head .title {
+    min-height: 44px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .title {
+    min-height: 44px;
+  }
 }
 .widget .head .title.best {
   background: url("../img/best-ico.png") 2px 1px no-repeat;
@@ -1038,7 +1414,12 @@ footer {
 }
 .widget .head .title.birth {
   background: url("../img/birth.png") 1px 5px no-repeat;
-  padding: 15px 0 8px 82px;
+  padding: 13px 0 5px 82px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .title.birth {
+    padding: 13px 0 5px 62px;
+  }
 }
 .widget .body {
   background-color: #f6f8f9;
@@ -1079,6 +1460,18 @@ footer {
   right: 7px;
   width: 46%;
 }
+@media only screen and (max-width: 479px) {
+  .widget .body .btn {
+    font-size: 11px;
+    height: 23px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .body .btn {
+    font-size: 11px;
+    height: 23px;
+  }
+}
 .widget .body .btn:hover {
   opacity: 0.8;
 }
@@ -1088,7 +1481,7 @@ footer {
 .widget.slider {
   border: 3px #c5ccce solid;
   border-radius: 18px;
-  margin: 14px 0 20px;
+  margin: 14px 0 -5px;
   background-color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d4d7da));
   background: -webkit-linear-gradient(top, #ffffff, #d4d7da);
@@ -1101,6 +1494,12 @@ footer {
   font-size: 24px;
   padding: 0 8px 0 18px;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget.slider .head {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
 .widget.slider .body {
   text-align: center;
 }
@@ -1111,6 +1510,12 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget.slider .body h4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
 .widget.slider .body h5 {
   color: #74706f;
   font-size: 32px;
@@ -1118,12 +1523,24 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget.slider .body h5 {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 .widget.slider .body p {
   color: #74706f;
   font-size: 24px;
-  line-height: 32px;
+  line-height: 28px;
   margin: 0;
   padding: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget.slider .body p {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }
 .widget.slider .body .btn {
   font-size: 20px;
@@ -1133,6 +1550,13 @@ footer {
   margin: 10px auto;
   position: relative;
   top: 0;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget.slider .body .btn {
+    font-size: 14px;
+    line-height: 22px;
+    height: 25px;
+  }
 }
 .widget.slider .body .carousel-control {
   background: none;
@@ -1156,7 +1580,7 @@ footer {
 .box .foot {
   background: #be392a;
   border-radius: 0 0 5px 5px;
-  line-height: 76px;
+  line-height: 72px;
   text-align: center;
 }
 .box .foot a {
