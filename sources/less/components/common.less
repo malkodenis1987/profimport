@@ -19,53 +19,85 @@ html,body {
   display: block;
   height: 35px;
  }
-.col-md-5-1 {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  width: 45.5000%;
-  .responsive('small', {
-    width: 100%;
-  });
-  .responsive('tablet', {
-    width: 30%;
-  });
-  p {
-    &:last-child {
-      padding-bottom: 5px;
+.content {
+  .col-md-7-1 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 54.5000%;
+    .responsive('small', {
+      width: 100%;
+    });
+    .responsive('tablet', {
+      width: 50%;
+    });
+  }
+  .col-md-5-1 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 45.5000%;
+    .responsive('small', {
+      width: 100%;
+    });
+    .responsive('tablet', {
+      width: 50%;
+    });
+    img {
+      margin-right: 2%;
+      width: 54%;
+    }
+    &.long {
+      img {
+        margin-right: 0;
+        width: 100%;
+      }
+    }
+    p {
+      padding-left: 56%;
+      &.docs {
+        padding-left: 56%;
+      }
+      &:last-child {
+        padding-bottom: 5px;
+      }
     }
   }
-}
-.col-md-3-5 {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  float: left;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  width: 27.25%;
-  .responsive('tablet', {
-    width: 35%;
-  });
-  .responsive('small', {
-    width: 100%;
-  });
-  p {
-    &:last-child {
-      padding-bottom: 5px;
+  .col-md-3-5 {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    width: 50%;
+    .responsive('tablet', {
+      width: 100%;
+    });
+    .responsive('small', {
+      width: 100%;
+    });
+    p {
+      &:last-child {
+        padding-bottom: 5px;
+      }
     }
   }
 }
 .scroll-wrapper {
   overflow: auto;
-  padding-right: 20px;
   .responsive('small', {
     padding-right: 0;
   });
@@ -76,7 +108,7 @@ html,body {
     .jspTrack {
       border-radius: 3px;
       .jspDrag {
-        background: @red;
+        background: @grey;
         border-radius: 3px;
       }
     }

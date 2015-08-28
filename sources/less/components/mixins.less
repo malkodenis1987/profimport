@@ -1,6 +1,7 @@
 @small-breakpoint: 320px;
 @medium-breakpoint: 480px;
 @large-breakpoint: 768px;
+@tab-breakpoint: 990px;
 @tablet-breakpoint: 1024px;
 @standard-breakpoint: 1200px;
 @xlarge-breakpoint: 1366px;
@@ -29,6 +30,9 @@
 }
 .responsive(@view; @rules) when (@view = 'tablet') {
   @media only screen and (min-width: @large-breakpoint) and (max-width: @tablet-breakpoint) { @rules(); }
+}
+.responsive(@view; @rules) when (@view = 'tab') {
+  @media only screen and (min-width: @large-breakpoint) and (max-width: @tab-breakpoint) { @rules(); }
 }
 .responsive(@view; @rules) when (@view = 'vertTablet') {
   @media only screen and (min-width: @large-breakpoint) and (max-width: (@tablet-breakpoint - 1)) { @rules(); }

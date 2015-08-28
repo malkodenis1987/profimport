@@ -23,4 +23,9 @@ $(function() {
         });
     }
     addComment.jScrollPane();
+
+    var ideaHead = $('.idea-head');
+    if (ideaHead.length) {
+        ideaHead.css('min-height', ideaHead.parents('.row').height());
+    }
 });

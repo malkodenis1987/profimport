@@ -10,6 +10,7 @@
     padding: 0;
     li {
       background: none;
+      color: @grey;
       display: inline-block;
       line-height: 18px;
       padding: 0 3px;
@@ -18,8 +19,15 @@
       &.next {
       }
       &.current {
-        font-size: 22px;
+        font-family:'Sochi2014-Bold';
+        font-size: 24px;
         font-weight: bold;
+        color: @grey;
+        position: relative;
+        top: 3px;
+        a, span {
+          color: @grey;
+        }
       }
       a {
         color: @grey_light;
@@ -28,11 +36,13 @@
         text-decoration: none;
         &:hover {
           background: none;
+          color: @grey;
           text-decoration: none;
         }
       }
       span {
         display: block;
+        color: @grey;
         border: none;
         padding: 0;
         &:hover {

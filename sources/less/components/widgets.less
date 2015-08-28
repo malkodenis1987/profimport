@@ -70,18 +70,39 @@
       bottom: 7px;
       color: @white;
       display: block;
-      font-size: 18px;
+      font-size: 16px;
       height: 28px;
       line-height: 22px;
       padding: 0;
       position: absolute;
       right: 7px;
-      width: 46%;
-      .responsive('small', {
-        font-size: 11px;
+      width: 50%;
+      .responsive('xxxlarge', {
+        font-size: 14px;
         height: 23px;
+        width: 50%;
+      });
+      .responsive('xxlarge', {
+        font-size: 12px;
+        height: 23px;
+        width: 50%;
+      });
+      .responsive('xlarge', {
+        font-size: 12px;
+        height: 23px;
+        width: 50%;
+      });
+      .responsive('large', {
+        font-size: 12px;
+        height: 23px;
+        width: 55%;
       });
       .responsive('tablet', {
+        font-size: 11px;
+        height: 23px;
+        width: 60%;
+      });
+      .responsive('small', {
         font-size: 11px;
         height: 23px;
       });
@@ -221,12 +242,46 @@
         padding: 0 0 0 30px;
         &.like {
           background: url("../img/action-like.gif") left top no-repeat;
+          &:hover {
+            background: url("../img/action-like-hover.gif") left top no-repeat;
+          }
         }
         &.dislike {
-          background: url("../img/action-dislike.gif") left 2px no-repeat;
+          background: url("../img/action-dislike.gif") left 0 no-repeat;
+          &:hover {
+            background: url("../img/action-dislike-hover.gif") left top no-repeat;
+          }
         }
         &.comment {
           background: url("../img/action-comment.gif") left top no-repeat;
+          &:hover {
+            background: url("../img/action-comment-hover.gif") left 2px no-repeat;
+          }
+        }
+        &:hover {
+          color: @red;
+          text-decoration: none;
+        }
+        &.disabled {
+          &.like {
+            &:hover {
+              background: url("../img/action-like.gif") left top no-repeat;
+            }
+          }
+          &.dislike {
+            &:hover {
+              background: url("../img/action-dislike.gif") left top no-repeat;
+            }
+          }
+          &.comment {
+            &:hover {
+              background: url("../img/action-comment.gif") left top no-repeat;
+            }
+          }
+          &:hover {
+            color: @sidebar-grey;
+            text-decoration: none;
+          }
         }
       }
     }

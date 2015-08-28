@@ -16,6 +16,15 @@
   font-stretch: normal;
   unicode-range: U+000D-2122;
 }
+@font-face {
+  font-family: 'Sochi2014-Bold';
+  src: url('../fonts/Sochi2014-Bold_gdi.eot');
+  src: url('../fonts/Sochi2014-Bold_gdi.eot?#iefix') format('embedded-opentype'), url('../fonts/Sochi2014-Bold_gdi.woff') format('woff'), url('../fonts/Sochi2014-Bold_gdi.ttf') format('truetype'), url('../fonts/Sochi2014-Bold_gdi.svg#Sochi2014-Bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-2122;
+}
 * {
   margin: 0;
   padding: 0;
@@ -37,7 +46,28 @@ body {
   display: block;
   height: 35px;
 }
-.col-md-5-1 {
+.content .col-md-7-1 {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  float: left;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  width: 54.5000%;
+}
+@media only screen and (max-width: 479px) {
+  .content .col-md-7-1 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .col-md-7-1 {
+    width: 50%;
+  }
+}
+.content .col-md-5-1 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -49,19 +79,33 @@ body {
   width: 45.5000%;
 }
 @media only screen and (max-width: 479px) {
-  .col-md-5-1 {
+  .content .col-md-5-1 {
     width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .col-md-5-1 {
-    width: 30%;
+  .content .col-md-5-1 {
+    width: 50%;
   }
 }
-.col-md-5-1 p:last-child {
+.content .col-md-5-1 img {
+  margin-right: 2%;
+  width: 54%;
+}
+.content .col-md-5-1.long img {
+  margin-right: 0;
+  width: 100%;
+}
+.content .col-md-5-1 p {
+  padding-left: 56%;
+}
+.content .col-md-5-1 p.docs {
+  padding-left: 56%;
+}
+.content .col-md-5-1 p:last-child {
   padding-bottom: 5px;
 }
-.col-md-3-5 {
+.content .col-md-3-5 {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -70,24 +114,23 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   position: relative;
-  width: 27.25%;
+  width: 50%;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .col-md-3-5 {
-    width: 35%;
-  }
-}
-@media only screen and (max-width: 479px) {
-  .col-md-3-5 {
+  .content .col-md-3-5 {
     width: 100%;
   }
 }
-.col-md-3-5 p:last-child {
+@media only screen and (max-width: 479px) {
+  .content .col-md-3-5 {
+    width: 100%;
+  }
+}
+.content .col-md-3-5 p:last-child {
   padding-bottom: 5px;
 }
 .scroll-wrapper {
   overflow: auto;
-  padding-right: 20px;
 }
 @media only screen and (max-width: 479px) {
   .scroll-wrapper {
@@ -103,7 +146,7 @@ body {
   border-radius: 3px;
 }
 .scroll-wrapper .jspVerticalBar .jspTrack .jspDrag {
-  background: #be392a;
+  background: #aaaaaa;
   border-radius: 3px;
 }
 /* Gradient Mixin */
@@ -251,12 +294,41 @@ label {
   font-weight: normal;
   font-size: 18px;
 }
+label:hover {
+  color: #be392a;
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   label {
     font-size: 14px;
     line-height: 10px;
     margin-bottom: 0;
   }
+}
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label {
+  cursor: pointer;
+}
+input[type="radio"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 22px;
+  width: 22px;
+  margin: 0 5px 0 0;
+  background-image: url("../img/radio.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 3px;
+}
+input[type="radio"] + label::before {
+  background-position: 0px -33px;
+}
+input[type="radio"]:checked + label::before {
+  background-position: 0 3px;
+}
+input[type="radio"]:disabled + label::before {
+  background-position: -144px -279px;
 }
 .content {
   /* Книги */
@@ -297,9 +369,33 @@ label {
   color: #74706f;
   padding: 0 0 5px;
 }
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .content h4 {
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .content h4 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .content h4 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .content h4 {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .content h4 {
-    font-size: 17px;
+    font-size: 14px;
     line-height: 22px;
   }
 }
@@ -426,12 +522,6 @@ label {
 .content .docs .ico span:nth-child(1) {
   padding-left: 0;
 }
-.content .docs .ico:hover {
-  color: #be392a;
-}
-.content .docs .ico:hover a {
-  display: block;
-}
 .content .docs .ico a {
   bottom: -2px;
   color: #c4c4be;
@@ -452,6 +542,12 @@ label {
 }
 .content .docs .ico a:hover {
   color: #be392a;
+}
+.content .docs:hover {
+  color: #be392a;
+}
+.content .docs:hover a {
+  display: block;
 }
 .content .book .details {
   padding-left: 280px;
@@ -476,47 +572,35 @@ label {
     font-size: 14px;
   }
 }
+.content .social-item .link img {
+  display: block;
+  margin: 2% auto 0;
+  width: 43%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .content .social-item .link img {
+    font-size: 40%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .content .social-item .link img {
+    font-size: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .content .social-item .link img {
+    font-size: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .social-item .link img {
+    font-size: 30%;
+  }
+}
 .content .social-item .link a {
   color: #ffffff;
   display: block;
-  padding: 135px 0 0;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link a {
-    padding: 90px 0 0;
-  }
-}
-.content .social-item .link a.football {
-  background: url("../img/football-ico.png") center 35px no-repeat;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link a.football {
-    background: url("../img/football-ico.png") center 2px no-repeat;
-  }
-}
-.content .social-item .link a.fitness {
-  background: url("../img/fitness-ico.png") center 28px no-repeat;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link a.fitness {
-    background: url("../img/fitness-ico.png") center 2px no-repeat;
-  }
-}
-.content .social-item .link a.souna {
-  background: url("../img/souna-ico.png") center 40px no-repeat;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link a.souna {
-    background: url("../img/souna-ico.png") center 2px no-repeat;
-  }
-}
-.content .social-item .link a.party {
-  background: url("../img/party-ico.png") center 35px no-repeat;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link a.party {
-    background: url("../img/party-ico.png") center 2px no-repeat;
-  }
+  padding: 10px 0 0;
 }
 .content .boxes {
   margin: 0 0 7px;
@@ -539,10 +623,13 @@ label {
   width: 100%;
 }
 .content .boxes .box .title {
-  background: #be392a;
+  background: #c2232c;
   color: #ffffff;
   border-radius: 0 0 5px 5px;
   padding: 5px 10px;
+}
+.content .boxes .box .title.dark {
+  background: #961a20;
 }
 .content .boxes .box .title h4 {
   color: #ffffff;
@@ -563,6 +650,12 @@ label {
     font-size: 17px;
     line-height: 22px;
   }
+}
+.content .boxes .box .title h4 a {
+  color: #ffffff;
+}
+.content .boxes .box .title h4 a:hover {
+  text-decoration: none;
 }
 .content .boxes .box .title p {
   color: #ffffff;
@@ -658,18 +751,19 @@ label {
 .content .quiz .total {
   color: #be392a;
   float: right;
+  display: none;
 }
 .content .idea-head {
   background: #be392a;
-  padding: 12px 0 12px 40px;
+  padding: 0 0 0 40px;
 }
 .content .idea-head h4 {
-  background: url("../img/idea.png") left top no-repeat;
+  background: url("../img/idea.png") left 12px no-repeat;
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
   margin: 0;
-  padding: 0 0 0 70px;
+  padding: 12px 0 22px 70px;
 }
 .content .idea-head h4 span {
   display: block;
@@ -682,6 +776,7 @@ label {
   background: -moz-linear-gradient(top, #f6f8f9, #c3c8ce);
   background: -ms-linear-gradient(top, #f6f8f9, #c3c8ce);
   background: -o-linear-gradient(top, #f6f8f9, #c3c8ce);
+  margin: 0 -15px;
 }
 .content .idea-details p {
   padding: 5px 0;
@@ -829,10 +924,6 @@ label {
 .content .media-head.video h4 {
   background: url("../img/video.png") left center no-repeat;
 }
-.content .col-media {
-  float: left;
-  width: 50%;
-}
 @media only screen and (max-width: 479px) {
   .content .col-media {
     width: 100%;
@@ -852,14 +943,14 @@ label {
   padding: 0 5px;
   position: relative;
   text-align: center;
-  width: 50%;
+  width: 25%;
 }
 @media only screen and (max-width: 479px) {
   .content .col-media .item {
     width: 100%;
   }
 }
-.content .col-media .item:nth-child(even) {
+.content .col-media .item.new-row {
   clear: left;
 }
 .content .col-media .item .name {
@@ -890,9 +981,9 @@ label {
 header {
   height: 140px;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
   header {
-    height: auto;
+    height: 130px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -900,9 +991,19 @@ header {
     height: 115px;
   }
 }
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
   header {
-    height: 130px;
+    height: auto;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header {
+    height: auto;
+  }
+}
+@media only screen and (max-width: 479px) {
+  header {
+    height: auto;
   }
 }
 header .main-menu {
@@ -984,14 +1085,36 @@ header .main-menu li a {
   display: block;
   font-size: 22px;
   padding: 60px 0 0;
+  text-transform: uppercase;
 }
 header .main-menu li a:hover {
   color: #be392a;
   text-decoration: none;
 }
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  header .main-menu li a {
+    font-size: 21px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  header .main-menu li a {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  header .main-menu li a {
+    font-size: 16px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header .main-menu li a {
     font-size: 16px;
+    padding: 52px 0 0;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  header .main-menu li a {
+    font-size: 12px;
     padding: 52px 0 0;
   }
 }
@@ -1002,7 +1125,7 @@ header .search {
   padding: 92px 0 0;
   width: 40%;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
   header .search {
     padding: 10px 0 0;
     width: 100%;
@@ -1014,13 +1137,19 @@ header .search {
     width: 100%;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   header .search {
     padding: 10px 0 0;
     width: 100%;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  header .search {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 479px) {
   header .search {
     padding: 10px 0 0;
     width: 100%;
@@ -1061,17 +1190,10 @@ header .search input:-ms-input-placeholder {
 header .account {
   background: url("../img/flag.png") 10% 50px no-repeat;
   float: left;
-  padding: 55px 0 0 25%;
+  padding: 55px 0 0 22%;
   width: 60%;
 }
-@media only screen and (max-width: 479px) {
-  header .account {
-    background: none;
-    padding: 10px 0 0;
-    width: 100%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
   header .account {
     background: none;
     padding: 10px 0 0;
@@ -1085,7 +1207,20 @@ header .account {
     width: 100%;
   }
 }
-@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .account {
+    background: none;
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  header .account {
+    padding: 10px 0 0;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 479px) {
   header .account {
     background: none;
     padding: 10px 0 0;
@@ -1343,13 +1478,22 @@ footer {
 }
 .pager ul li {
   background: none;
+  color: #aaaaaa;
   display: inline-block;
   line-height: 18px;
   padding: 0 3px;
 }
 .pager ul li.current {
-  font-size: 22px;
+  font-family: 'Sochi2014-Bold';
+  font-size: 24px;
   font-weight: bold;
+  color: #aaaaaa;
+  position: relative;
+  top: 3px;
+}
+.pager ul li.current a,
+.pager ul li.current span {
+  color: #aaaaaa;
 }
 .pager ul li a {
   color: #c4c4be;
@@ -1359,10 +1503,12 @@ footer {
 }
 .pager ul li a:hover {
   background: none;
+  color: #aaaaaa;
   text-decoration: none;
 }
 .pager ul li span {
   display: block;
+  color: #aaaaaa;
   border: none;
   padding: 0;
 }
@@ -1452,21 +1598,50 @@ footer {
   bottom: 7px;
   color: #ffffff;
   display: block;
-  font-size: 18px;
+  font-size: 16px;
   height: 28px;
   line-height: 22px;
   padding: 0;
   position: absolute;
   right: 7px;
-  width: 46%;
+  width: 50%;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
   .widget .body .btn {
-    font-size: 11px;
+    font-size: 14px;
     height: 23px;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget .body .btn {
+    font-size: 12px;
+    height: 23px;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget .body .btn {
+    font-size: 12px;
+    height: 23px;
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .widget .body .btn {
+    font-size: 12px;
+    height: 23px;
+    width: 55%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .body .btn {
+    font-size: 11px;
+    height: 23px;
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 479px) {
   .widget .body .btn {
     font-size: 11px;
     height: 23px;
@@ -1623,11 +1798,37 @@ footer {
 .content .actions li a.like {
   background: url("../img/action-like.gif") left top no-repeat;
 }
+.content .actions li a.like:hover {
+  background: url("../img/action-like-hover.gif") left top no-repeat;
+}
 .content .actions li a.dislike {
-  background: url("../img/action-dislike.gif") left 2px no-repeat;
+  background: url("../img/action-dislike.gif") left 0 no-repeat;
+}
+.content .actions li a.dislike:hover {
+  background: url("../img/action-dislike-hover.gif") left top no-repeat;
 }
 .content .actions li a.comment {
   background: url("../img/action-comment.gif") left top no-repeat;
+}
+.content .actions li a.comment:hover {
+  background: url("../img/action-comment-hover.gif") left 2px no-repeat;
+}
+.content .actions li a:hover {
+  color: #be392a;
+  text-decoration: none;
+}
+.content .actions li a.disabled.like:hover {
+  background: url("../img/action-like.gif") left top no-repeat;
+}
+.content .actions li a.disabled.dislike:hover {
+  background: url("../img/action-dislike.gif") left top no-repeat;
+}
+.content .actions li a.disabled.comment:hover {
+  background: url("../img/action-comment.gif") left top no-repeat;
+}
+.content .actions li a.disabled:hover {
+  color: #c4c4be;
+  text-decoration: none;
 }
 .content .add-comment .comments-list {
   height: 260px;

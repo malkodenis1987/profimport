@@ -1,13 +1,19 @@
 header {
   height: 140px;
-  .responsive('small', {
-    height: auto;
+  .responsive('xlarge', {
+    height: 130px;
   });
   .responsive('tablet', {
     height: 115px;
   });
-  .responsive('xlarge', {
-    height: 130px;
+  .responsive('tab', {
+    height: auto;
+  });
+  .responsive('medium', {
+    height: auto;
+  });
+  .responsive('small', {
+    height: auto;
   });
   .main-menu {
     font-family: 'Sochi2014-Medium';
@@ -79,14 +85,28 @@ header {
         display: block;
         font-size: 22px;
         padding: 60px 0 0;
+        text-transform: uppercase;
         &:hover {
           color: @red;
           text-decoration: none;
         }
+        .responsive('xxxlarge', {
+          font-size: 21px;
+        });
+        .responsive('xxlarge', {
+          font-size: 20px;
+        });
+        .responsive('large', {
+          font-size: 16px;
+        });
         .responsive('tablet', {
           font-size: 16px;
           padding: 52px 0 0;
-        })
+        });
+        .responsive('medium', {
+          font-size: 12px;
+          padding: 52px 0 0;
+        });
       }
     }
   }
@@ -96,7 +116,7 @@ header {
     float: left;
     padding: 92px 0 0;
     width: 40%;
-    .responsive('small', {
+    .responsive('xxlarge', {
       padding: 10px 0 0;
       width: 100%;
     });
@@ -104,11 +124,15 @@ header {
       padding: 10px 0 0;
       width: 100%;
     });
-    .responsive('xxlarge', {
+    .responsive('tablet', {
       padding: 10px 0 0;
       width: 100%;
     });
-    .responsive('tablet', {
+    .responsive('tab', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('small', {
       padding: 10px 0 0;
       width: 100%;
     });
@@ -146,14 +170,9 @@ header {
   .account {
     background: url("../img/flag.png") 10% 50px no-repeat;
     float: left;
-    padding: 55px 0 0 25%;
+    padding: 55px 0 0 22%;
     width: 60%;
-    .responsive('small', {
-      background: none;
-      padding: 10px 0 0;
-      width: 100%;
-    });
-    .responsive('tablet', {
+    .responsive('xxlarge', {
       background: none;
       padding: 10px 0 0;
       width: 100%;
@@ -163,7 +182,16 @@ header {
       padding: 10px 0 0;
       width: 100%;
     });
-    .responsive('xxlarge', {
+    .responsive('tablet', {
+      background: none;
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('tab', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('small', {
       background: none;
       padding: 10px 0 0;
       width: 100%;

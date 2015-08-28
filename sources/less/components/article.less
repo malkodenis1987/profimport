@@ -23,8 +23,24 @@
       color: @text-color;
       padding: 0 0 5px;
     }
+    .responsive('xxxlarge', {
+      font-size: 20px;
+      line-height: 22px;
+    });
+    .responsive('xxlarge', {
+      font-size: 19px;
+      line-height: 22px;
+    });
+    .responsive('xlarge', {
+      font-size: 18px;
+      line-height: 22px;
+    });
+    .responsive('large', {
+      font-size: 15px;
+      line-height: 22px;
+    });
     .responsive('tablet', {
-      font-size: 17px;
+      font-size: 14px;
       line-height: 22px;
     });
   }
@@ -137,12 +153,6 @@
           padding-left: 0;
         }
       }
-      &:hover {
-        color: @red;
-        a {
-          display: block;
-        }
-      }
       a {
         bottom: -2px;
         color: @sidebar-grey;
@@ -163,6 +173,12 @@
         &:hover {
           color: @red;
         }
+      }
+    }
+    &:hover {
+      color: @red;
+      a {
+        display: block;
       }
     }
   }
@@ -189,37 +205,27 @@
       .responsive('tablet', {
         font-size: 14px;
       });
+      img {
+        display: block;
+        margin: 2% auto 0;
+        width: 43%;
+        .responsive('xxlarge', {
+          font-size: 40%;
+        });
+        .responsive('xlarge', {
+          font-size: 35%;
+        });
+        .responsive('large', {
+          font-size: 35%;
+        });
+        .responsive('tablet', {
+          font-size: 30%;
+        });
+      }
       a {
         color: @white;
         display: block;
-        padding: 135px 0 0;
-        .responsive('tablet', {
-          padding: 90px 0 0;
-        });
-        &.football {
-          background: url("../img/football-ico.png") center 35px no-repeat;
-          .responsive('tablet', {
-            background: url("../img/football-ico.png") center 2px no-repeat;
-          });
-        }
-        &.fitness {
-          background: url("../img/fitness-ico.png") center 28px no-repeat;
-          .responsive('tablet', {
-            background: url("../img/fitness-ico.png") center 2px no-repeat;
-          });
-        }
-        &.souna {
-          background: url("../img/souna-ico.png") center 40px no-repeat;
-          .responsive('tablet', {
-            background: url("../img/souna-ico.png") center 2px no-repeat;
-          });
-        }
-        &.party {
-          background: url("../img/party-ico.png") center 35px no-repeat;
-          .responsive('tablet', {
-            background: url("../img/party-ico.png") center 2px no-repeat;
-          });
-        }
+        padding: 10px 0 0;
       }
     }
   }
@@ -241,10 +247,13 @@
         }
       }
       .title {
-        background: @red;
+        background: @red_light;
         color: @white;
         border-radius: 0 0 5px 5px;
         padding: 5px 10px;
+        &.dark {
+          background: @red_dark;
+        }
         h4 {
           color: @white;
           font-size: 24px;
@@ -260,6 +269,12 @@
             font-size: 17px;
             line-height: 22px;
           });
+          a {
+            color: @white;
+            &:hover {
+              text-decoration: none;
+            }
+          }
         }
         p {
           color: @white;
@@ -344,19 +359,20 @@
     .total {
       color: @red;
       float: right;
+      display: none;
     }
   }
   /* Bank */
   .idea-head {
     background: @red;
-    padding: 12px 0 12px 40px;
+    padding: 0 0 0 40px;
     h4 {
-      background: url("../img/idea.png") left top no-repeat;
+      background: url("../img/idea.png") left 12px no-repeat;
       color: @white;
       font-size: 24px;
       font-weight: bold;
       margin: 0;
-      padding: 0 0 0 70px;
+      padding: 12px 0 22px 70px;
       span {
         display: block;
         color: @sidebar-grey;
@@ -365,6 +381,7 @@
   }
   .idea {
     .gradient();
+    margin: 0 -15px;
   }
   .idea-details {
     p {
@@ -523,8 +540,6 @@
     }
   }
   .col-media {
-    float: left;
-    width: 50%;
     .responsive('small', {
       width: 100%;
     });
@@ -542,11 +557,11 @@
       padding: 0 5px;
       position: relative;
       text-align: center;
-      width: 50%;
+      width: 25%;
       .responsive('small', {
         width: 100%;
       });
-      &:nth-child(even) {
+      &.new-row {
         clear: left;
       }
       .name {
