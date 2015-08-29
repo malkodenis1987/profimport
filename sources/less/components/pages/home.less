@@ -1,0 +1,133 @@
+/* Home */
+.boxes {
+  margin: 0 0 7px;
+  .box {
+    float: left;
+    width: 33.33%;
+    .responsive('small', {
+      width: 100%;
+    });
+    .pic {
+      border-radius: 5px 5px 0 0;
+      img {
+        border-radius: 5px 5px 0 0;
+        height: auto;
+        width: 100%;
+      }
+    }
+    .title {
+      background: @red_light;
+      color: @white;
+      border-radius: 0 0 5px 5px;
+      padding: 5px 10px;
+      &.dark {
+        background: @red_dark;
+      }
+      h4 {
+        color: @white;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0;
+        height: 60px;
+        padding: 0 0 5px;
+        .responsive('small', {
+          font-size: 16px;
+          line-height: 20px;
+        });
+        .responsive('tablet', {
+          font-size: 17px;
+          line-height: 22px;
+        });
+        a {
+          color: @white;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+      p {
+        color: @white;
+        margin: 0;
+        padding: 0 0 5px;
+        a {
+          color: @white;
+          float: right;
+          &:after {
+            content: ">";
+          }
+        }
+      }
+    }
+  }
+  &.long {
+    .box {
+      width: 25%;
+      .responsive('small', {
+        width: 100%;
+      });
+    }
+  }
+  &.full-width {
+    .box {
+      width: 100%;
+    }
+  }
+}
+.quiz {
+  .gradient();
+  border-radius: 5px;
+  padding: 9px 20px 8px 8px;
+  h4 {
+    background: url("../img/quiz.png") left center no-repeat;
+    line-height: 44px;
+    margin: 5px;
+    padding: 0 0 0 58px;
+    .responsive('tablet', {
+      margin-bottom: 0;
+    });
+  }
+  p {
+    padding: 0 0 5px;
+    .responsive('tablet', {
+      padding-bottom: 0;
+    });
+  }
+  .question {
+    text-align: center;
+    p {
+      font-size: 22px;
+      line-height: 32px;
+      margin: 0;
+      padding: 0 20px 5px;
+      .responsive('tablet', {
+        font-size: 14px;
+        line-height: 18px;
+      });
+    }
+    .btn {
+      font-size: 22px;
+      height: 40px;
+      line-height: 28px;
+      padding: 0 30px;
+      .responsive('tablet', {
+        font-size: 14px;
+        height: 22px;
+        line-height: 20px;
+      });
+    }
+  }
+  .options {
+    color: @red;
+    font-size: 22px;
+    padding: 15px 0 10px;
+    .responsive('tablet', {
+      font-size: 17px;
+      line-height: 22px;
+    });
+  }
+  .total {
+    color: @red;
+    float: right;
+    display: none;
+  }
+}

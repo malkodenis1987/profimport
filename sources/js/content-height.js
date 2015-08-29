@@ -17,11 +17,11 @@ $(function() {
     console.log('windowHeight: ' + windowHeight);
     console.log('indent: ' + indent);
 
-    if ($('.visible-xs').is(':hidden')) {
+    /*if ($('.visible-xs').is(':hidden')) {
         scrollContent.height(windowHeight - indent).jScrollPane({
             contentWidth: '0px'
         });
-    }
+    }*/
     addComment.jScrollPane();
 
     var ideaHead = $('.idea-head');
