@@ -6,55 +6,71 @@
 @standard-breakpoint: 1200px;
 @xlarge-breakpoint: 1366px;
 @xxlarge-breakpoint: 1600px;
-
+/* 0px - 479px */
 .responsive(@view; @rules) when (@view = 'small') {
   @media only screen and (max-width: (@medium-breakpoint - 1)) { @rules(); }
 }
+/* 480px - 767px */
 .responsive(@view; @rules) when (@view = 'medium') {
   @media only screen and (min-width: @medium-breakpoint) and (max-width: (@large-breakpoint - 1)) { @rules(); }
 }
+/* 768px - 1199px */
 .responsive(@view; @rules) when (@view = 'large') {
   @media only screen and (min-width: @large-breakpoint) and (max-width: (@standard-breakpoint - 1) ){ @rules(); }
 }
+/* 1024px - 1199px */
 .responsive(@view; @rules) when (@view = 'xlarge') {
   @media only screen and (min-width: @tablet-breakpoint) and (max-width: (@standard-breakpoint - 1) ) { @rules(); }
 }
+/* 1200px - 1365px */
 .responsive(@view; @rules) when (@view = 'xxlarge') {
   @media only screen and (min-width: @standard-breakpoint) and (max-width: (@xlarge-breakpoint - 1) ) { @rules(); }
 }
+/* 1366px - 1599px */
 .responsive(@view; @rules) when (@view = 'xxxlarge') {
   @media only screen and (min-width: @xlarge-breakpoint) and (max-width: (@xxlarge-breakpoint - 1) ) { @rules(); }
 }
+/* 1200px - ~ */
 .responsive(@view; @rules) when (@view = 'standard') {
   @media only screen and (min-width: @standard-breakpoint) { @rules(); }
 }
+/* 768px - 1024px */
 .responsive(@view; @rules) when (@view = 'tablet') {
   @media only screen and (min-width: @large-breakpoint) and (max-width: @tablet-breakpoint) { @rules(); }
 }
+/* 768px - 990px */
 .responsive(@view; @rules) when (@view = 'tab') {
   @media only screen and (min-width: @large-breakpoint) and (max-width: @tab-breakpoint) { @rules(); }
 }
+/* 768px - 1023px */
 .responsive(@view; @rules) when (@view = 'vertTablet') {
   @media only screen and (min-width: @large-breakpoint) and (max-width: (@tablet-breakpoint - 1)) { @rules(); }
 }
+/* 320px - 767px */
 .responsive(@view; @rules) when (@view = 'phone') {
   @media only screen and (min-width: @small-breakpoint) and (max-width: (@large-breakpoint - 1)) { @rules(); }
 }
+/* 480px - 767px */
 .responsive(@view; @rules) when (@view = 'landscapePhone') {
   @media only screen and (min-width: @medium-breakpoint) and (max-width: (@large-breakpoint - 1)) { @rules(); }
 }
+/* 0px - 320px */
 .responsive(@view; @rules) when (@view = 'mobile') {
   @media only screen and (max-width: @small-breakpoint) { @rules(); }
 }
+/* 0px - 479px */
 .responsive(@view; @rules) when (@view = 'max480') {
   @media only screen and (max-width: (@medium-breakpoint - 1)) { @rules(); }
 }
+/* 0px - 767px */
 .responsive(@view; @rules) when (@view = 'max768') {
   @media only screen and (max-width: (@large-breakpoint - 1)) { @rules(); }
 }
+/* 767px - ~ */
 .responsive(@view; @rules) when (@view = 'min768') {
   @media only screen and (min-width: @large-breakpoint) { @rules(); }
 }
+/* 0px - 1023px */
 .responsive(@view; @rules) when (@view = 'max1024') {
   @media only screen and (max-width: (@tablet-breakpoint - 1)) { @rules(); }
 }

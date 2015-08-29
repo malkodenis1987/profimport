@@ -12,16 +12,28 @@
     color: @white;
     font-size: 24px;
     line-height: 32px;
-    padding: 25px 10px 10px;
+    padding: 25px 10px 10px 80px;
     position: relative;
-    text-align: center;
-    .responsive('small', {
+    .responsive('xxxlarge', {
+      font-size: 20px;
+    });
+    .responsive('xxlarge', {
+      font-size: 16px;
+    });
+    .responsive('xlarge', {
       background: none;
       background-color: @red;
-      font-size: 20px;
-      line-height: 22px;
+      font-size: 18px;
+      padding-left: 10px;
     });
     .responsive('tablet', {
+      background: none;
+      background-color: @red;
+      font-size: 18px;
+      line-height: 22px;
+      padding-left: 10px;
+    });
+    .responsive('small', {
       background: none;
       background-color: @red;
       font-size: 20px;
@@ -30,31 +42,35 @@
     .dots {
       background: url("../img/calendar-bg.png") center top no-repeat;
       height: 44px;
-      left: 0;
+      left: 20%;
       position: absolute;
       top: -14px;
-      width: 100%;
+      width: 60%;
     }
   }
   .body {
     padding: 7px 13px 10px 7px;
     .fc-toolbar {
-      h2 {
-        color: @red;
-        font-size: 24px;
-        .responsive('tablet', {
-          font-size: 20px;
-        });
-      }
-      .fc-today-button {
-        display: none;
-      }
-      .fc-button-group {
+      .fc-right {
+        h2 {
+          color: @red;
+          display: inline-block;
+          font-size: 24px;
+          .responsive('tablet', {
+            font-size: 20px;
+          });
+        }
+        .fc-today-button {
+          display: none;
+        }
         button {
           background: none;
           box-shadow: none;
           border: none;
           color: @sidebar-grey;
+          &:hover {
+            color: @red;
+          }
         }
       }
     }
@@ -80,8 +96,12 @@
       }
       .fc-day-number {
         color: @calendar-border;
-        font-size: 14px;
+        font-size: 12px;
         font-weight: bold;
+        padding-bottom: 0;
+        &.has-event {
+          color: @red;
+        }
       }
       .fc-event {
         background: none;
@@ -89,6 +109,9 @@
         color: @red;
         font-size: 9px;
         padding: 5px 0 0;
+      }
+      .fc-content {
+        white-space: normal;
       }
     }
   }
@@ -104,6 +127,7 @@
   padding: 0 10px;
   &:hover {
     color: @white;
+    text-decoration: none;
     opacity: 0.8;
   }
   &.big {

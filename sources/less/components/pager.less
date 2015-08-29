@@ -1,52 +1,54 @@
-.pager {
-  color: @grey_light;
-  font-size: 18px;
-  font-style: italic;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  ul {
+.content {
+  .pager {
+    color: @grey_light;
+    font-size: 18px;
+    font-style: italic;
     margin: 0;
     padding: 0;
-    li {
-      background: none;
-      color: @grey;
-      display: inline-block;
-      line-height: 18px;
-      padding: 0 3px;
-      &.prev {
-      }
-      &.next {
-      }
-      &.current {
-        font-family:'Sochi2014-Bold';
-        font-size: 24px;
-        font-weight: bold;
+    text-align: center;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        background: none;
         color: @grey;
-        position: relative;
-        top: 3px;
-        a, span {
-          color: @grey;
+        display: inline-block;
+        line-height: 18px;
+        padding: 0 3px;
+        &.prev {
         }
-      }
-      a {
-        color: @grey_light;
-        border: none;
-        padding: 0;
-        text-decoration: none;
-        &:hover {
-          background: none;
+        &.next {
+        }
+        &.current {
+          font-family:'Sochi2014-Bold';
+          font-size: 24px;
+          font-weight: bold;
           color: @grey;
+          position: relative;
+          top: 3px;
+          a, span {
+            color: @grey;
+          }
+        }
+        a {
+          color: @grey_light;
+          border: none;
+          padding: 0;
           text-decoration: none;
+          &:hover {
+            background: none;
+            color: @grey;
+            text-decoration: none;
+          }
         }
-      }
-      span {
-        display: block;
-        color: @grey;
-        border: none;
-        padding: 0;
-        &:hover {
-          background: none;
+        span {
+          display: block;
+          color: @grey;
+          border: none;
+          padding: 0;
+          &:hover {
+            background: none;
+          }
         }
       }
     }

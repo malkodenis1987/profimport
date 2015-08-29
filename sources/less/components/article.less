@@ -92,6 +92,12 @@
     &:hover {
       text-decoration: underline;
     }
+    &.btn {
+      color: @white;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   ul, ol, dl {
     color: @text-color;
@@ -129,6 +135,7 @@
     max-width: 100%;
   }
   .docs {
+    cursor: pointer;
     position: relative;
     .ico {
       color: @text-color;
@@ -175,8 +182,10 @@
         }
       }
     }
-    &:hover {
-      color: @red;
+    &.clicked {
+      .ico {
+        color: @red;
+      }
       a {
         display: block;
       }
@@ -186,47 +195,6 @@
   .book {
     .details {
       padding-left: 280px;
-    }
-  }
-  /* Социяальный пакет */
-  .social-item {
-    background: @red;
-    .pic {
-      float: left;
-      width: 75%;
-    }
-    .link {
-      color: @white;
-      font-size: 24px;
-      float: left;
-      text-transform: uppercase;
-      text-align: center;
-      width: 25%;
-      .responsive('tablet', {
-        font-size: 14px;
-      });
-      img {
-        display: block;
-        margin: 2% auto 0;
-        width: 43%;
-        .responsive('xxlarge', {
-          font-size: 40%;
-        });
-        .responsive('xlarge', {
-          font-size: 35%;
-        });
-        .responsive('large', {
-          font-size: 35%;
-        });
-        .responsive('tablet', {
-          font-size: 30%;
-        });
-      }
-      a {
-        color: @white;
-        display: block;
-        padding: 10px 0 0;
-      }
     }
   }
 }

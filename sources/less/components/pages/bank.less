@@ -18,6 +18,9 @@
   .gradient();
   margin: 0 -15px;
 }
+.idea-head {
+  margin-left: -15px;
+}
 .idea-details {
   p {
     padding: 5px 0;
@@ -119,6 +122,10 @@
       }
     }
     .add-comment {
+      display: none;
+      &.active {
+        display: block;
+      }
       .comments-list {
         height: 100px;
       }

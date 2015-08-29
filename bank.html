@@ -13,6 +13,11 @@
     <link rel="stylesheet" href="bower_components/jquery.jscrollpane/jquery.jscrollpane.css"/>
     <link rel="stylesheet" href="bower_components/fullcalendar/dist/fullcalendar.min.css"/>
     <link rel="stylesheet" href="bower_components/jquery-colorbox/example1/colorbox.css"/>
+    <link rel="stylesheet" href="bower_components/jReject/css/jquery.reject.css"/>
+
+    <!--[if lte IE 8]>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <!--<![endif]-->
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -22,6 +27,7 @@
     <script src="bower_components/moment/min/moment-with-locales.min.js"></script>
     <script src="bower_components/fullcalendar/dist/fullcalendar.min.js"></script>
     <script src="bower_components/jquery-colorbox/jquery.colorbox-min.js"></script>
+    <script src="bower_components/jReject/js/jquery.reject.js"></script>
 
     <!-- Custom styles and scripts -->
     <link rel="stylesheet" href="assets/css/app.min.css"/>
@@ -68,21 +74,19 @@
     <div id="content" class="content">
         <div class="scroll-wrapper">
             <div class="container-fluid">
-                <div class="idea">
-                    <div class="row">
-                        <div class="col-md-5 col-lg-3 col-xs-12">
-                            <div class="idea-head">
-                                <h4>Есть идея? <span>Поделись с нами</span></h4>
-                            </div>
+                <div class="row idea">
+                    <div class="col-md-5 col-lg-3 col-xs-12">
+                        <div class="idea-head">
+                            <h4>Есть идея? <span>Поделись с нами</span></h4>
                         </div>
-                        <div class="col-md-7 col-lg-9 col-xs-12">
-                            <div class="idea-details">
-                                <p>
-                                    Нам важно мнение каждого сотрудника!<br />
-                                    Мы ценим инициативу и инициативных людей! В этом разделе Вы можете предлагать любые идеи, которые связаны с рабочим процессом, социальными программами, условиями работы и т.п.<br />
-                                    Каждая идея выдвигается на обсуждение. Решение о принятии и реализации идеи принимается Генеральным директором после изучения мнения проголосовавших и высказавшихся.
-                                </p>
-                            </div>
+                    </div>
+                    <div class="col-md-7 col-lg-9 col-xs-12">
+                        <div class="idea-details">
+                            <p>
+                                Нам важно мнение каждого сотрудника!<br />
+                                Мы ценим инициативу и инициативных людей! В этом разделе Вы можете предлагать любые идеи, которые связаны с рабочим процессом, социальными программами, условиями работы и т.п.<br />
+                                Каждая идея выдвигается на обсуждение. Решение о принятии и реализации идеи принимается Генеральным директором после изучения мнения проголосовавших и высказавшихся.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -278,7 +282,7 @@
                                             <div class="add-comment clearfix">
                                                 <form action="">
                                                     <p class="author">d.sorokotyaga</p>
-                                                    <textarea name="comment" id="comment" cols="30" rows="1" placeholder="оставить комментарий..."></textarea>
+                                                    <textarea name="comment" id="comment1" cols="30" rows="1" placeholder="оставить комментарий..."></textarea>
                                                     <div class="button-row">
                                                         <button class="btn grey">отправить</button>
                                                         <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
@@ -318,6 +322,56 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12">
+                                        <div class="add-comment">
+                                            <div class="comments-list">
+                                                <ul>
+                                                    <li>
+                                                        <p class="author">n.petrov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">o.orlov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">k.denisenko</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">n.petrov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">o.orlov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">k.denisenko</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="add-comment clearfix">
+                                                <form action="">
+                                                    <p class="author">d.sorokotyaga</p>
+                                                    <textarea name="comment" id="comment2" cols="30" rows="1" placeholder="оставить комментарий..."></textarea>
+                                                    <div class="button-row">
+                                                        <button class="btn grey">отправить</button>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <!-- Idea Item -->
                             <div class="idea-item">
@@ -346,6 +400,56 @@
                                             <li><a class="dislike" href="#">2</a></li>
                                             <li><a class="comment" href="#">10</a></li>
                                         </ul>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12 col-xs-12">
+                                        <div class="add-comment">
+                                            <div class="comments-list">
+                                                <ul>
+                                                    <li>
+                                                        <p class="author">n.petrov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">o.orlov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">k.denisenko</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">n.petrov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Ура! Всем спасибо! Приглашаю отпраздновать сегодня в обед вкусным тортиком!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">o.orlov</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">Свет, так держать! Мы - лучшие! Даешь в следующем месяце перевыполнение Плана!</p>
+                                                    </li>
+                                                    <li>
+                                                        <p class="author">k.denisenko</p>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                        <p class="comment">В следующем месяце победа за нами! Мебель, дадим стране угля!!!</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="add-comment clearfix">
+                                                <form action="">
+                                                    <p class="author">d.sorokotyaga</p>
+                                                    <textarea name="comment" id="comment3" cols="30" rows="1" placeholder="оставить комментарий..."></textarea>
+                                                    <div class="button-row">
+                                                        <button class="btn grey">отправить</button>
+                                                        <p class="date"><span class="day">05.08.15</span><span class="time">11:02</span></p>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

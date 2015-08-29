@@ -5,6 +5,7 @@
     color: @white;
     font-size: 22px;
     line-height: 46px;
+    min-height: 46px;
     padding: 0 8px 0 2px;
     .responsive('small', {
       font-size: 20px;
@@ -19,11 +20,27 @@
     }
     .title {
       display: inline-block;
-      padding: 0 0 0 38px;
-      .responsive('small', {
-        min-height: 44px;
+      line-height: 24px;
+      padding: 9px 0 8px 38px;
+      .responsive('xxxlarge', {
+        font-size: 20px;
+      });
+      .responsive('xxlarge', {
+        font-size: 16px;
+      });
+      .responsive('xlarge', {
+        font-size: 18px;
       });
       .responsive('tablet', {
+        font-size: 18px;
+      });
+      .responsive('small', {
+        font-size: 20px;
+      });
+      .responsive('tablet', {
+        min-height: 44px;
+      });
+      .responsive('small', {
         min-height: 44px;
       });
       &.best {
@@ -90,12 +107,12 @@
       .responsive('xlarge', {
         font-size: 12px;
         height: 23px;
-        width: 50%;
+        width: 60%;
       });
       .responsive('large', {
         font-size: 12px;
         height: 23px;
-        width: 55%;
+        width: 60%;
       });
       .responsive('tablet', {
         font-size: 11px;
@@ -107,6 +124,7 @@
         height: 23px;
       });
       &:hover {
+        text-decoration: none;
         opacity: 0.8;
       }
       &:nth-child(2) {
@@ -132,8 +150,8 @@
       text-align: center;
       h4 {
         color: @text-color;
-        font-size: 48px;
-        line-height: 48px;
+        font-size: 44px;
+        line-height: 44px;
         margin: 0;
         padding: 0;
         .responsive('tablet', {
@@ -143,8 +161,8 @@
       }
       h5 {
         color: @text-color;
-        font-size: 32px;
-        line-height: 40px;
+        font-size: 30px;
+        line-height: 38px;
         margin: 0;
         padding: 0;
         .responsive('tablet', {
@@ -176,6 +194,11 @@
           line-height: 22px;
           height: 25px;
         });
+      }
+      .carousel-inner {
+        img {
+          max-width: 45%;
+        }
       }
       .carousel-control {
         background: none;

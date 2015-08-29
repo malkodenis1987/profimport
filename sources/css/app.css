@@ -54,6 +54,7 @@ body {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 10px;
   position: relative;
   width: 54.5000%;
 }
@@ -75,6 +76,7 @@ body {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 10px;
   position: relative;
   width: 45.5000%;
 }
@@ -113,6 +115,7 @@ body {
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 10px;
   position: relative;
   width: 50%;
 }
@@ -128,9 +131,6 @@ body {
 }
 .content .col-md-3-5 p:last-child {
   padding-bottom: 5px;
-}
-.scroll-wrapper {
-  overflow: auto;
 }
 @media only screen and (max-width: 479px) {
   .scroll-wrapper {
@@ -149,6 +149,23 @@ body {
   background: #aaaaaa;
   border-radius: 3px;
 }
+/* 0px - 479px */
+/* 480px - 767px */
+/* 768px - 1199px */
+/* 1024px - 1199px */
+/* 1200px - 1365px */
+/* 1366px - 1599px */
+/* 1200px - ~ */
+/* 768px - 1024px */
+/* 768px - 990px */
+/* 768px - 1023px */
+/* 320px - 767px */
+/* 480px - 767px */
+/* 0px - 320px */
+/* 0px - 479px */
+/* 0px - 767px */
+/* 767px - ~ */
+/* 0px - 1023px */
 /* Gradient Mixin */
 .datepicker {
   border: 3px #c5ccce solid;
@@ -170,19 +187,37 @@ body {
   color: #ffffff;
   font-size: 24px;
   line-height: 32px;
-  padding: 25px 10px 10px;
+  padding: 25px 10px 10px 80px;
   position: relative;
-  text-align: center;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .datepicker .head {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .datepicker .head {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
   .datepicker .head {
     background: none;
     background-color: #be392a;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 18px;
+    padding-left: 10px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .datepicker .head {
+    background: none;
+    background-color: #be392a;
+    font-size: 18px;
+    line-height: 22px;
+    padding-left: 10px;
+  }
+}
+@media only screen and (max-width: 479px) {
   .datepicker .head {
     background: none;
     background-color: #be392a;
@@ -193,31 +228,35 @@ body {
 .datepicker .head .dots {
   background: url("../img/calendar-bg.png") center top no-repeat;
   height: 44px;
-  left: 0;
+  left: 20%;
   position: absolute;
   top: -14px;
-  width: 100%;
+  width: 60%;
 }
 .datepicker .body {
   padding: 7px 13px 10px 7px;
 }
-.datepicker .body .fc-toolbar h2 {
+.datepicker .body .fc-toolbar .fc-right h2 {
   color: #be392a;
+  display: inline-block;
   font-size: 24px;
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .datepicker .body .fc-toolbar h2 {
+  .datepicker .body .fc-toolbar .fc-right h2 {
     font-size: 20px;
   }
 }
-.datepicker .body .fc-toolbar .fc-today-button {
+.datepicker .body .fc-toolbar .fc-right .fc-today-button {
   display: none;
 }
-.datepicker .body .fc-toolbar .fc-button-group button {
+.datepicker .body .fc-toolbar .fc-right button {
   background: none;
   box-shadow: none;
   border: none;
   color: #c4c4be;
+}
+.datepicker .body .fc-toolbar .fc-right button:hover {
+  color: #be392a;
 }
 .datepicker .body .fc-view-container {
   background: #ffffff;
@@ -243,8 +282,12 @@ body {
 }
 .datepicker .body .fc-view-container .fc-day-number {
   color: #9b9b96;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
+  padding-bottom: 0;
+}
+.datepicker .body .fc-view-container .fc-day-number.has-event {
+  color: #be392a;
 }
 .datepicker .body .fc-view-container .fc-event {
   background: none;
@@ -252,6 +295,9 @@ body {
   color: #be392a;
   font-size: 9px;
   padding: 5px 0 0;
+}
+.datepicker .body .fc-view-container .fc-content {
+  white-space: normal;
 }
 .btn {
   background: #be392a;
@@ -265,6 +311,7 @@ body {
 }
 .btn:hover {
   color: #ffffff;
+  text-decoration: none;
   opacity: 0.8;
 }
 .btn.big {
@@ -503,7 +550,7 @@ header .search {
 }
 @media only screen and (max-width: 479px) {
   header .search {
-    padding: 10px 0 0;
+    padding: 0;
     width: 100%;
   }
 }
@@ -562,20 +609,20 @@ header .account {
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header .account {
     background: none;
-    padding: 10px 0 0;
+    padding: 10px 0;
     width: 100%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   header .account {
-    padding: 10px 0 0;
+    padding: 10px 0;
     width: 100%;
   }
 }
 @media only screen and (max-width: 479px) {
   header .account {
     background: none;
-    padding: 10px 0 0;
+    padding: 10px 0;
     width: 100%;
   }
 }
@@ -670,19 +717,43 @@ footer {
 .sidebar.left ul li a:hover {
   text-decoration: none;
 }
-@media only screen and (max-width: 479px) {
-  .sidebar.left ul li a {
-    font-size: 14px;
-    line-height: 22px;
-  }
-}
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
   .sidebar.left ul li a {
     font-size: 20px;
     line-height: 24px;
   }
 }
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .sidebar.left ul li a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .sidebar.left ul li a {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .sidebar.left ul li a {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 990px) {
+  .sidebar.left ul li a {
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .sidebar.left ul li a {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media only screen and (max-width: 479px) {
   .sidebar.left ul li a {
     font-size: 14px;
     line-height: 22px;
@@ -816,7 +887,7 @@ footer {
   background: #9b9b96;
   width: 52%;
 }
-.pager {
+.content .pager {
   color: #c4c4be;
   font-size: 18px;
   font-style: italic;
@@ -824,18 +895,18 @@ footer {
   padding: 0;
   text-align: center;
 }
-.pager ul {
+.content .pager ul {
   margin: 0;
   padding: 0;
 }
-.pager ul li {
+.content .pager ul li {
   background: none;
   color: #aaaaaa;
   display: inline-block;
   line-height: 18px;
   padding: 0 3px;
 }
-.pager ul li.current {
+.content .pager ul li.current {
   font-family: 'Sochi2014-Bold';
   font-size: 24px;
   font-weight: bold;
@@ -843,28 +914,28 @@ footer {
   position: relative;
   top: 3px;
 }
-.pager ul li.current a,
-.pager ul li.current span {
+.content .pager ul li.current a,
+.content .pager ul li.current span {
   color: #aaaaaa;
 }
-.pager ul li a {
+.content .pager ul li a {
   color: #c4c4be;
   border: none;
   padding: 0;
   text-decoration: none;
 }
-.pager ul li a:hover {
+.content .pager ul li a:hover {
   background: none;
   color: #aaaaaa;
   text-decoration: none;
 }
-.pager ul li span {
+.content .pager ul li span {
   display: block;
   color: #aaaaaa;
   border: none;
   padding: 0;
 }
-.pager ul li span:hover {
+.content .pager ul li span:hover {
   background: none;
 }
 .widget .head {
@@ -873,6 +944,7 @@ footer {
   color: #ffffff;
   font-size: 22px;
   line-height: 46px;
+  min-height: 46px;
   padding: 0 8px 0 2px;
 }
 @media only screen and (max-width: 479px) {
@@ -892,14 +964,40 @@ footer {
 }
 .widget .head .title {
   display: inline-block;
-  padding: 0 0 0 38px;
+  line-height: 24px;
+  padding: 9px 0 8px 38px;
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .widget .head .title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget .head .title {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget .head .title {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .title {
+    font-size: 18px;
+  }
 }
 @media only screen and (max-width: 479px) {
+  .widget .head .title {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .widget .head .title {
     min-height: 44px;
   }
 }
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 479px) {
   .widget .head .title {
     min-height: 44px;
   }
@@ -976,14 +1074,14 @@ footer {
   .widget .body .btn {
     font-size: 12px;
     height: 23px;
-    width: 50%;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
   .widget .body .btn {
     font-size: 12px;
     height: 23px;
-    width: 55%;
+    width: 60%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1000,6 +1098,7 @@ footer {
   }
 }
 .widget .body .btn:hover {
+  text-decoration: none;
   opacity: 0.8;
 }
 .widget .body .btn:nth-child(2) {
@@ -1032,8 +1131,8 @@ footer {
 }
 .widget.slider .body h4 {
   color: #74706f;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 44px;
+  line-height: 44px;
   margin: 0;
   padding: 0;
 }
@@ -1045,8 +1144,8 @@ footer {
 }
 .widget.slider .body h5 {
   color: #74706f;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 30px;
+  line-height: 38px;
   margin: 0;
   padding: 0;
 }
@@ -1084,6 +1183,9 @@ footer {
     line-height: 22px;
     height: 25px;
   }
+}
+.widget.slider .body .carousel-inner img {
+  max-width: 45%;
 }
 .widget.slider .body .carousel-control {
   background: none;
@@ -1410,7 +1512,6 @@ li.L9 {
 }
 .content {
   /* Книги */
-  /* Социяальный пакет */
 }
 .content h1,
 .content h2,
@@ -1527,6 +1628,12 @@ li.L9 {
 .content a:hover {
   text-decoration: underline;
 }
+.content a.btn {
+  color: #ffffff;
+}
+.content a.btn:hover {
+  text-decoration: none;
+}
 .content ul,
 .content ol,
 .content dl {
@@ -1571,6 +1678,7 @@ li.L9 {
   max-width: 100%;
 }
 .content .docs {
+  cursor: pointer;
   position: relative;
 }
 .content .docs .ico {
@@ -1618,64 +1726,14 @@ li.L9 {
 .content .docs .ico a:hover {
   color: #be392a;
 }
-.content .docs:hover {
+.content .docs.clicked .ico {
   color: #be392a;
 }
-.content .docs:hover a {
+.content .docs.clicked a {
   display: block;
 }
 .content .book .details {
   padding-left: 280px;
-}
-.content .social-item {
-  background: #be392a;
-}
-.content .social-item .pic {
-  float: left;
-  width: 75%;
-}
-.content .social-item .link {
-  color: #ffffff;
-  font-size: 24px;
-  float: left;
-  text-transform: uppercase;
-  text-align: center;
-  width: 25%;
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link {
-    font-size: 14px;
-  }
-}
-.content .social-item .link img {
-  display: block;
-  margin: 2% auto 0;
-  width: 43%;
-}
-@media only screen and (min-width: 1200px) and (max-width: 1365px) {
-  .content .social-item .link img {
-    font-size: 40%;
-  }
-}
-@media only screen and (min-width: 1024px) and (max-width: 1199px) {
-  .content .social-item .link img {
-    font-size: 35%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
-  .content .social-item .link img {
-    font-size: 35%;
-  }
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .content .social-item .link img {
-    font-size: 30%;
-  }
-}
-.content .social-item .link a {
-  color: #ffffff;
-  display: block;
-  padding: 10px 0 0;
 }
 /* Home */
 .boxes {
@@ -1854,6 +1912,9 @@ li.L9 {
   background: -o-linear-gradient(top, #f6f8f9, #c3c8ce);
   margin: 0 -15px;
 }
+.idea-head {
+  margin-left: -15px;
+}
 .idea-details p {
   padding: 5px 0;
 }
@@ -1952,6 +2013,12 @@ li.L9 {
 }
 .idea-column .idea-item .view:hover {
   color: #be392a;
+}
+.idea-column .idea-item .add-comment {
+  display: none;
+}
+.idea-column .idea-item .add-comment.active {
+  display: block;
 }
 .idea-column .idea-item .add-comment .comments-list {
   height: 100px;
@@ -2053,4 +2120,75 @@ li.L9 {
 }
 .col-media .item .play:hover {
   text-decoration: none;
+}
+.social-item {
+  background: #be392a;
+}
+.social-item .pic {
+  float: left;
+  width: 75%;
+}
+@media only screen and (max-width: 479px) {
+  .social-item .pic {
+    width: 100%;
+  }
+}
+.social-item .link {
+  color: #ffffff;
+  font-size: 24px;
+  float: left;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .social-item .link {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .social-item .link {
+    width: 100%;
+  }
+}
+.social-item .link img {
+  display: block;
+  margin: 2% auto 0;
+  width: 43%;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .social-item .link img {
+    width: 41%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .social-item .link img {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .social-item .link img {
+    width: 35%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .social-item .link img {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .social-item .link img {
+    width: 30%;
+  }
+}
+.social-item .link a {
+  color: #ffffff;
+  display: block;
+  padding: 10px 0 0;
+}
+.pd-details {
+  display: none;
+}
+.pd-details.active {
+  display: block;
 }

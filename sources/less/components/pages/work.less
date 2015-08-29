@@ -1,0 +1,55 @@
+.social-item {
+  background: @red;
+  .pic {
+    float: left;
+    width: 75%;
+    .responsive('small', {
+      width: 100%;
+    });
+  }
+  .link {
+    color: @white;
+    font-size: 24px;
+    float: left;
+    text-transform: uppercase;
+    text-align: center;
+    width: 25%;
+    .responsive('tablet', {
+      font-size: 14px;
+    });
+    .responsive('small', {
+      width: 100%;
+    });
+    img {
+      display: block;
+      margin: 2% auto 0;
+      width: 43%;
+      .responsive('xxlarge', {
+        width: 41%;
+      });
+      .responsive('xlarge', {
+        width: 35%;
+      });
+      .responsive('large', {
+        width: 35%;
+      });
+      .responsive('tablet', {
+        width: 30%;
+      });
+      .responsive('small', {
+        width: 30%;
+      });
+    }
+    a {
+      color: @white;
+      display: block;
+      padding: 10px 0 0;
+    }
+  }
+}
+.pd-details {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
