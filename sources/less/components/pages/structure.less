@@ -1,4 +1,247 @@
 .structure {
+  position: relative;
+  min-height: 1155px;
+  margin-top: -27px;
+  width: 1440px;
+  .search {
+    background: url("../img/search.png") left bottom no-repeat;
+    border-bottom: 1px #9b9b96 solid;
+    float: left;
+    padding: 27px 0 0;
+    width: 175px;
+    .responsive('xxlarge', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('xlarge', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('tablet', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('tab', {
+      padding: 10px 0 0;
+      width: 100%;
+    });
+    .responsive('small', {
+      padding: 0;
+      width: 100%;
+    });
+    button {
+      background: none;
+      border: 0;
+      float: left;
+      width: 17%;
+    }
+    input {
+      background: none;
+      border: none;
+      color: @grey_menu;
+      font-size: 18px;
+      float: left;
+      height: 26px;
+      width: 83%;
+      &::-webkit-input-placeholder {
+        font-style: italic;
+      }
+      &:-moz-placeholder {
+        font-style: italic;
+      }
+      &::-moz-placeholder {
+        font-style: italic;
+      }
+      &:-ms-input-placeholder {
+        font-style: italic;
+      }
+      .responsive('xxxlarge', {
+        font-size: 14px;
+      });
+    }
+  }
+  .group {
+    position: absolute;
+    width: 230px;
+    h5 {
+      color: @text-color;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 18px;
+      margin: 0;
+      padding: 0;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    &#general {
+      left: 519px;
+      top: 27px;
+      .line {
+        &.horizontal {
+          &.right {
+            top: 11px;
+            width: 565px;
+          }
+          &.left {
+            left: -126px;
+            top: 39px;
+            width: 130px;
+          }
+        }
+      }
+    }
+    &#commerce {
+      left: 278px;
+      top: 67px;
+      .line {
+        &.horizontal {
+          &.right {
+            top: 42px;
+            width: 257px;
+            &.one {
+              left: 484px;
+              top: 142px;
+              width: 225px;
+            }
+            &.two {
+              left: 709px;
+              top: 212px;
+              width: 327px;
+            }
+          }
+          &.left {
+            left: -163px;
+            top: 41px;
+            width: 166px;
+          }
+        }
+        &.vertical {
+          &.one {
+            height: 100px;
+            left: 484px;
+            top: 43px;
+          }
+          &.two {
+            height: 71px;
+            left: 709px;
+            top: 142px;
+          }
+        }
+      }
+    }
+    &#office {
+      left: 786px;
+      top: 38px;
+      width: 196px;
+      .line {
+        &.vertical {
+          left: 207px;
+          height: 51px;
+        }
+      }
+    }
+    &#it {
+      left: 1001px;
+      top: 38px;
+      width: 196px;
+      .line {
+        &.vertical {
+          left: 207px;
+          height: 51px;
+        }
+      }
+    }
+    &#hr {
+      left: 1215px;
+      top: 38px;
+      width: 196px;
+      .line {
+        &.vertical {
+          left: 207px;
+          height: 128px;
+        }
+      }
+    }
+    &#import-logistic {
+      left: 0;
+      top: 109px;
+    }
+    &#transport {
+      left: 0;
+      top: 995px;
+    }
+    &#didonato {
+      left: 247px;
+      top: 140px;
+      width: 224px;
+      .line {
+        &.vertical {
+          left: 235px;
+          height: 495px;
+        }
+      }
+    }
+    &#sklad {
+      left: 247px;
+      top: 755px;
+      width: 224px;
+      .line {
+        &.vertical {
+          left: 235px;
+          height: 301px;
+          top: 41px;
+        }
+      }
+    }
+    &#svet {
+      left: 487px;
+      top: 110px;
+      .line {
+        &.vertical {
+          left: 241px;
+          height: 939px;
+        }
+      }
+    }
+    &#oboi {
+      left: 735px;
+      top: 209px;
+      .line {
+        &.vertical {
+          left: 241px;
+          height: 794px;
+        }
+      }
+    }
+    &#mebel {
+      left: 980px;
+      top: 280px;
+      width: 224px;
+      .line {
+        &.vertical {
+          left: 235px;
+          height: 658px;
+        }
+      }
+    }
+    &#finance {
+      left: 1220px;
+      top: 280px;
+      width: 186px;
+      .line {
+        &.vertical {
+          left: 197px;
+          height: 312px;
+          top: 259px;
+          &.additional {
+            height: 573px;
+            left: 201px;
+            top: 116px;
+          }
+        }
+      }
+    }
+  }
   .node {
     background-color: @white;
     border: 1px @calendar-border solid;
@@ -6,13 +249,15 @@
     color: @text-color;
     font-size: 18px;
     display: inline-block;
-    width: 260px;
-    height: 60px;
+    height: auto;
     line-height: 18px;
-    z-index: 10;
-    margin: 0 2px;
+    margin: 0 0 2px;
+    padding: 5px 0;
+    position: relative;
     text-align: center;
     text-decoration: none;
+    width: 100%;
+    z-index: 10;
     &:hover {
       background: @calendar-grey;
       text-decoration: none;
@@ -30,10 +275,67 @@
       font-weight: bold;
       text-decoration: none;
       strong {
-        display: block;
         text-transform: uppercase;
         text-decoration: none;
       }
+    }
+    .empty {
+      color: #b9cfd6;
+      text-transform: uppercase;
+    }
+  }
+  .arrow {
+    &.down {
+      background: url("../img/structure-arrow-down.gif") center bottom no-repeat;
+      height: 16px;
+      display: block;
+      margin: 6px 0 -22px;
+      &.big {
+        height: 25px;
+        margin: 11px 0 -37px;
+      }
+      &.head {
+        height: 25px;
+        margin: 0;
+      }
+    }
+    &.left {
+      background: url("../img/structure-arrow-left.gif") center bottom no-repeat;
+      height: 11px;
+      margin-top: -6px;
+      position: absolute;
+      right: -12px;
+      top: 50%;
+      width: 11px;
+      &.big {
+        background: url("../img/structure-arrow-left-big.gif") center bottom no-repeat;
+        right: -16px;
+        width: 15px;
+      }
+      &.no {
+        background: url("../img/arrow-left-no.gif") center bottom no-repeat;
+        &.indent {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .line {
+    &.vertical {
+      background: @calendar-border;
+      height: 772px;
+      left: 241px;
+      position: absolute;
+      top: 66px;
+      width: 1px;
+    }
+    &.horizontal {
+      background: @calendar-border;
+      height: 1px;
+      left: 228px;
+      position: absolute;
+      top: 19px;
+      width: 131px;
     }
   }
 }

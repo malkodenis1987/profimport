@@ -91,11 +91,807 @@
                     <!-- Main -->
                     <div class="main" id="main">
                         <div class="structure">
-                            <div class="node">
-                                <a href="javascript:;" data-toggle="modal" data-target="#card">
-                                    <span class="vacation">Коммерческий директор</span>
-                                    <span class="name"><strong>Иванов</strong> Иван Иванович</span>
-                                </a>
+                            <!-- Поиск -->
+                            <div class="search">
+                                <form action="#">
+                                    <div class="form-row clearfix">
+                                        <button type="submit">&nbsp;</button>
+                                        <input type="text" id="search" name="search" placeholder="найти на сайте..."/>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Группа Генеральный директор -->
+                            <div class="group" id="general">
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Генеральный директор</span>
+                                        <span class="name"><strong>Лобазов</strong> Владимир</span>
+                                    </a>
+                                </div>
+                                <span class="line horizontal right">&nbsp;</span>
+                                <span class="line horizontal left">&nbsp;</span>
+                            </div>
+                            <!-- Группа Комерческий директор -->
+                            <div class="group" id="commerce">
+                                <span class="arrow down head">&nbsp;</span>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Комерческий директор</span>
+                                        <span class="name"><strong>Половнев</strong> Евгений</span>
+                                    </a>
+                                </div>
+                                <span class="line horizontal right">&nbsp;</span>
+                                <span class="line horizontal right one">&nbsp;</span>
+                                <span class="line horizontal right two">&nbsp;</span>
+                                <span class="line horizontal left">&nbsp;</span>
+                                <span class="line vertical one">&nbsp;</span>
+                                <span class="line vertical two">&nbsp;</span>
+                            </div>
+                            <!-- Группа Офис -->
+                            <div class="group" id="office">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>Офис</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Помощник руководителя</span>
+                                        <span class="name"><strong>Кононова</strong> Марина</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Офис-менеджер</span>
+                                        <span class="name"><strong>Пахунова</strong> Анна</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа IT отдел -->
+                            <div class="group" id="it">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>IT отдел</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">IT директор</span>
+                                        <span class="name"><strong>Борисюк</strong> Виталий</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Администратор</span>
+                                        <span class="name"><strong>Федоров</strong> Михаил</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа HR отдел -->
+                            <div class="group" id="hr">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>HR отдел</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель отдела</span>
+                                        <span class="name"><strong>Кочума</strong> Юлия</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по обороту и адаптации персонала</span>
+                                        <span class="name"><strong>Шульга</strong> Ольга</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по внутрикор-м коммуникациям</span>
+                                        <span class="name"><strong>Сорокотяга</strong> Дарья</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Импорт и логистика -->
+                            <div class="group" id="import-logistic">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>Импорт и логистика</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель отдела</span>
+                                        <span class="name"><strong>Кияшко</strong> Владимир</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам СВЕТ</span>
+                                        <span class="name"><strong>Тарселли</strong> Викторио</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам СВЕТ</span>
+                                        <span class="name"><strong>Колесников</strong> Владимир</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам МЕБЕЛЬ</span>
+                                        <span class="name"><strong>Вашкулат</strong> Виктория</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам МЕБЕЛЬ</span>
+                                        <span class="name"><strong>Терещук</strong> Агата</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам ДЕКОР</span>
+                                        <span class="name"><strong>Щерба</strong> Татьяна</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам ДЕКОР</span>
+                                        <span class="name"><strong>Добриогло</strong> Ольга</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам новые фабрики</span>
+                                        <span class="name"><strong>Билецкая</strong> Виктория</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по поставкам новые фабрики</span>
+                                        <span class="name"><strong>Левша</strong> Михаил</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по логистике ЕВРОПА</span>
+                                        <span class="name"><strong>Цвицинская</strong> Янина</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                    <span class="line horizontal">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по логистике ЕВРОПА</span>
+                                        <span class="name"><strong>Тризна</strong> Андрей</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по логистике УКРАИНА</span>
+                                        <span class="name"><strong>Самойленко</strong> Римма</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по логистике УКРАИНА</span>
+                                        <span class="name"><strong>Мамицкая</strong> Ольга</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Транспорт -->
+                            <div class="group" id="transport">
+                                <h5>Транспорт</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Водитель</span>
+                                        <span class="name"><strong>Перейма</strong> Николай</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Водитель</span>
+                                        <span class="name"><strong>Гаевой</strong> Руслан</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Водитель</span>
+                                        <span class="name"><strong>Гаевой</strong> Михаил</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- Группа DiDonato -->
+                            <div class="group" id="didonato">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>DiDonato</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель направления</span>
+                                        <span class="name"><strong>Кущаев</strong> Денис</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам регионального развития КИЕВ</span>
+                                        <span class="name"><strong>Грибков</strong> Андрей</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам регионального развития ВОСТОК</span>
+                                        <span class="name"><span class="empty">ВАКАНСИЯ</span></span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам регионального развития ЗАПАД</span>
+                                        <span class="name"><span class="empty">ВАКАНСИЯ</span></span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам регионального развития ЮГ</span>
+                                        <span class="name"><strong>Кравцова</strong> Екатерина</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам с клиентами</span>
+                                        <span class="name"><strong>Стадниченко</strong> Юлия</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Помощник технолога</span>
+                                        <span class="name"><strong>Осьмак</strong> Александр</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Помощник технолога</span>
+                                        <span class="name"><strong>Башкина</strong> Татьяна</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                    <span class="arrow down big">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Склад -->
+                            <div class="group" id="sklad">
+                                <h5>Склад</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Зав. складом</span>
+                                        <span class="name"><strong>Коркин</strong> Валерий</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Товаровед</span>
+                                        <span class="name"><strong>Шевчук</strong> Николай</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Товаровед</span>
+                                        <span class="name"><strong>Назаренко</strong> Дмитрий</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Товаровед</span>
+                                        <span class="name"><strong>Ульянов</strong> Виталий</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Товаровед</span>
+                                        <span class="name"><strong>Машовец</strong> Алексей</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Товаровед</span>
+                                        <span class="name"><strong>Кривицкий</strong> Дмитрий</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Товаровед</span>
+                                        <span class="name"><strong>Березанский</strong> Игорь</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Свет -->
+                            <div class="group" id="svet">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>Свет</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель направления</span>
+                                        <span class="name"><strong>Сковородников</strong> Егор</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития КИЕВ</span>
+                                        <span class="name"><strong>Адаев</strong> Алексей</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Булава</strong> Татьяна</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Кисель</strong> Александра</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Федорова</strong> Дарья</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ВОСТОК</span>
+                                        <span class="name"><strong>Горячкин</strong> Андрей</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Кальницкая</strong> Виктория</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Лысак</strong> Елена</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Бренд-менеджер электроинст-ии</span>
+                                        <span class="name"><strong>Сидоренко</strong> Дмитрий</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам регион. развития ЗАПАД</span>
+                                        <span class="name"><strong>Сичкарь</strong> Татьяна</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Мырка</strong> Дарья</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по вопросам регион. развития ЮГ</span>
+                                        <span class="name"><strong>Лабуш</strong> Дмитрий</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Шевченко</strong> Елена</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Инженер</span>
+                                        <span class="name"><strong>Литвиненко</strong> Михаил</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Обои -->
+                            <div class="group" id="oboi">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>Обои-Ткани</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель направления</span>
+                                        <span class="name"><strong>Мартыненко</strong> Виктория</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития КИЕВ</span>
+                                        <span class="name"><strong>Раткина</strong> Мария</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития КИЕВ</span>
+                                        <span class="name"><strong>Кубащенко</strong> Анастасия</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Киричок</strong> Юлия</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ВОСТОК</span>
+                                        <span class="name"><strong>Близнюк</strong> Александр</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Немченко</strong> Елена</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ЗАПАД</span>
+                                        <span class="name"><strong>Костюк</strong> Максим</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Сабара</strong> Юстина</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ЮГ</span>
+                                        <span class="name"><strong>Миргородская</strong> Екатерина</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Гасанова</strong> Татьяна</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Контент-менеджер</span>
+                                        <span class="name"><strong>Гринь</strong> Алена</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по продажам ВОСТОК</span>
+                                        <span class="name"><strong>Черноусенко</strong> Татьяна</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Мебель -->
+                            <div class="group" id="mebel">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>Мебель</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель направления</span>
+                                        <span class="name"><strong>Савченко</strong> Александр</span>
+                                    </a>
+                                    <span class="arrow left no">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития КИЕВ</span>
+                                        <span class="name"><strong>Тесленко</strong> Алексей</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития КИЕВ</span>
+                                        <span class="name"><span class="empty">ВАКАНСИЯ</span></span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Качмар</strong> Алена</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Бацкевич</strong> Ирина</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ВОСТОК</span>
+                                        <span class="name"><strong>Тикан</strong> Константин</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Чернышенко</strong> Виктория</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ЗАПАД</span>
+                                        <span class="name"><strong>Строгуш</strong> Петр</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Лесык</strong> Наталья</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по  вопросам регион. развития ЮГ</span>
+                                        <span class="name"><strong>Андриенко</strong> Юрий</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Менеджер по работе с клиентами</span>
+                                        <span class="name"><strong>Каланджова</strong> Алена</span>
+                                    </a>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                            </div>
+                            <!-- Группа Финансовый отдел -->
+                            <div class="group" id="finance">
+                                <span class="arrow down head">&nbsp;</span>
+                                <h5>Финансовый отдел</h5>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Финансовый директор</span>
+                                        <span class="name"><strong>Лабазов</strong> Михаил</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Главный бухгалтер</span>
+                                        <span class="name"><strong>Бобро</strong> Лариса</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left big">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Помощник бухгалтер</span>
+                                        <span class="name"><strong>Рудийко</strong> Татьяна</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Руководитель группы учета</span>
+                                        <span class="name"><strong>Ефремова</strong> Ирина</span>
+                                    </a>
+                                    <span class="arrow left big">&nbsp;</span>
+                                    <span class="arrow left no indent">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Учетчик Киев</span>
+                                        <span class="name"><strong>Неверицкая</strong> Татьяна</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Касир КИЕВ</span>
+                                        <span class="name"><strong>Стороженко</strong> Татьяна</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Учетчик ХАРЬКОВ</span>
+                                        <span class="name"><strong>Костенко</strong> Елена</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Учетчик ОДЕССА</span>
+                                        <span class="name"><strong>Деревянко</strong> Елена</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Учетчик ЛЬВОВ</span>
+                                        <span class="name"><strong>Герасимив</strong> Елена</span>
+                                    </a>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Учетчик склад</span>
+                                        <span class="name"><strong>Чиркина</strong> Татьяна</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Учетчик склад</span>
+                                        <span class="name"><strong>Чиркина</strong> Татьяна</span>
+                                    </a>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Программист 1С</span>
+                                        <span class="name"><strong>Рублевская</strong> Валерия</span>
+                                    </a>
+                                    <span class="arrow down">&nbsp;</span>
+                                    <span class="arrow left big">&nbsp;</span>
+                                </div>
+                                <!-- Node -->
+                                <div class="node">
+                                    <a href="javascript:;" data-toggle="modal" data-target="#card">
+                                        <span class="vacation">Помощник программиста 1С</span>
+                                        <span class="name"><strong>Жураковский</strong> Виталий</span>
+                                    </a>
+                                </div>
+                                <span class="line vertical">&nbsp;</span>
+                                <span class="line vertical additional">&nbsp;</span>
                             </div>
                         </div>
                     </div>
