@@ -19,8 +19,16 @@ $(function() {
     }*/
     addComment.jScrollPane();
 
+    ideaHead();
+
+    $(window).on('resize', function(){
+        ideaHead();
+    });
+});
+
+function ideaHead() {
     var ideaHead = $('.idea-head');
     if (ideaHead.length) {
         ideaHead.css('min-height', ideaHead.parents('.row').height());
     }
-});
+}

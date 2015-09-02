@@ -378,16 +378,16 @@ input[type="radio"]:disabled + label::before {
   background-position: -144px -279px;
 }
 header {
-  height: 140px;
+  height: 120px;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   header {
-    height: 130px;
+    height: 140px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header {
-    height: 115px;
+    height: 105px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
@@ -409,7 +409,7 @@ header .main-menu {
   font-family: 'Sochi2014-Medium';
   float: left;
   margin: 0;
-  padding: 35px 0 10px;
+  padding: 30px 0 10px;
   width: 100%;
 }
 header .main-menu li {
@@ -442,7 +442,27 @@ header .main-menu li.home a {
   padding-top: 0;
 }
 header .main-menu li.home img {
-  max-width: 100%;
+  max-width: 62%;
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  header .main-menu li.home img {
+    max-width: 74%;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  header .main-menu li.home img {
+    max-width: 83%;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  header .main-menu li.home img {
+    max-width: 90%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .main-menu li.home img {
+    max-width: 100%;
+  }
 }
 header .main-menu li.about {
   background: url("../img/menu-about.png") center top no-repeat;
@@ -482,8 +502,8 @@ header .main-menu li.bank.active {
 header .main-menu li a {
   color: #74706f;
   display: block;
-  font-size: 22px;
-  padding: 60px 0 0;
+  font-size: 18px;
+  padding: 50px 0 0;
   text-transform: uppercase;
 }
 header .main-menu li a:hover {
@@ -521,7 +541,7 @@ header .search {
   background: url("../img/search.png") left bottom no-repeat;
   border-bottom: 1px #9b9b96 solid;
   float: left;
-  padding: 92px 0 0;
+  padding: 72px 0 0;
   width: 40%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -587,9 +607,9 @@ header .search input:-ms-input-placeholder {
   }
 }
 header .account {
-  background: url("../img/flag.png") 10% 50px no-repeat;
+  background: url("../img/flag.png") 10% 32px no-repeat;
   float: left;
-  padding: 55px 0 0 22%;
+  padding: 35px 0 0 22%;
   width: 60%;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -1060,7 +1080,7 @@ footer {
   .widget .body .btn {
     font-size: 14px;
     height: 23px;
-    width: 50%;
+    width: 40%;
   }
 }
 @media only screen and (min-width: 1200px) and (max-width: 1365px) {
@@ -1074,7 +1094,7 @@ footer {
   .widget .body .btn {
     font-size: 12px;
     height: 23px;
-    width: 60%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1088,7 +1108,7 @@ footer {
   .widget .body .btn {
     font-size: 11px;
     height: 23px;
-    width: 60%;
+    width: 40%;
   }
 }
 @media only screen and (max-width: 479px) {
@@ -1103,6 +1123,9 @@ footer {
 }
 .widget .body .btn:nth-child(2) {
   bottom: 45px;
+}
+.widget .body .btn.single {
+  bottom: 7px;
 }
 .widget.slider {
   border: 3px #c5ccce solid;
@@ -1136,6 +1159,30 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .widget.slider .body h4 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget.slider .body h4 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget.slider .body h4 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .widget.slider .body h4 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .widget.slider .body h4 {
     font-size: 20px;
@@ -1149,6 +1196,30 @@ footer {
   margin: 0;
   padding: 0;
 }
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .widget.slider .body h5 {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget.slider .body h5 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget.slider .body h5 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .widget.slider .body h5 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .widget.slider .body h5 {
     font-size: 14px;
@@ -1161,6 +1232,30 @@ footer {
   line-height: 28px;
   margin: 0;
   padding: 0;
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .widget.slider .body p {
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget.slider .body p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget.slider .body p {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .widget.slider .body p {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .widget.slider .body p {
@@ -1773,9 +1868,27 @@ li.L9 {
   height: 60px;
   padding: 0 0 5px;
 }
-@media only screen and (max-width: 479px) {
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
   .boxes .box .title h4 {
-    font-size: 16px;
+    font-size: 22px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .boxes .box .title h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .boxes .box .title h4 {
+    font-size: 18px;
+    line-height: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .boxes .box .title h4 {
+    font-size: 18px;
     line-height: 20px;
   }
 }
@@ -1783,6 +1896,12 @@ li.L9 {
   .boxes .box .title h4 {
     font-size: 17px;
     line-height: 22px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .boxes .box .title h4 {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 .boxes .box .title h4 a {
@@ -1795,6 +1914,36 @@ li.L9 {
   color: #ffffff;
   margin: 0;
   padding: 0 0 5px;
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .boxes .box .title p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .boxes .box .title p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .boxes .box .title p {
+    font-size: 13px;
+    line-height: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .boxes .box .title p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .boxes .box .title p {
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .boxes .box .title p a {
   color: #ffffff;
@@ -2123,6 +2272,7 @@ li.L9 {
 }
 .social-item {
   background: #be392a;
+  border-radius: 0 6px 6px 0;
 }
 .social-item .pic {
   float: left;
@@ -2134,6 +2284,7 @@ li.L9 {
   }
 }
 .social-item .link {
+  border-radius: 0 6px 6px 0;
   color: #ffffff;
   font-size: 24px;
   float: left;
@@ -2191,4 +2342,39 @@ li.L9 {
 }
 .pd-details.active {
   display: block;
+}
+.structure .node {
+  background-color: #ffffff;
+  border: 1px #9b9b96 solid;
+  border-radius: 5px;
+  color: #74706f;
+  font-size: 18px;
+  display: inline-block;
+  width: 260px;
+  height: 60px;
+  line-height: 18px;
+  z-index: 10;
+  margin: 0 2px;
+  text-align: center;
+  text-decoration: none;
+}
+.structure .node:hover {
+  background: #c5ccce;
+  text-decoration: none;
+}
+.structure .node a:hover {
+  text-decoration: none;
+}
+.structure .node .vacation {
+  display: block;
+}
+.structure .node .name {
+  color: #74706f;
+  font-weight: bold;
+  text-decoration: none;
+}
+.structure .node .name strong {
+  display: block;
+  text-transform: uppercase;
+  text-decoration: none;
 }

@@ -1,0 +1,39 @@
+.structure {
+  .node {
+    background-color: @white;
+    border: 1px @calendar-border solid;
+    border-radius: 5px;
+    color: @text-color;
+    font-size: 18px;
+    display: inline-block;
+    width: 260px;
+    height: 60px;
+    line-height: 18px;
+    z-index: 10;
+    margin: 0 2px;
+    text-align: center;
+    text-decoration: none;
+    &:hover {
+      background: @calendar-grey;
+      text-decoration: none;
+    }
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+    .vacation {
+      display: block;
+    }
+    .name {
+      color: @text-color;
+      font-weight: bold;
+      text-decoration: none;
+      strong {
+        display: block;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+  }
+}

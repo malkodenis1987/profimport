@@ -1,10 +1,10 @@
 header {
-  height: 140px;
+  height: 120px;
   .responsive('xlarge', {
-    height: 130px;
+    height: 140px;
   });
   .responsive('tablet', {
-    height: 115px;
+    height: 105px;
   });
   .responsive('tab', {
     height: auto;
@@ -19,7 +19,7 @@ header {
     font-family: 'Sochi2014-Medium';
     float: left;
     margin: 0;
-    padding: 35px 0 10px;
+    padding: 30px 0 10px;
     width: 100%;
     li {
       float: left;
@@ -47,7 +47,19 @@ header {
           padding-top: 0;
         }
         img {
-          max-width: 100%;
+          max-width: 62%;
+          .responsive('xxxlarge', {
+            max-width: 74%;
+          });
+          .responsive('xxlarge', {
+            max-width: 83%;
+          });
+          .responsive('xlarge', {
+            max-width: 90%;
+          });
+          .responsive('tablet', {
+            max-width: 100%;
+          });
         }
       }
       &.about {
@@ -83,8 +95,8 @@ header {
       a {
         color: @grey_menu;
         display: block;
-        font-size: 22px;
-        padding: 60px 0 0;
+        font-size: 18px;
+        padding: 50px 0 0;
         text-transform: uppercase;
         &:hover {
           color: @red;
@@ -114,7 +126,7 @@ header {
     background: url("../img/search.png") left bottom no-repeat;
     border-bottom: 1px #9b9b96 solid;
     float: left;
-    padding: 92px 0 0;
+    padding: 72px 0 0;
     width: 40%;
     .responsive('xxlarge', {
       padding: 10px 0 0;
@@ -168,9 +180,9 @@ header {
     }
   }
   .account {
-    background: url("../img/flag.png") 10% 50px no-repeat;
+    background: url("../img/flag.png") 10% 32px no-repeat;
     float: left;
-    padding: 55px 0 0 22%;
+    padding: 35px 0 0 22%;
     width: 60%;
     .responsive('xxlarge', {
       background: none;
