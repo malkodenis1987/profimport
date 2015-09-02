@@ -379,6 +379,8 @@ input[type="radio"]:disabled + label::before {
 }
 header {
   height: 120px;
+  position: relative;
+  z-index: 5;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   header {
@@ -416,6 +418,7 @@ header .main-menu li {
   float: left;
   list-style: none;
   text-align: center;
+  position: relative;
   width: 16.9%;
 }
 @media only screen and (max-width: 479px) {
@@ -499,6 +502,12 @@ header .main-menu li.bank:hover,
 header .main-menu li.bank.active {
   background-position: center -154px;
 }
+header .main-menu li:hover a {
+  color: #be392a;
+}
+header .main-menu li:hover ul li a {
+  color: #74706f;
+}
 header .main-menu li a {
   color: #74706f;
   display: block;
@@ -536,6 +545,35 @@ header .main-menu li a:hover {
     font-size: 12px;
     padding: 52px 0 0;
   }
+}
+header .main-menu li:hover ul {
+  display: block;
+}
+header .main-menu li ul {
+  background: #f8f8f8;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  display: none;
+  padding: 0 10px;
+  position: absolute;
+  width: 375px;
+}
+header .main-menu li ul li {
+  border-bottom: 1px #e8e8e5 solid;
+  float: none;
+  text-align: left;
+  width: 100%;
+}
+header .main-menu li ul li a {
+  background: none;
+  color: #74706f;
+  font-size: 18px;
+  line-height: 42px;
+  padding: 0;
+  text-transform: uppercase;
+}
+header .main-menu li ul li a:hover {
+  color: #be392a;
 }
 header .search {
   background: url("../img/search.png") left bottom no-repeat;

@@ -1,5 +1,7 @@
 header {
   height: 120px;
+  position: relative;
+  z-index: 5;
   .responsive('xlarge', {
     height: 140px;
   });
@@ -25,6 +27,7 @@ header {
       float: left;
       list-style: none;
       text-align: center;
+      position: relative;
       width: 16.9%;
       .responsive('small', {
         float: none;
@@ -92,6 +95,18 @@ header {
           background-position: center -154px;
         }
       }
+      &:hover {
+        a {
+          color: @red;
+        }
+        ul {
+          li {
+            a {
+              color: @text-color;
+            }
+          }
+        }
+      }
       a {
         color: @grey_menu;
         display: block;
@@ -119,6 +134,37 @@ header {
           font-size: 12px;
           padding: 52px 0 0;
         });
+      }
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+      ul {
+        background: #f8f8f8;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: none;
+        padding: 0 10px;
+        position: absolute;
+        width: 375px;
+        li {
+          border-bottom: 1px #e8e8e5 solid;
+          float: none;
+          text-align: left;
+          width: 100%;
+          a {
+            background: none;
+            color: @text-color;
+            font-size: 18px;
+            line-height: 42px;
+            padding: 0;
+            text-transform: uppercase;
+            &:hover {
+              color: @red;
+            }
+          }
+        }
       }
     }
   }
