@@ -58,6 +58,9 @@
       min-width: 100%;
       padding: 10px;
       width: 100%;
+      .responsive('tablet', {
+        font-size: 14px;
+      });
     }
     .author {
       float: right;
@@ -133,6 +136,9 @@
         .author {
           float: right;
           width: 20%;
+          .responsive('tablet', {
+            width: 30%;
+          });
         }
         .button-row {
           float: left;
@@ -145,6 +151,10 @@
         textarea {
           float: left;
           width: 80%;
+          .responsive('tablet', {
+            width: 70%;
+            font-size: 14px;
+          });
         }
       }
     }

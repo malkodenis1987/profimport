@@ -697,7 +697,8 @@ header .account p.title {
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   header .account p.title {
-    padding-bottom: 15px;
+    font-size: 20px;
+    padding-bottom: 10px;
   }
 }
 header .account p.dater {
@@ -707,6 +708,11 @@ header .account p.dater {
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
   header .account p.dater {
     font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  header .account p.dater {
+    font-size: 20px;
   }
 }
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
@@ -2144,6 +2150,11 @@ li.L9 {
   padding: 10px;
   width: 100%;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .idea-column:last-child textarea {
+    font-size: 14px;
+  }
+}
 .idea-column:last-child .author {
   float: right;
 }
@@ -2214,6 +2225,11 @@ li.L9 {
   float: right;
   width: 20%;
 }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .idea-column .idea-item .add-comment .add-comment .author {
+    width: 30%;
+  }
+}
 .idea-column .idea-item .add-comment .add-comment .button-row {
   float: left;
   width: 100%;
@@ -2225,6 +2241,12 @@ li.L9 {
 .idea-column .idea-item .add-comment .add-comment textarea {
   float: left;
   width: 80%;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .idea-column .idea-item .add-comment .add-comment textarea {
+    width: 70%;
+    font-size: 14px;
+  }
 }
 .media-head {
   background: #be392a;
