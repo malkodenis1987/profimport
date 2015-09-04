@@ -1329,6 +1329,12 @@ footer {
 .widget.slider .body .carousel-control {
   background: none;
 }
+.widget.slider .body .carousel-control.left {
+  left: -12px;
+}
+.widget.slider .body .carousel-control.right {
+  right: -12px;
+}
 .widget.slider .body .glyphicon {
   color: #74706f;
 }
@@ -1858,9 +1864,49 @@ li.L9 {
   background: url("../img/download.png") left center no-repeat;
   left: 26px;
 }
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .content .docs .ico a.download {
+    left: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .content .docs .ico a.download {
+    left: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .content .docs .ico a.download {
+    left: 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .docs .ico a.download {
+    left: 10px;
+  }
+}
 .content .docs .ico a.print {
   background: url("../img/print.png") left center no-repeat;
   left: 115px;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .content .docs .ico a.print {
+    left: 82px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .content .docs .ico a.print {
+    left: 82px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .content .docs .ico a.print {
+    left: 82px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .docs .ico a.print {
+    left: 82px;
+  }
 }
 .content .docs .ico a:hover {
   color: #be392a;
@@ -1870,6 +1916,26 @@ li.L9 {
 }
 .content .docs.clicked a {
   display: block;
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .content .docs.clicked a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .content .docs.clicked a {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .content .docs.clicked a {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .content .docs.clicked a {
+    font-size: 12px;
+  }
 }
 .content .book .details {
   padding-left: 280px;
@@ -1900,6 +1966,16 @@ li.L9 {
   color: #ffffff;
   border-radius: 0 0 5px 5px;
   padding: 5px 10px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .boxes .box .title {
+    margin-bottom: 10px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .boxes .box .title {
+    margin-bottom: 10px;
+  }
 }
 .boxes .box .title.dark {
   background: #961a20;
@@ -1999,9 +2075,26 @@ li.L9 {
 .boxes.long .box {
   width: 25%;
 }
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .boxes.long .box {
+    width: 100%;
+  }
+}
 @media only screen and (max-width: 479px) {
   .boxes.long .box {
     width: 100%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .boxes.long .box .title h4 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  .boxes.long .box .title h4 {
+    font-size: 14px;
+    line-height: 16px;
   }
 }
 .boxes.full-width .box {
