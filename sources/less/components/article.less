@@ -172,10 +172,34 @@
         &.download {
           background: url("../img/download.png") left center no-repeat;
           left: 26px;
+          .responsive('xxlarge', {
+            left: 10px;
+          });
+          .responsive('xlarge', {
+            left: 10px;
+          });
+          .responsive('large', {
+            left: 10px;
+          });
+          .responsive('tablet', {
+            left: 10px;
+          });
         }
         &.print {
           background: url("../img/print.png") left center no-repeat;
           left: 115px;
+          .responsive('xxlarge', {
+            left: 82px;
+          });
+          .responsive('xlarge', {
+            left: 82px;
+          });
+          .responsive('large', {
+            left: 82px;
+          });
+          .responsive('tablet', {
+            left: 82px;
+          });
         }
         &:hover {
           color: @red;
@@ -188,6 +212,18 @@
       }
       a {
         display: block;
+        .responsive('xxlarge', {
+          font-size: 14px;
+        });
+        .responsive('xlarge', {
+          font-size: 14px;
+        });
+        .responsive('large', {
+          font-size: 12px;
+        });
+        .responsive('tablet', {
+          font-size: 12px;
+        });
       }
     }
   }

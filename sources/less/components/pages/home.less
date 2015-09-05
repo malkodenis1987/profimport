@@ -20,6 +20,12 @@
       color: @white;
       border-radius: 0 0 5px 5px;
       padding: 5px 10px;
+      .responsive('tablet', {
+        margin-bottom: 10px;
+      });
+      .responsive('small', {
+        margin-bottom: 10px;
+      });
       &.dark {
         background: @red_dark;
       }
@@ -98,9 +104,24 @@
   &.long {
     .box {
       width: 25%;
+      .responsive('medium', {
+        width: 100%;
+      });
       .responsive('small', {
         width: 100%;
       });
+      .title {
+        h4 {
+          .responsive('tablet', {
+            font-size: 14px;
+            line-height: 16px;
+          });
+          .responsive('medium', {
+            font-size: 14px;
+            line-height: 16px;
+          });
+        }
+      }
     }
   }
   &.full-width {
