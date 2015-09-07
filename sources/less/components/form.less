@@ -15,23 +15,34 @@
     padding: 25px 10px 10px 80px;
     position: relative;
     .responsive('xxxlarge', {
+      background: @red url("../img/calendar-ico-medium.png") 22px 18px no-repeat;
       font-size: 20px;
     });
     .responsive('xxlarge', {
+      background: @red url("../img/calendar-ico-medium.png") 22px 18px no-repeat;
       font-size: 16px;
     });
     .responsive('xlarge', {
-      background: none;
-      background-color: @red;
-      font-size: 18px;
-      padding-left: 10px;
+      background: @red url("../img/calendar-ico-medium.png") 14px 16px no-repeat;
+      line-height: 16px;
+      padding-left: 54px;
+      padding-top: 20px;
+    });
+    .responsive('large', {
+      background: @red url("../img/calendar-ico-medium.png") 8px 16px no-repeat;
+      font-size: 16px;
+      line-height: 16px;
+      padding-left: 54px;
+      padding-top: 25px;
+      padding-bottom: 15px;
     });
     .responsive('tablet', {
-      background: none;
+      background: @red url("../img/calendar-ico-small.png") 17px 21px no-repeat;
       background-color: @red;
-      font-size: 18px;
-      line-height: 22px;
-      padding-left: 10px;
+      font-size: 16px;
+      line-height: 16px;
+      padding-left: 54px;
+      padding-top: 25px;
     });
     .responsive('small', {
       background: none;
@@ -42,10 +53,52 @@
     .dots {
       background: url("../img/calendar-bg.png") center top no-repeat;
       height: 44px;
-      left: 20%;
+      left: 0;
       position: absolute;
       top: -14px;
-      width: 60%;
+      width: 100%;
+      .responsive('xxxxlarge', {
+        background: url("../img/calendar-bg-medium.png") center top no-repeat;
+        left: 50%;
+        top: -12px;
+        margin-left: -90px;
+        width: 180px;
+      });
+      .responsive('xxxlarge', {
+        background: url("../img/calendar-bg-medium.png") center top no-repeat;
+        left: 50%;
+        top: -12px;
+        margin-left: -90px;
+        width: 180px;
+      });
+      .responsive('xxlarge', {
+        background: url("../img/calendar-bg-medium.png") center top no-repeat;
+        left: 50%;
+        margin-left: -90px;
+        top: -10px;
+        width: 180px;
+      });
+      .responsive('xlarge', {
+        background: url("../img/calendar-bg-medium.png") center top no-repeat;
+        left: 50%;
+        margin-left: -90px;
+        top: -10px;
+        width: 180px;
+      });
+      .responsive('large', {
+        background: url("../img/calendar-bg-small.png") center top no-repeat;
+        left: 50%;
+        margin-left: -90px;
+        top: -10px;
+        width: 180px;
+      });
+      .responsive('tablet', {
+        background: url("../img/calendar-bg-small.png") center top no-repeat;
+        left: 50%;
+        margin-left: -90px;
+        top: -10px;
+        width: 180px;
+      });
     }
   }
   .body {

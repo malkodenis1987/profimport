@@ -1,5 +1,5 @@
 $(function() {
-    var addComment = $('.comments-list');
+    var addComment = $('.comments-list:visible');
     $('p.docs').on('click', function(){
         $(this).toggleClass('clicked');
     });

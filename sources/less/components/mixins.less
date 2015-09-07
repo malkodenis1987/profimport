@@ -6,12 +6,13 @@
 @standard-breakpoint: 1200px;
 @xlarge-breakpoint: 1366px;
 @xxlarge-breakpoint: 1600px;
+@xxxlarge-breakpoint: 1845px;
 /* 0px - 479px */
 .responsive(@view; @rules) when (@view = 'small') {
   @media only screen and (max-width: (@medium-breakpoint - 1)) { @rules(); }
 }
 /* 480px - 767px */
-.responsive(@view; @rules) when (@view = 'medium') {
+  .responsive(@view; @rules) when (@view = 'medium') {
   @media only screen and (min-width: @medium-breakpoint) and (max-width: (@large-breakpoint - 1)) { @rules(); }
 }
 /* 768px - 1199px */
@@ -29,6 +30,10 @@
 /* 1366px - 1599px */
 .responsive(@view; @rules) when (@view = 'xxxlarge') {
   @media only screen and (min-width: @xlarge-breakpoint) and (max-width: (@xxlarge-breakpoint - 1) ) { @rules(); }
+}
+/* 1600px - 1845px */
+.responsive(@view; @rules) when (@view = 'xxxxlarge') {
+  @media only screen and (min-width: @xxlarge-breakpoint) and (max-width: (@xxxlarge-breakpoint - 1) ) { @rules(); }
 }
 /* 1200px - ~ */
 .responsive(@view; @rules) when (@view = 'standard') {

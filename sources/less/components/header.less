@@ -22,6 +22,7 @@ header {
     float: left;
     margin: 0;
     padding: 30px 0 10px;
+    position: relative;
     width: 100%;
     li {
       float: left;
@@ -47,7 +48,11 @@ header {
           width: 100%;
         });
         a {
-          padding-top: 0;
+          background: url("../img/logo.png") left bottom no-repeat;
+          background-size: auto 100%;
+          position: relative;
+          text-indent: -10000px;
+          top: -4px;
         }
         img {
           max-width: 62%;
@@ -174,9 +179,11 @@ header {
     float: left;
     padding: 72px 0 0;
     width: 40%;
+    .responsive('xxxlarge', {
+
+    });
     .responsive('xxlarge', {
-      padding: 10px 0 0;
-      width: 100%;
+
     });
     .responsive('xlarge', {
       padding: 10px 0 0;
@@ -223,6 +230,18 @@ header {
       .responsive('xxxlarge', {
         font-size: 14px;
       });
+      .responsive('xxlarge', {
+        font-size: 14px;
+      });
+      .responsive('xlarge', {
+        font-size: 14px;
+      });
+      .responsive('large', {
+        font-size: 14px;
+      });
+      .responsive('tablet', {
+        font-size: 14px;
+      });
     }
   }
   .account {
@@ -230,10 +249,11 @@ header {
     float: left;
     padding: 35px 0 0 22%;
     width: 60%;
+    .responsive('xxxlarge', {
+      padding: 35px 0 0 25%;
+    });
     .responsive('xxlarge', {
-      background: none;
-      padding: 10px 0 0;
-      width: 100%;
+      padding: 35px 0 0 25%;
     });
     .responsive('xlarge', {
       background: none;
@@ -263,6 +283,19 @@ header {
       &.title {
         color: @red;
         padding-bottom: 20px;
+        .responsive('xxxlarge', {
+          font-size: 20px;
+        });
+        .responsive('xxlarge', {
+          font-size: 20px;
+        });
+        .responsive('xlarge', {
+          font-size: 20px;
+          padding-bottom: 10px;
+        });
+        .responsive('large', {
+          font-size: 20px;
+        });
         .responsive('tablet', {
           font-size: 20px;
           padding-bottom: 10px;
@@ -272,6 +305,15 @@ header {
         font-size: 20px;
         padding-bottom: 0;
         .responsive('xxxlarge', {
+          font-size: 14px;
+        });
+        .responsive('xxlarge', {
+          font-size: 14px;
+        });
+        .responsive('xlarge', {
+          font-size: 14px;
+        });
+        .responsive('large', {
           font-size: 14px;
         });
         .responsive('tablet', {
