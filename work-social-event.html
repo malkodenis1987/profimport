@@ -128,7 +128,7 @@
                                                     <div id="datepicker"></div>
                                                 </div>
                                             </div>
-                                            <a class="btn big" href="#">Присоединиться</a>
+                                            <a onclick="$('#ajax_form').modal('show'); return false;" class="btn big" href="#">Присоединиться</a>
                                         </div>
                                     </div>
                                 </div>
@@ -200,6 +200,26 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default grey">приложить документы</button>
+                <button type="button" class="btn btn-primary">отправить</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="ajax_form" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                <h4 class="modal-title" id="myModalLabel2">test test1</h4>
+            </div>
+            <div class="modal-body">
+                <p> <br></p>
+                <p><a href="#">написать комментарий...</a></p>
+            </div>
+            <div class="modal-footer">
+                <span class="btn btn-default btn-file grey">
+                приложить документы <input type="file">
+                </span>
                 <button type="button" class="btn btn-primary">отправить</button>
             </div>
         </div>

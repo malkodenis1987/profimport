@@ -28,7 +28,8 @@ $(function() {
 
 function ideaHead() {
     var ideaHead = $('.idea-head');
-    if (ideaHead.length) {
-        ideaHead.css('min-height', ideaHead.parents('.row').height());
+    var ideaHeight = $('.idea-details').height();
+    if (ideaHead.length && (ideaHead.height() < ideaHeight)) {
+        ideaHead.css('min-height', ideaHeight);
     }
 }

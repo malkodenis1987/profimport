@@ -17,6 +17,31 @@
     });
     .date {
       float: right;
+      .responsive('xxxxlarge', {
+        font-size: 18px;
+        line-height: 42px;
+        padding-top: 3px;
+      });
+      .responsive('xxxlarge', {
+        font-size: 16px;
+        line-height: 42px;
+        padding-top: 5px;
+      });
+      .responsive('xxlarge', {
+        font-size: 16px;
+      });
+      .responsive('xlarge', {
+        font-size: 18px;
+      });
+      .responsive('tablet', {
+        font-size: 18px;
+      });
+      .responsive('small', {
+        font-size: 20px;
+      });
+      .responsive('tablet', {
+        min-height: 44px;
+      });
     }
     .title {
       display: inline-block;
@@ -45,6 +70,27 @@
       });
       &.best {
         background: url("../img/best-ico.png") 2px 1px no-repeat;
+        .responsive('xxxxlarge', {
+          font-size: 18px;
+        });
+        .responsive('xxxlarge', {
+          font-size: 16px;
+        });
+        .responsive('xxlarge', {
+          font-size: 16px;
+        });
+        .responsive('xlarge', {
+          font-size: 18px;
+        });
+        .responsive('tablet', {
+          font-size: 18px;
+        });
+        .responsive('small', {
+          font-size: 20px;
+        });
+        .responsive('tablet', {
+          min-height: 44px;
+        });
       }
       &.seminar {
         background: url("../img/seminar-ico.png") 1px 5px no-repeat;
@@ -53,10 +99,17 @@
         background: url("../img/birth.png") 1px 5px no-repeat;
         display: block;
         min-height: 66px;
-        padding: 13px 50px 5px 50px;
+        padding: 20px 40px 5px 50px;
         text-align: center;
+        .responsive('xlarge', {
+          padding: 20px 0 5px 50px;
+        });
+        .responsive('large', {
+          font-size: 14px;
+          padding: 20px 0 5px 50px;
+        });
         .responsive('tablet', {
-          padding: 13px 0 5px 62px;
+          padding: 13px 0 5px 50px;
         });
       }
     }
@@ -96,7 +149,7 @@
       padding: 0;
       position: absolute;
       right: 7px;
-      width: 50%;
+      width: 46%;
       .responsive('xxxlarge', {
         font-size: 14px;
         height: 23px;
@@ -105,7 +158,7 @@
       .responsive('xxlarge', {
         font-size: 12px;
         height: 23px;
-        width: 50%;
+        width: 46%;
       });
       .responsive('xlarge', {
         font-size: 12px;
@@ -115,7 +168,7 @@
       .responsive('large', {
         font-size: 12px;
         height: 23px;
-        width: 60%;
+        width: 46%;
       });
       .responsive('tablet', {
         font-size: 11px;
@@ -130,18 +183,19 @@
         text-decoration: none;
         opacity: 0.8;
       }
-      &:nth-child(2) {
-        bottom: 45px;
-      }
       &.single {
         bottom: 7px;
+      }
+      &.long {
+        bottom: 7px;
+        width: 70%;
       }
     }
   }
   &.slider {
     border: 3px @calendar-grey solid;
     border-radius: 18px;
-    margin: 14px 0 -5px;
+    margin: 0 0 -5px;
     .gradient(#ffffff, #d4d7da);
     .head {
       border-radius: 15px 15px 0 0;

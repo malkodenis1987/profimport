@@ -1,4 +1,4 @@
-#card {
+.card {
   .modal-dialog {
     width: 790px;
   }
@@ -78,6 +78,7 @@
         float: left;
         width: 100%;
         dt {
+          clear: left;
           float: left;
           width: 40%;
         }
@@ -90,6 +91,7 @@
     .foot {
       p {
         font-size: 24px;
+        line-height: 34px;
         strong {
           padding: 0 15px 0 0;
         }
@@ -126,8 +128,29 @@
       }
       &.grey {
         background: @calendar-border;
+        float: left;
+        line-height: 36px;
         width: 52%;
       }
+    }
+    .btn-file {
+      position: relative;
+      overflow: hidden;
+    }
+    .btn-file input[type=file] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      min-width: 100%;
+      min-height: 100%;
+      font-size: 100px;
+      text-align: right;
+      filter: alpha(opacity=0);
+      opacity: 0;
+      outline: none;
+      background: white;
+      cursor: inherit;
+      display: block;
     }
   }
 }

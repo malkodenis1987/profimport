@@ -132,6 +132,7 @@
     });
   }
   img {
+    border-radius: 5px;
     max-width: 100%;
   }
   .docs {
@@ -149,6 +150,9 @@
         background: url("../img/doc.png") left 2px no-repeat;
       }
       &.xls {
+        background: url("../img/xls.png") left top no-repeat;
+      }
+      &.xlsx {
         background: url("../img/xls.png") left top no-repeat;
       }
       &.pdf {
@@ -232,5 +236,15 @@
     .details {
       padding-left: 280px;
     }
+  }
+  .add-comment {
+    .jspContainer {
+      min-width: 100%;
+    }
+  }
+  .news_content > p {
+    line-height: 0;
+    margin: 0;
+    padding: 0;
   }
 }

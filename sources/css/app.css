@@ -91,10 +91,12 @@ body {
   }
 }
 .content .col-md-5-1 img {
+  border-radius: 5px;
   margin-right: 2%;
   width: 54%;
 }
 .content .col-md-5-1.long img {
+  border-radius: 5px;
   margin-right: 0;
   width: 100%;
 }
@@ -953,7 +955,7 @@ footer {
 .sidebar.right .btn {
   width: 100%;
 }
-#card .modal-dialog {
+.card .modal-dialog {
   width: 790px;
 }
 .modal-dialog .modal-header {
@@ -1031,6 +1033,7 @@ footer {
   width: 100%;
 }
 .modal-dialog .modal-body .body dl dt {
+  clear: left;
   float: left;
   width: 40%;
 }
@@ -1040,6 +1043,7 @@ footer {
 }
 .modal-dialog .modal-body .foot p {
   font-size: 24px;
+  line-height: 34px;
 }
 .modal-dialog .modal-body .foot p strong {
   padding: 0 15px 0 0;
@@ -1076,7 +1080,28 @@ footer {
 }
 .modal-dialog .modal-footer .btn.grey {
   background: #9b9b96;
+  float: left;
+  line-height: 36px;
   width: 52%;
+}
+.modal-dialog .modal-footer .btn-file {
+  position: relative;
+  overflow: hidden;
+}
+.modal-dialog .modal-footer .btn-file input[type=file] {
+  position: absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  font-size: 100px;
+  text-align: right;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  outline: none;
+  background: white;
+  cursor: inherit;
+  display: block;
 }
 .content .pager {
   color: #c4c4be;
@@ -1153,6 +1178,45 @@ footer {
 .widget .head .date {
   float: right;
 }
+@media only screen and (min-width: 1600px) and (max-width: 1844px) {
+  .widget .head .date {
+    font-size: 18px;
+    line-height: 42px;
+    padding-top: 3px;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .widget .head .date {
+    font-size: 16px;
+    line-height: 42px;
+    padding-top: 5px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget .head .date {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget .head .date {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .date {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .widget .head .date {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .date {
+    min-height: 44px;
+  }
+}
 .widget .head .title {
   display: inline-block;
   line-height: 24px;
@@ -1196,6 +1260,41 @@ footer {
 .widget .head .title.best {
   background: url("../img/best-ico.png") 2px 1px no-repeat;
 }
+@media only screen and (min-width: 1600px) and (max-width: 1844px) {
+  .widget .head .title.best {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1366px) and (max-width: 1599px) {
+  .widget .head .title.best {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1365px) {
+  .widget .head .title.best {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget .head .title.best {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .title.best {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 479px) {
+  .widget .head .title.best {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .widget .head .title.best {
+    min-height: 44px;
+  }
+}
 .widget .head .title.seminar {
   background: url("../img/seminar-ico.png") 1px 5px no-repeat;
 }
@@ -1203,12 +1302,23 @@ footer {
   background: url("../img/birth.png") 1px 5px no-repeat;
   display: block;
   min-height: 66px;
-  padding: 13px 50px 5px 50px;
+  padding: 20px 40px 5px 50px;
   text-align: center;
+}
+@media only screen and (min-width: 1024px) and (max-width: 1199px) {
+  .widget .head .title.birth {
+    padding: 20px 0 5px 50px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .widget .head .title.birth {
+    font-size: 14px;
+    padding: 20px 0 5px 50px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .widget .head .title.birth {
-    padding: 13px 0 5px 62px;
+    padding: 13px 0 5px 50px;
   }
 }
 .widget .body {
@@ -1248,7 +1358,7 @@ footer {
   padding: 0;
   position: absolute;
   right: 7px;
-  width: 50%;
+  width: 46%;
 }
 @media only screen and (min-width: 1366px) and (max-width: 1599px) {
   .widget .body .btn {
@@ -1261,7 +1371,7 @@ footer {
   .widget .body .btn {
     font-size: 12px;
     height: 23px;
-    width: 50%;
+    width: 46%;
   }
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -1275,7 +1385,7 @@ footer {
   .widget .body .btn {
     font-size: 12px;
     height: 23px;
-    width: 60%;
+    width: 46%;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -1295,16 +1405,17 @@ footer {
   text-decoration: none;
   opacity: 0.8;
 }
-.widget .body .btn:nth-child(2) {
-  bottom: 45px;
-}
 .widget .body .btn.single {
   bottom: 7px;
+}
+.widget .body .btn.long {
+  bottom: 7px;
+  width: 70%;
 }
 .widget.slider {
   border: 3px #c5ccce solid;
   border-radius: 18px;
-  margin: 14px 0 -5px;
+  margin: 0 0 -5px;
   background-color: #ffffff;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d4d7da));
   background: -webkit-linear-gradient(top, #ffffff, #d4d7da);
@@ -1950,6 +2061,7 @@ li.L9 {
   }
 }
 .content img {
+  border-radius: 5px;
   max-width: 100%;
 }
 .content .docs {
@@ -1969,6 +2081,9 @@ li.L9 {
   background: url("../img/doc.png") left 2px no-repeat;
 }
 .content .docs .ico.xls {
+  background: url("../img/xls.png") left top no-repeat;
+}
+.content .docs .ico.xlsx {
   background: url("../img/xls.png") left top no-repeat;
 }
 .content .docs .ico.pdf {
@@ -2069,6 +2184,14 @@ li.L9 {
 }
 .content .book .details {
   padding-left: 280px;
+}
+.content .add-comment .jspContainer {
+  min-width: 100%;
+}
+.content .news_content > p {
+  line-height: 0;
+  margin: 0;
+  padding: 0;
 }
 /* Home */
 .boxes {
@@ -2413,6 +2536,7 @@ li.L9 {
 }
 .idea-column .idea-item .actions {
   float: left;
+  margin: 7px 0 0;
 }
 .idea-column .idea-item .accepted {
   background: #4fb114;
@@ -2541,6 +2665,9 @@ li.L9 {
 .col-media .item .pic {
   position: relative;
 }
+.col-media .item .pic img {
+  border-radius: 5px;
+}
 .col-media .item .play {
   background: url("../img/play.png") 0 0 no-repeat;
   height: 89px;
@@ -2628,7 +2755,7 @@ li.L9 {
 }
 .structure {
   position: relative;
-  min-height: 1155px;
+  min-height: 1200px;
   margin-top: -27px;
   width: 1440px;
 }
@@ -2788,6 +2915,9 @@ li.L9 {
   left: 207px;
   height: 128px;
 }
+.structure .group#hr .vacation {
+  letter-spacing: -1px;
+}
 .structure .group#import-logistic {
   left: 0;
   top: 109px;
@@ -2821,7 +2951,7 @@ li.L9 {
 }
 .structure .group#svet .line.vertical {
   left: 241px;
-  height: 939px;
+  height: 1007px;
 }
 .structure .group#oboi {
   left: 735px;
@@ -2829,7 +2959,7 @@ li.L9 {
 }
 .structure .group#oboi .line.vertical {
   left: 241px;
-  height: 794px;
+  height: 844px;
 }
 .structure .group#mebel {
   left: 980px;
@@ -2851,9 +2981,13 @@ li.L9 {
   top: 259px;
 }
 .structure .group#finance .line.vertical.additional {
-  height: 573px;
+  height: 623px;
   left: 201px;
-  top: 116px;
+  top: 66px;
+}
+.structure .group#finance .name,
+.structure .group#finance h5 {
+  letter-spacing: -1px;
 }
 .structure .node {
   background-color: #ffffff;
@@ -2928,6 +3062,11 @@ li.L9 {
 }
 .structure .arrow.left.no.indent {
   margin-top: 10px;
+}
+.structure .arrow.left.no.long {
+  background: url("../img/arrow-left-no.gif") center bottom repeat-x;
+  right: -16px;
+  width: 16px;
 }
 .structure .line.vertical {
   background: #9b9b96;
