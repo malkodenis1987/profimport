@@ -2672,6 +2672,9 @@ li.L9 {
 .col-media .item a {
   display: block;
 }
+.col-media .item a.gallery_hidden {
+  display: none;
+}
 .col-media .item .play {
   background: url("../img/play.png") 0 0 no-repeat;
   height: 89px;
