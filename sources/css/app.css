@@ -134,20 +134,15 @@ body {
 .content .col-md-3-5 p:last-child {
   padding-bottom: 5px;
 }
-@media only screen and (max-width: 479px) {
-  .scroll-wrapper {
-    padding-right: 0;
-  }
-}
-.scroll-wrapper .jspVerticalBar {
+.jspVerticalBar {
   background: none;
   border-radius: 3px;
   width: 5px;
 }
-.scroll-wrapper .jspVerticalBar .jspTrack {
+.jspVerticalBar .jspTrack {
   border-radius: 3px;
 }
-.scroll-wrapper .jspVerticalBar .jspTrack .jspDrag {
+.jspVerticalBar .jspTrack .jspDrag {
   background: #aaaaaa;
   border-radius: 3px;
 }
@@ -369,6 +364,9 @@ body {
 .datepicker .body .fc-view-container .fc-content {
   white-space: normal;
 }
+.datepicker .body .fc-view-container .fc-time {
+  display: block;
+}
 .btn {
   background: #be392a;
   border: 0;
@@ -450,7 +448,7 @@ input[type="radio"]:disabled + label::before {
 header {
   height: 125px;
   position: relative;
-  z-index: 5;
+  z-index: 100;
 }
 @media only screen and (min-width: 1024px) and (max-width: 1199px) {
   header {
@@ -2077,12 +2075,11 @@ li.L9 {
   padding: 2px 0 16px 25px;
   position: relative;
 }
-.content .docs .ico.doc {
+.content .docs .ico.doc,
+.content .docs .ico.docx {
   background: url("../img/doc.png") left 2px no-repeat;
 }
-.content .docs .ico.xls {
-  background: url("../img/xls.png") left top no-repeat;
-}
+.content .docs .ico.xls,
 .content .docs .ico.xlsx {
   background: url("../img/xls.png") left top no-repeat;
 }
@@ -2183,7 +2180,7 @@ li.L9 {
   }
 }
 .content .book .details {
-  padding-left: 280px;
+  padding-left: 150px;
 }
 .content .add-comment .jspContainer {
   min-width: 100%;
@@ -2192,6 +2189,10 @@ li.L9 {
   line-height: 0;
   margin: 0;
   padding: 0;
+}
+.content .book {
+  clear: left;
+  padding: 0 0 10px;
 }
 /* Home */
 .boxes {
@@ -2642,7 +2643,7 @@ li.L9 {
   padding: 0 5px;
   position: relative;
   text-align: center;
-  width: 25%;
+  width: 50%;
 }
 @media only screen and (max-width: 479px) {
   .col-media .item {
@@ -2668,6 +2669,9 @@ li.L9 {
 .col-media .item .pic img {
   border-radius: 5px;
 }
+.col-media .item a {
+  display: block;
+}
 .col-media .item .play {
   background: url("../img/play.png") 0 0 no-repeat;
   height: 89px;
@@ -2679,6 +2683,9 @@ li.L9 {
 }
 .col-media .item .play:hover {
   text-decoration: none;
+}
+.gallery_hidden {
+  display: none;
 }
 .social-item {
   background: #be392a;
@@ -2934,6 +2941,9 @@ li.L9 {
 .structure .group#didonato .line.vertical {
   left: 235px;
   height: 495px;
+}
+.structure .group#didonato .vacation {
+  letter-spacing: 0.1px;
 }
 .structure .group#sklad {
   left: 247px;

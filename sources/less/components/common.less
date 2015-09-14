@@ -101,20 +101,16 @@ html,body {
     }
   }
 }
-.scroll-wrapper {
-  .responsive('small', {
-    padding-right: 0;
-  });
-  .jspVerticalBar {
-    background: none;
+
+.jspVerticalBar {
+  background: none;
+  border-radius: 3px;
+  width: 5px;
+  .jspTrack {
     border-radius: 3px;
-    width: 5px;
-    .jspTrack {
+    .jspDrag {
+      background: @grey;
       border-radius: 3px;
-      .jspDrag {
-        background: @grey;
-        border-radius: 3px;
-      }
     }
   }
 }

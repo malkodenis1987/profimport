@@ -146,13 +146,10 @@
       margin: 0;
       padding: 2px 0 16px 25px;
       position: relative;
-      &.doc {
+      &.doc, &.docx {
         background: url("../img/doc.png") left 2px no-repeat;
       }
-      &.xls {
-        background: url("../img/xls.png") left top no-repeat;
-      }
-      &.xlsx {
+      &.xls, &.xlsx {
         background: url("../img/xls.png") left top no-repeat;
       }
       &.pdf {
@@ -234,7 +231,7 @@
   /* Книги */
   .book {
     .details {
-      padding-left: 280px;
+      padding-left: 150px;
     }
   }
   .add-comment {
@@ -246,5 +243,9 @@
     line-height: 0;
     margin: 0;
     padding: 0;
+  }
+  .book {
+    clear: left;
+    padding: 0 0 10px;
   }
 }
