@@ -8,7 +8,7 @@ $(function() {
     });
     $('.comment, .view').on('click', function(){
         $(this).parents('.row').next('.row').find('.add-comment').toggleClass('active');
-        addComment.jScrollPane();
+        //addComment.jScrollPane();
         return false;
     });
 });
