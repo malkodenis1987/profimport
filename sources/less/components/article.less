@@ -140,11 +140,12 @@
     position: relative;
     .ico {
       color: @text-color;
+      display: block;
       font-size: 18px;
       line-height: 26px;
       letter-spacing: -0.7px;
       margin: 0;
-      padding: 2px 0 16px 25px;
+      padding: 0 0 0 25px;
       position: relative;
       &.doc, &.docx {
         background: url("../img/doc.png") left 2px no-repeat;
@@ -162,7 +163,7 @@
         }
       }
       a {
-        bottom: -2px;
+        bottom: -16px;
         color: @sidebar-grey;
         display: none;
         line-height: 18px;
@@ -235,8 +236,17 @@
     }
   }
   .add-comment {
+    position: relative;
     .jspContainer {
       min-width: 100%;
+    }
+    .add-comment {
+      bottom: 0;
+      left: 0;
+      margin-bottom: 0;
+      padding-bottom: 0;
+      position: absolute;
+      width: 100%;
     }
   }
   .news_content > p {
@@ -247,5 +257,15 @@
   .book {
     clear: left;
     padding: 0 0 10px;
+  }
+  .news-actions {
+    padding-top: 28px;
+  }
+  #noactive_idea {
+    .add-comment {
+      .add-comment {
+        position: relative;
+      }
+    }
   }
 }
